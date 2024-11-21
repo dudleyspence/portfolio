@@ -331,7 +331,7 @@ export default function Skills() {
           />
           <img
             className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/jest.png"
+            src="/skills/Jest.png"
             alt="Jest"
           />
         </div>
