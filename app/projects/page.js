@@ -78,10 +78,10 @@ const projects = [
     image: "PortfolioSinglePage.png",
     type: "Frontend",
     title: "Original Single Page Portfolio Site",
-    backskills: ["HTML", "CSS", "JavaScript"],
-    githubF: "",
+    frontskills: ["HTML", "CSS", "JavaScript"],
+    githubF: "https://github.com/dudleyspence/old-portfolio-site",
     githubB: "",
-    siteLink: "",
+    siteLink: "https://old-portfolio-site-production.up.railway.app",
     description:
       "While my current portfolio is built with Next.js, I value a strong foundation in web development. This original portfolio site, crafted with HTML, CSS, and JavaScript, showcases my ability to create responsive and user-friendly designs without relying on frameworks.",
     reverse: true,
