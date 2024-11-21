@@ -1,12 +1,4 @@
-"use client";
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
 
 export default function Project({
   image,
@@ -20,27 +12,20 @@ export default function Project({
   description,
   reverse,
 }) {
+  // test point
   return (
-    <Card
+    <div
       className={
         (reverse === true ? "lg:flex-row-reverse " : "lg:flex-row ") +
-        "w-full max-w-[85vw] flex-col bg-background"
+        "w-full max-w-[85vw] flex flex-col bg-background relative"
       }
-      shadow={false}
     >
-      <CardHeader
-        // className="m-0 w-full lg:w-3/5 shrink-0 rounded-b-none lg:rounded-r-none lg:rounded-l-xl "
-        className="m-0 w-full lg:w-3/5 shrink-0 rounded-xl"
-      >
-        <img src={image} className="h-full w-full object-cover" />
-      </CardHeader>
-      <CardBody className="px-0 lg:px-6">
-        <Typography variant="h6" className="mb-4 uppercase text-text">
-          {type}
-        </Typography>
-        <Typography variant="h4" className="mb-2 text-text">
-          {title}
-        </Typography>
+      <div className="m-0 w-full lg:w-3/5 shrink-0 rounded-xl relative overflow-hidden shadow-xl">
+        <img src={image} className="rounded-lg h-full w-full object-cover" />
+      </div>
+      <div className="font-sans px-0 lg:w-2/5 lg:px-6 p-6">
+        <h6 className="mb-4 uppercase font-bold text-text">{type}</h6>
+        <h1 className="mb-4 text-2xl font-sans font-bold text-text">{title}</h1>
         {frontskills && (
           <div className="flex flex-row items-center gap-2 mb-2">
             <a href={githubF} target="_blank" rel="noopener noreferrer">
@@ -56,9 +41,9 @@ export default function Project({
                 />
               </svg>
             </a>
-            <Typography className="font-bold text-text">
+            <p className="font-bold font-sans text-text">
               Frontend: <span>{frontskills.join(", ")}</span>
-            </Typography>
+            </p>
           </div>
         )}
         {backskills && (
@@ -76,15 +61,13 @@ export default function Project({
                 />
               </svg>
             </a>
-            <Typography className="font-bold text-text">
+            <p className="font-bold font-sans text-text">
               Backend: <span>{backskills.join(", ")}</span>
-            </Typography>
+            </p>
           </div>
         )}
 
-        <Typography className="mb-8 font-normal text-text">
-          {description}
-        </Typography>
+        <p className="mb-8 font-sans text-text">{description}</p>
 
         {type === "dissertation" ? (
           <a
@@ -92,7 +75,7 @@ export default function Project({
             className="inline-block"
             download
           >
-            <Button
+            <button
               variant="text"
               className="flex items-center gap-2 text-text"
             >
@@ -111,11 +94,11 @@ export default function Project({
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </Button>
+            </button>
           </a>
         ) : (
           <a href={siteLink} className="inline-block">
-            <Button
+            <button
               variant="text"
               className="flex items-center gap-2 text-text"
             >
@@ -134,10 +117,10 @@ export default function Project({
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </Button>
+            </button>
           </a>
         )}
-      </CardBody>
-    </Card>
+      </div>
+    </div>
   );
 }
