@@ -2,6 +2,8 @@
 import React from "react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+
 import {
   Card,
   CardBody,
@@ -12,28 +14,31 @@ import {
 import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("about");
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  //   useEffect(() => {
-  //     setMounted(true);
-  //   }, []);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-  //   if (!mounted) {
-  //     return null;
-  //   }
+  if (!mounted) {
+    return null;
+  }
   return (
     <Card
       className="w-full max-w-[550px] lg:max-w-[92vw] flex-col-reverse lg:flex-row-reverse bg-background"
       shadow={false}
     >
       <CardHeader className="m-0 w-full lg:w-2/5 shrink-0  rounded-xl">
-        <img
-          src={theme === "dark" ? "mapdark.png" : "maplight.png"}
-          alt="card-image"
-          className="h-full w-full object-cover"
-        />
+        <div className="h-full w-full">
+          <Image
+            src={theme === "dark" ? "/mapdark.png" : "/maplight.png"}
+            alt="card-image"
+            className="object-cover !static"
+            fill
+          />
+        </div>
       </CardHeader>
       <CardBody className="px-0 lg:px-6">
         <Typography

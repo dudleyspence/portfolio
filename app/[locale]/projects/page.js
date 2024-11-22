@@ -4,7 +4,7 @@ import initTranslations from "@/app/i18n";
 
 const projects = [
   {
-    image: "../PeaceOfMind.png",
+    image: "/PeaceOfMind.png",
     type: "fullstack",
     title: "peace_of_mind_title",
     frontskills: ["JavaScript", "React", "Redux", "Tailwind"],
@@ -16,7 +16,7 @@ const projects = [
     reverse: false,
   },
   {
-    image: "../FrenchLanguage.png",
+    image: "/FrenchLanguage.png",
     type: "fullstack",
     title: "french_language_title",
     frontskills: ["Next.js", "Tailwind", "Axios"],
@@ -28,7 +28,7 @@ const projects = [
     reverse: true,
   },
   {
-    image: "../TrailTalk.png",
+    image: "/TrailTalk.png",
     type: "fullstack",
     title: "trailtalk_title",
     frontskills: ["JavaScript", "React", "HTML", "CSS"],
@@ -40,7 +40,7 @@ const projects = [
     reverse: false,
   },
   {
-    image: "../TravelSync.png",
+    image: "/TravelSync.png",
     type: "fullstack",
     title: "travelsync_title",
     frontskills: ["React.js", "HTML", "CSS", "Mapbox"],
@@ -59,7 +59,7 @@ const projects = [
     reverse: true,
   },
   {
-    image: "../Npuzzle.png",
+    image: "/Npuzzle.png",
     type: "dissertation",
     title: "n_puzzle_title",
     backskills: ["Python", "TensorFlow", "NumPy"],
@@ -70,7 +70,7 @@ const projects = [
     reverse: false,
   },
   {
-    image: "../PortfolioSinglePage.png",
+    image: "/PortfolioSinglePage.png",
     type: "frontend",
     title: "original_portfolio_title",
     frontskills: ["HTML", "CSS", "JavaScript"],
@@ -82,7 +82,8 @@ const projects = [
   },
 ];
 
-export default async function page({ params: { locale } }) {
+export default async function page({ params }) {
+  const { locale } = await params;
   const { t } = await initTranslations(locale, ["projects"]);
 
   return (

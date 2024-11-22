@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Project({
   image,
@@ -16,23 +17,23 @@ export default function Project({
     <div
       className={`${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } w-full max-w-[85vw] flex flex-col bg-background relative`}
+      } flex w-full max-w-[85vw] flex-col lg:flex bg-background relative`}
     >
       {/* Image Section */}
-      <div className="m-0 w-full lg:w-3/5 shrink-0 rounded-xl relative overflow-hidden shadow-xl">
-        <img
+      <div className="relative w-full lg:w-3/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
+        <Image
           src={image}
           alt={`${title} Image`}
-          className="rounded-lg h-full w-full object-cover"
+          className="rounded-lg !static lg:absolute object-cover"
+          fill
+          priority
         />
       </div>
 
-      {/* Content Section */}
       <div className="font-sans px-0 lg:w-2/5 lg:px-6 p-6">
         <h6 className="mb-4 uppercase font-bold text-text">{type}</h6>
         <h1 className="mb-4 text-2xl font-sans font-bold text-text">{title}</h1>
 
-        {/* Frontend Skills */}
         {frontskills && (
           <div className="flex flex-row items-center gap-2 mb-2">
             {githubF && (
@@ -56,7 +57,6 @@ export default function Project({
           </div>
         )}
 
-        {/* Backend Skills */}
         {backskills && (
           <div className="flex flex-row items-center gap-2 mb-2 ">
             {githubB && (

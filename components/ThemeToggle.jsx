@@ -1,6 +1,7 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -11,10 +12,16 @@ export default function ThemeToggle() {
   if (!mounted) return null;
 
   return (
-    <img
-      className="h-[20px] w-[20px] self-end lg:self-auto mt-3 lg:mt-0"
+    <div
+      className="relative h-[20px] w-[20px] self-end lg:self-auto mt-3 lg:mt-0 cursor-pointer"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      src={theme === "dark" ? "theme/sun.png" : "theme/moon.png"}
-    />
+    >
+      <Image
+        src={theme === "dark" ? "/theme/sun.png" : "/theme/moon.png"}
+        alt={theme === "dark" ? "Sun Icon" : "Moon Icon"}
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
   );
 }

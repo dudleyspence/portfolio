@@ -1,15 +1,14 @@
 import React from "react";
-
-import initTranslations from "@/app/i18n";
-import TranslationsProvider from "@/components/TranslationsProvider";
-
-import Skills from "@/components/Skills";
 import AboutMe from "@/components/AboutMe";
+import TranslationsProvider from "@/components/TranslationsProvider";
+import initTranslations from "@/app/i18n";
+import Skills from "@/components/Skills";
 
 const namespaces = ["about"];
 
-export default async function page({ params: { locale } }) {
-  const { t, resources } = await initTranslations(locale, namespaces);
+export default async function Page({ params }) {
+  const { locale } = await params; // Get locale from params
+  const { resources } = await initTranslations(locale, namespaces);
 
   return (
     <TranslationsProvider
