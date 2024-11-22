@@ -1,4 +1,3 @@
-import ThemeToggle from "@/components/ThemeToggle";
 import "./globals.css";
 import { BasicNavbar } from "@/components/Navbar";
 import ThemeProvider from "@/utils/ThemeProvider";

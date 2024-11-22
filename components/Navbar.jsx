@@ -2,15 +2,14 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
   Button,
   IconButton,
-  Card,
   Collapse,
 } from "@material-tailwind/react";
 
 import ThemeToggle from "./ThemeToggle";
+import LanguageChanger from "./LanguageChanger";
 
 export function BasicNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -44,6 +43,11 @@ export function BasicNavbar() {
           Projects
         </a>
       </Typography>
+      <Typography as="li" variant="Large" className="p-1 font-bold text-text">
+        <a href="contact" className="flex items-center justify-end">
+          Contact
+        </a>
+      </Typography>
 
       <a as="li" href="/dudley-spence-cv.pdf" download>
         <Button size="sm" className="hidden lg:inline-block bg-buttonGreen">
@@ -60,6 +64,7 @@ export function BasicNavbar() {
           <span>Resume</span>
         </Button>
       </a>
+      <LanguageChanger />
       <ThemeToggle />
     </ul>
   );

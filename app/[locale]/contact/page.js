@@ -1,5 +1,5 @@
 "use client";
-import ContactForm from "@/draftpage/ContactForm";
+import ContactForm from "@/components/ContactForm";
 import {
   Card,
   Textarea,
@@ -19,6 +19,7 @@ export default function ProfileCard() {
           <Typography variant="h4" className="mb-2 text-foreground">
             Contact Me
           </Typography>
+          <ContactForm />
         </CardBody>
 
         <CardFooter className="flex justify-center gap-7 pt-10">
