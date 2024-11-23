@@ -19,6 +19,7 @@ module.exports = withMT({
         buttonGreen: "#81b29a",
         lowcontrast: "var(--lowcontrast)",
         lowcontrast2: "var(--lowcontrast2)",
+        highcontrast: "var(--highcontrast)",
       },
     },
   },

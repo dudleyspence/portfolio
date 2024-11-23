@@ -12,6 +12,7 @@ export default function Project({
   siteLink,
   description,
   reverse,
+  linktag,
 }) {
   return (
     <div
@@ -82,7 +83,7 @@ export default function Project({
 
         <p className="mb-8 font-sans text-text">{description}</p>
 
-        {type === "dissertation" ? (
+        {siteLink === "download" ? (
           <a
             href="Solving the N-Puzzle using Deep Reinforcement Learning.pdf"
             className="inline-block"
@@ -90,9 +91,9 @@ export default function Project({
           >
             <button
               variant="text"
-              className="flex items-center gap-2 text-text"
+              className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-text hover:bg-highcontrast active:bg-gray-900/20 flex items-center gap-2"
             >
-              Download Dissertation
+              {linktag}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -113,9 +114,9 @@ export default function Project({
           <a href={siteLink} className="inline-block">
             <button
               variant="text"
-              className="flex items-center gap-2 text-text"
+              className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-text hover:bg-highcontrast active:bg-gray-900/20 flex items-center gap-2"
             >
-              View Live Site
+              {linktag}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

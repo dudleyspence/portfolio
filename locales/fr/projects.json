@@ -13,5 +13,7 @@
   "n_puzzle_title": "Résolution du N-puzzle avec apprentissage profond par renforcement",
   "n_puzzle_desc": "Pour mon mémoire de Master en informatique, j'ai utilisé Python et TensorFlow pour créer un modèle d'apprentissage par renforcement profond qui apprend à résoudre le N-puzzle.",
   "original_portfolio_title": "Site de portfolio original d'une seule page",
-  "original_portfolio_desc": "Bien que mon portfolio actuel soit construit avec Next.js, j'accorde de l'importance à une base solide en développement web. Ce site de portfolio original, créé avec HTML, CSS et JavaScript, montre ma capacité à créer des designs réactifs et conviviaux sans dépendre de frameworks."
+  "original_portfolio_desc": "Bien que mon portfolio actuel soit construit avec Next.js, j'accorde de l'importance à une base solide en développement web. Ce site de portfolio original, créé avec HTML, CSS et JavaScript, montre ma capacité à créer des designs réactifs et conviviaux sans dépendre de frameworks.",
+  "view_site": "Voir le site en direct",
+  "download_diss": "Télécharger la dissertation"
 }

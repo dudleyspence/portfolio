@@ -22,7 +22,7 @@ export default function ContactForm() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Message Submitted Successfully");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -80,7 +80,7 @@ export default function ContactForm() {
           {t("send")}
         </Button>
       </form>
-      <span>{result}</span>
+      <span className="mt-10">{result}</span>
     </div>
   );
 }

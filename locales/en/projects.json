@@ -13,5 +13,7 @@
   "n_puzzle_title": "Solving the N-Puzzle with Deep Reinforcement Learning",
   "n_puzzle_desc": "My MSc Computer Science thesis used Python and TensorFlow to create a deep reinforcement learning model that learns to solve the N-Puzzle.",
   "original_portfolio_title": "Original Single-Page Portfolio Website",
-  "original_portfolio_desc": "Although my current portfolio is built with Next.js, I value a solid foundation in web development. This original portfolio site, created with HTML, CSS, and JavaScript, showcases my ability to create responsive and user-friendly designs without relying on frameworks."
+  "original_portfolio_desc": "Although my current portfolio is built with Next.js, I value a solid foundation in web development. This original portfolio site, created with HTML, CSS, and JavaScript, showcases my ability to create responsive and user-friendly designs without relying on frameworks.",
+  "view_site": "View Live Site",
+  "download_diss": "Download Dissertation"
 }
