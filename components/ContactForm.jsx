@@ -1,19 +1,46 @@
 "use client";
 import { Textarea, Input, Button } from "@material-tailwind/react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const [result, setResult] = React.useState("");
+  const { t } = useTranslation("contact");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "a5f7a38a-6ef2-4c47-bcf2-784def440021");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div>
       <form
         className="w-96 flex flex-col items-end gap-6 mt-10"
-        id="contactform"
-        action="https://formsubmit.io/send/dudleyspence5@gmail.com"
-        method="POST"
+        onSubmit={onSubmit}
       >
         <Input
           type="text"
           name="name"
-          placeholder="Full Name"
+          required
+          placeholder={t("fullname")}
           className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10"
           size="lg"
           labelProps={{
@@ -21,17 +48,12 @@ export default function ContactForm() {
           }}
           containerProps={{ className: "min-w-[100px]" }}
         />
-        <input
-          name="_redirect"
-          type="hidden"
-          id="name"
-          value="http://localhost:3004/"
-        ></input>
-        <input type="text" name="_formsubmit_id" className="hidden" />
+
         <Input
           type="email"
           name="email"
-          placeholder="Email Address"
+          required
+          placeholder={t("email")}
           className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10"
           size="lg"
           labelProps={{
@@ -41,7 +63,8 @@ export default function ContactForm() {
         />
         <Textarea
           name="message"
-          placeholder="Message"
+          placeholder={t("message")}
+          required
           className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10"
           size="lg"
           labelProps={{
@@ -54,9 +77,10 @@ export default function ContactForm() {
           size="sm"
           className="rounded-md self-end bg-buttonGreen"
         >
-          Send
+          {t("send")}
         </Button>
       </form>
+      <span>{result}</span>
     </div>
   );
 }

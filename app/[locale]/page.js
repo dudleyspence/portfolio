@@ -1,4 +1,11 @@
-export default function Home() {
+import initTranslations from "@/app/i18n";
+
+const namespaces = ["common"];
+
+export default async function Home({ params }) {
+  const { locale } = await params;
+  const { t } = await initTranslations(locale, namespaces);
+
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center h-[calc(100vh-150px)]">
       <img src="/profile.png" className="h-64 w-64 lg:h-96 lg:w-96" />
@@ -8,7 +15,7 @@ export default function Home() {
           Dudley Spence
         </p>
         <p className="text-[30px] lg:text-[40px] text-buttonGreen">
-          Software Engineer
+          {t("job_title")}
         </p>
         <div className="social-links flex flex-row gap-6 mt-10 justify-self-end">
           <a

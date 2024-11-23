@@ -1,38 +1,26 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Button,
-  Typography,
-  Avatar,
-} from "@material-tailwind/react";
-
-export function Northcoders() {
+export function Northcoders({ t }) {
   return (
-    <Card color="transparent" shadow={false} className="w-full max-w-[36rem]">
-      <CardHeader
-        color="transparent"
-        floated={false}
-        shadow={false}
-        className="mx-0 flex items-center gap-4 pt-0 pb-6"
-      >
-        <Avatar
-          size="lg"
-          variant="rounded"
+    <div className="font-sans relative flex w-full max-w-[36rem] p-4 flex-col rounded-lg bg-transparent ">
+      <div className="relative bg-clip-border mt-4 rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none mx-0 flex items-center gap-4 pt-0 pb-6">
+        <img
           src="https://pbs.twimg.com/profile_images/1333392601450426370/x_DT51WI_400x400.jpg"
-          alt="Liverpool Uni Logo"
+          alt={t("northcoders.institution")}
+          className="relative inline-block h-[58px] w-[58px] rounded-lg object-cover object-center"
         />
-        <div className="flex w-full flex-col gap-0.5">
+        <div className="flex gap-1 w-full flex-col">
           <div className="flex items-center justify-between">
-            <Typography variant="h5" className="text-text">
-              Software Engineering Course
-            </Typography>
+            <h5 className="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-text">
+              {t("northcoders.course_title")}
+            </h5>
           </div>
-          <Typography className="text-text">Northcoders</Typography>
+          <p className="block antialiased font-sans text-base font-light leading-relaxed text-text">
+            {t("northcoders.institution")}
+          </p>
         </div>
-      </CardHeader>
-      <CardBody className="mb-6 flex flex-col gap-3 p-0 text-text">
-        <Typography className="text-text flex flex-row gap-3 items-center">
+      </div>
+
+      <div className="mb-6 flex flex-col gap-4">
+        <div className="text-text flex flex-row gap-3 items-center">
           <svg
             className="fill-text h-5 w-5"
             version="1.1"
@@ -60,20 +48,18 @@ export function Northcoders() {
               </g>
             </g>
           </svg>
-          June 2024 - Sept 2024
-        </Typography>
+          {t("northcoders.duration")}
+        </div>
 
-        <Typography>
-          Gained full-stack development skills, working with front-end (HTML,
-          CSS, React) and back-end (Node.js, Express) technologies, including
-          SQL databases.
-        </Typography>
+        <p className="block antialiased font-sans text-base font-light leading-relaxed text-inherit">
+          {t("northcoders.description")}
+        </p>
         <a
           href="https://northcoders.com/our-courses/coding-bootcamp"
           className="inline-block"
         >
-          <Button variant="text" className="flex items-center gap-2 text-text">
-            Learn More
+          <button className="align-middle select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg hover:bg-gray-900/10 active:bg-gray-900/20 flex items-center gap-2 text-text">
+            {t("northcoders.learn_more")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -88,9 +74,9 @@ export function Northcoders() {
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
-          </Button>
+          </button>
         </a>
-      </CardBody>
-    </Card>
+      </div>
+    </div>
   );
 }
