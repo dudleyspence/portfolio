@@ -1,9 +1,11 @@
 "use client";
 import { Textarea, Input, Button } from "@material-tailwind/react";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
   const [result, setResult] = React.useState("");
+  const { t } = useTranslation("contact");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -38,7 +40,7 @@ export default function ContactForm() {
           type="text"
           name="name"
           required
-          placeholder="Full Name"
+          placeholder={t("fullname")}
           className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10"
           size="lg"
           labelProps={{
@@ -51,7 +53,7 @@ export default function ContactForm() {
           type="email"
           name="email"
           required
-          placeholder="Email Address"
+          placeholder={t("email")}
           className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10"
           size="lg"
           labelProps={{
@@ -61,7 +63,7 @@ export default function ContactForm() {
         />
         <Textarea
           name="message"
-          placeholder="Message"
+          placeholder={t("message")}
           required
           className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10"
           size="lg"
@@ -75,7 +77,7 @@ export default function ContactForm() {
           size="sm"
           className="rounded-md self-end bg-buttonGreen"
         >
-          Send
+          {t("send")}
         </Button>
       </form>
       <span>{result}</span>

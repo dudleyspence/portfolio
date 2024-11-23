@@ -7,7 +7,7 @@ import Skills from "@/components/Skills";
 const namespaces = ["about"];
 
 export default async function Page({ params }) {
-  const { locale } = await params; // Get locale from params
+  const { locale } = await params;
   const { resources } = await initTranslations(locale, namespaces);
 
   return (

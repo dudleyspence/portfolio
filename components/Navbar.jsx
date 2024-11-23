@@ -23,28 +23,48 @@ export function BasicNavbar() {
     );
   }, []);
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography as="li" variant="large" className="p-1 font-bold text-text">
+    <ul className="mt-2 h-full mb-4 lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <Typography
+        as="li"
+        variant="large"
+        className=" h-full p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+      >
         <a href="/" className="flex items-center">
           {t("nav_home")}
         </a>
       </Typography>
-      <Typography as="li" variant="large" className="p-1 font-bold text-text">
+      <Typography
+        as="li"
+        variant="large"
+        className=" p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+      >
         <a href="/about" className="flex items-center">
           {t("nav_about")}
         </a>
       </Typography>
-      <Typography as="li" variant="large" className="p-1 font-bold text-text">
+      <Typography
+        as="li"
+        variant="large"
+        className="p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+      >
         <a href="/experience" className="flex items-center">
           {t("nav_experience")}
         </a>
       </Typography>
-      <Typography as="li" variant="large" className="p-1 font-bold text-text">
+      <Typography
+        as="li"
+        variant="large"
+        className="p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+      >
         <a href="/projects" className="flex items-center">
           {t("nav_projects")}
         </a>
       </Typography>
-      <Typography as="li" variant="large" className="p-1 font-bold text-text">
+      <Typography
+        as="li"
+        variant="large"
+        className="p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+      >
         <a href="/contact" className="flex items-center">
           {t("nav_contact")}
         </a>
@@ -55,7 +75,6 @@ export function BasicNavbar() {
   return (
     <Navbar className="sticky bg-background top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none !shadow-none">
       <div className="flex items-center justify-between">
-        {/* Logo */}
         <div className="h-auto w-[25vw] max-w-[200px] relative">
           <Image
             src="/logo.png"
@@ -66,7 +85,7 @@ export function BasicNavbar() {
           />
         </div>
 
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="h-full hidden lg:flex items-center gap-6">
           {navList}
           <a href="/dudley-spence-cv.pdf" download>
             <Button size="sm" className="bg-buttonGreen">

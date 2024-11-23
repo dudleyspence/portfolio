@@ -1,28 +1,30 @@
-"use client";
 import ContactForm from "@/components/ContactForm";
-import {
-  Card,
-  Textarea,
-  Input,
-  Button,
-  CardBody,
-  CardFooter,
-  Typography,
-  Tooltip,
-} from "@material-tailwind/react";
+import TranslationsProvider from "@/components/TranslationsProvider";
+import initTranslations from "@/app/i18n";
 
-export default function ProfileCard() {
+const namespaces = ["contact"];
+
+export default async function ProfileCard({ params }) {
+  const { locale } = await params;
+  const { t, resources } = await initTranslations(locale, namespaces);
+
   return (
-    <div className="flex justify-center items-center ">
-      <Card className="max-w-[600px] w-full justify-center items-center bg-transparent shadow-none">
-        <CardBody className="text-center">
-          <Typography variant="h4" className="mb-2 text-foreground">
-            Contact Me
-          </Typography>
-          <ContactForm />
-        </CardBody>
+    <div className="flex justify-center min-h-[calc(70vh)] items-center ">
+      <div className="max-w-[600px] w-full flex gap-6 flex-col justify-center items-center bg-transparent shadow-none">
+        <div className="text-center">
+          <h4 className="mb-2 font-sans text-2xl text-foreground">
+            {t("contactme")}
+          </h4>
+          <TranslationsProvider
+            resources={resources}
+            locale={locale}
+            namespaces={namespaces}
+          >
+            <ContactForm />
+          </TranslationsProvider>
+        </div>
 
-        <CardFooter className="flex justify-center gap-7 pt-10">
+        <div className="flex justify-center gap-7 pt-10">
           <a href="https://github.com/dudleyspence">
             <svg
               id="githubIcon"
@@ -101,8 +103,8 @@ export default function ProfileCard() {
               <path d="M189.547,324.346l87.616,176.304l223.917-490L11.137,245.793L189.547,324.346z M194.754,305.243 l-136.77-60.216L433.599,64.761L194.754,305.243z M276.436,455.383l-67.787-136.416L449.62,76.36L276.436,455.383z" />
             </svg>
           </a>
-        </CardFooter>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }
