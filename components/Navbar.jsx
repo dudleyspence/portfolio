@@ -27,7 +27,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className=" h-full p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className=" h-full p-1 font-normal text-text text-md lg:text-xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
       >
         <a href="/" className="flex items-center">
           {t("nav_home")}
@@ -36,7 +36,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className=" p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className=" p-1 font-normal text-text text-md lg:text-xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
       >
         <a href="/about" className="flex items-center">
           {t("nav_about")}
@@ -45,7 +45,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className="p-1 font-normal text-text text-md lg:text-xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
       >
         <a href="/experience" className="flex items-center">
           {t("nav_experience")}
@@ -54,7 +54,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className="p-1 font-normal text-text text-md lg:text-xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
       >
         <a href="/projects" className="flex items-center">
           {t("nav_projects")}
@@ -63,7 +63,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-2xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className="p-1 font-normal text-text text-md lg:text-xl cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
       >
         <a href="/contact" className="flex items-center">
           {t("nav_contact")}
@@ -141,7 +141,7 @@ export function BasicNavbar() {
           {navList}
           <div className="flex flex-row gap-5">
             <a href="/dudley-spence-cv.pdf" download className="mb-2 w-full">
-              <Button size="sm" className="bg-buttonGreen w-full">
+              <Button size="sm" className="bg-buttonGreen  w-full">
                 <span>{t("nav_resume")}</span>
               </Button>
             </a>

@@ -16,10 +16,10 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="overflow-scroll h-[100vh]">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <TranslationsProvider locale={locale} namespaces={namespaces}>
-            <div className="overflow-scroll h-[100vh]">
+            <div>
               <BasicNavbar />
               {children}
               <Footer />
