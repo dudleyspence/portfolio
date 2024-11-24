@@ -26,26 +26,38 @@ export default function Skills() {
               className="object-cover"
             />
           </div>
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/javascript.png"
-            alt="JavaScript"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/react.png"
-            alt="React"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/nextjs.png"
-            alt="Next.js"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/tailwind.png"
-            alt="TailwindCSS"
-          />
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/javascript.png"
+              alt="JavaScript"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/react.png"
+              alt="React"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/nextjs.png"
+              alt="Next.js"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/tailwind.png"
+              alt="TailwindCSS"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
 
@@ -55,21 +67,30 @@ export default function Skills() {
       >
         <h4 className="mb-4 text-text">Backend</h4>
         <div className="flex flex-row flex-wrap gap-2">
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/nodejs.png"
-            alt="Node.js"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/express.png"
-            alt="Express.js"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/fastAPI.png"
-            alt="FastAPI"
-          />
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/nodejs.png"
+              alt="Node.js"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/express.png"
+              alt="Express.js"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/fastAPI.png"
+              alt="FastAPI"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
 
@@ -79,26 +100,38 @@ export default function Skills() {
       >
         <h4 className="mb-4 text-text text-xl sm:text-2xl">Database</h4>
         <div className="flex flex-row flex-wrap gap-2">
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/mongo-db.png"
-            alt="MongoDB"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/firebase.png"
-            alt="Firebase"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/mysql.png"
-            alt="MySQL"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/postgre.png"
-            alt="PostgreSQL"
-          />
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/mongo-db.png"
+              alt="MongoDB"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/firebase.png"
+              alt="Firebase"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/mysql.png"
+              alt="MySQL"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/postgre.png"
+              alt="PostgreSQL"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
 
@@ -108,31 +141,46 @@ export default function Skills() {
       >
         <h4 className="mb-4 text-text">Additional Tools</h4>
         <div className="flex flex-row flex-wrap gap-2">
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/github.png"
-            alt="GitHub"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/vite.png"
-            alt="Vite"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/npm.png"
-            alt="npm"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/visualstudio.png"
-            alt="Visual Studio Code"
-          />
-          <img
-            className="sm:h-16 sm:w-16  h-10 w-10"
-            src="/skills/Jest.png"
-            alt="Jest"
-          />
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/github.png"
+              alt="GitHub"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/vite.png"
+              alt="Vite"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/npm.png"
+              alt="npm"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/visualstudio.png"
+              alt="Visual Studio Code"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
+            <Image
+              src="/skills/Jest.png"
+              alt="Jest"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>
