@@ -31,7 +31,11 @@ export default function Project({
         />
       </div>
 
-      <div className="font-sans px-0 lg:w-2/5 lg:px-6 p-6">
+      <div
+        className={`font-sans px-0 lg:w-2/5 lg:px-6 p-6 ${
+          reverse ? "lg:pl-0" : "lg:pr-0"
+        }`}
+      >
         <h6 className="mb-4 uppercase font-bold text-text">{type}</h6>
         <h1 className="mb-4 text-2xl font-sans font-bold text-text">{title}</h1>
 
