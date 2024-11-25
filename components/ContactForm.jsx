@@ -75,7 +75,7 @@ export default function ContactForm() {
         <Button
           type="submit"
           size="sm"
-          className="rounded-md self-center lg:self-end bg-buttonGreen"
+          className="rounded-md self-center hover:bg-orange lg:self-end bg-buttonGreen"
         >
           {t("send")}
         </Button>

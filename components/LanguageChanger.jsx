@@ -129,7 +129,7 @@ export default function LanguageChanger() {
             ?.name || countries[0].name}
           <ChevronDownIcon
             strokeWidth={2.5}
-            className={`w-3.5 h-3.5 transition-transform ${
+            className={`w-3.5 h-3.5 !fill-text transition-transform inline-block ${
               openMenu ? "rotate-180" : ""
             }`}
           />

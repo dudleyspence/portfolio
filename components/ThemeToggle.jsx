@@ -13,7 +13,7 @@ export default function ThemeToggle() {
 
   return (
     <div
-      className="relative h-[20px] w-[20px] self-end lg:self-auto mt-3 lg:mt-0 cursor-pointer"
+      className="relative h-[20px] w-[20px] lg:self-auto  lg:mt-0 cursor-pointer"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <Image
@@ -21,6 +21,7 @@ export default function ThemeToggle() {
         alt={theme === "dark" ? "Sun Icon" : "Moon Icon"}
         layout="fill"
         objectFit="contain"
+        priority
       />
     </div>
   );

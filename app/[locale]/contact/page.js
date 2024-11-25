@@ -4,7 +4,7 @@ import initTranslations from "@/app/i18n";
 
 const namespaces = ["contact"];
 
-export default async function ProfileCard({ params }) {
+export default async function ContactPage({ params }) {
   const { locale } = await params;
   const { t, resources } = await initTranslations(locale, namespaces);
 
@@ -29,7 +29,7 @@ export default async function ProfileCard({ params }) {
             <svg
               id="githubIcon"
               viewBox="0 0 100 100"
-              className="h-8 w-8 fill-text"
+              className="h-8 w-8 fill-text hover:scale-110 hover:fill-buttonGreen"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -42,7 +42,7 @@ export default async function ProfileCard({ params }) {
           <a href="https://www.linkedin.com/in/dudleyspence">
             <svg
               id="linkedinIcon"
-              className="fill-foreground h-8 w-8 cursor-pointer"
+              className="fill-foreground h-8 w-8 cursor-pointer hover:scale-110 hover:fill-buttonGreen"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -74,7 +74,7 @@ export default async function ProfileCard({ params }) {
           <a href="https://www.instagram.com/dudleyspence/">
             <svg
               id="instagramIcon"
-              className="h-8 w-8 fill-foreground"
+              className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"
               viewBox="0 0 56.7 56.7"
               width="100%"
               height="100%"
@@ -92,7 +92,7 @@ export default async function ProfileCard({ params }) {
           <a href="mailto:dudleyspence5@gmail.com">
             <svg
               id="emailIcon"
-              className="h-8 w-8 fill-foreground"
+              className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"
               viewBox="0 0 512 512"
               width="100%"
               height="100%"

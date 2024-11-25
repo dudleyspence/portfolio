@@ -1,4 +1,5 @@
 import initTranslations from "@/app/i18n";
+import Image from "next/image";
 
 const namespaces = ["common"];
 
@@ -7,17 +8,27 @@ export default async function Home({ params }) {
   const { t } = await initTranslations(locale, namespaces);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center h-[calc(100vh-150px)]">
-      <img src="/profile.png" className="h-64 w-64 lg:h-96 lg:w-96" />
+    <div className="flex flex-col lg:flex-row gap-7 lg:gap-20 justify-center items-center h-[75vh]">
+      <div className="relative h-72 w-72 lg:h-[400px] lg:w-[400px]">
+        <Image
+          src="/profile.png"
+          alt="Profile"
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
       <div className="flex flex-col justify-center items-center">
-        <p className="text-[30px] lg:text-[40px] text-buttonGreen"></p>
-        <p className="text-[30px] lg:text-[40px] text-foreground">
+        <p className="text-[30px] lg:text-[50px] text-foreground">
           Dudley Spence
         </p>
-        <p className="text-[30px] lg:text-[40px] text-buttonGreen">
+        <p className="text-[30px] lg:text-[50px] text-buttonGreen">
           {t("job_title")}
         </p>
-        <div className="social-links flex flex-row gap-6 mt-10 justify-self-end">
+        <p className=" w-[300px] lg:w-[400px] mt-5 text-center text-[18px] lg:text-[20px] text-foreground">
+          {t("slogan")}
+        </p>
+        <div className="social-links flex flex-row gap-8 mt-10 justify-self-end">
           <a
             href="https://github.com/dudleyspence"
             target="_blank"
@@ -25,7 +36,7 @@ export default async function Home({ params }) {
             className="text-foreground-color"
           >
             <svg
-              className="fill-foreground h-[30px] w-[30px] cursor-pointer"
+              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:scale-110 hover:fill-buttonGreen"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -40,7 +51,7 @@ export default async function Home({ params }) {
           <a href="https://www.linkedin.com/in/dudleyspence">
             <svg
               id="linkedinIcon"
-              className="fill-foreground h-[30px] w-[30px] cursor-pointer"
+              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:scale-110 hover:fill-buttonGreen"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -75,7 +86,7 @@ export default async function Home({ params }) {
             className="text-foreground-color"
           >
             <svg
-              className="fill-current h-[30px] w-[30px] cursor-pointer"
+              className="fill-current h-[30px] w-[30px] cursor-pointer hover:scale-110 hover:fill-buttonGreen"
               viewBox="0 0 512 512"
               xmlns="http://www.w3.org/2000/svg"
             >
