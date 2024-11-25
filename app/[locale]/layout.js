@@ -3,6 +3,7 @@ import { BasicNavbar } from "@/components/Navbar";
 import ThemeProvider from "@/utils/ThemeProvider";
 import { Footer } from "@/components/Footer";
 import TranslationsProvider from "@/components/TranslationsProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Dudley Spence",
@@ -26,6 +27,7 @@ export default async function RootLayout({ children, params }) {
             </div>
           </TranslationsProvider>
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
