@@ -22,12 +22,13 @@ export default async function Home({ params }) {
         <p className="text-[30px] lg:text-[50px] text-foreground">
           Dudley Spence
         </p>
-        <p className="text-[30px] lg:text-[50px] text-buttonGreen">
+        <p className="line-1 anim-typewriter text-[30px] lg:text-[50px] text-buttonGreen">
           {t("job_title")}
         </p>
         <p className=" w-[300px] lg:w-[400px] mt-5 text-center text-[18px] lg:text-[20px] text-foreground">
           {t("slogan")}
         </p>
+
         <div className="social-links flex flex-row gap-8 mt-10 justify-self-end">
           <a
             href="https://github.com/dudleyspence"
@@ -36,7 +37,7 @@ export default async function Home({ params }) {
             className="text-foreground-color"
           >
             <svg
-              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:scale-110 hover:fill-buttonGreen"
+              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:animate-bounce hover:fill-buttonGreen"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -51,7 +52,7 @@ export default async function Home({ params }) {
           <a href="https://www.linkedin.com/in/dudleyspence">
             <svg
               id="linkedinIcon"
-              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:scale-110 hover:fill-buttonGreen"
+              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:animate-bounce hover:fill-buttonGreen"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -86,7 +87,7 @@ export default async function Home({ params }) {
             className="text-foreground-color"
           >
             <svg
-              className="fill-current h-[30px] w-[30px] cursor-pointer hover:scale-110 hover:fill-buttonGreen"
+              className="fill-current h-[30px] w-[30px] cursor-pointer hover:fill-buttonGreen hover:animate-bounce"
               viewBox="0 0 512 512"
               xmlns="http://www.w3.org/2000/svg"
             >

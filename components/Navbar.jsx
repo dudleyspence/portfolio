@@ -27,7 +27,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className=" h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className=" h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in"
       >
         <a href="/" className="flex items-center">
           {t("nav_home")}
@@ -36,7 +36,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className=" p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className=" p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in "
       >
         <a href="/about" className="flex items-center">
           {t("nav_about")}
@@ -45,7 +45,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in "
       >
         <a href="/experience" className="flex items-center">
           {t("nav_experience")}
@@ -54,7 +54,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in"
       >
         <a href="/projects" className="flex items-center">
           {t("nav_projects")}
@@ -63,7 +63,7 @@ export function BasicNavbar() {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-8 "
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in"
       >
         <a href="/contact" className="flex items-center">
           {t("nav_contact")}

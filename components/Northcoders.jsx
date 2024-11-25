@@ -1,6 +1,6 @@
 export function Northcoders({ t }) {
   return (
-    <div className="font-sans relative flex w-full max-w-[36rem] p-4 flex-col rounded-lg bg-lowcontrast2 min-h-[370px]">
+    <div className="font-sans relative flex w-full max-w-[36rem] p-6 flex-col rounded-lg bg-lowcontrast2 min-h-[370px]">
       <div className="relative bg-clip-border mt-4 rounded-lg overflow-hidden bg-transparent text-gray-700 shadow-none mx-0 flex items-center gap-4 pt-0 pb-6">
         <img
           src="https://pbs.twimg.com/profile_images/1333392601450426370/x_DT51WI_400x400.jpg"

@@ -34,3 +34,34 @@ body {
   font-style: light;
   min-height: 100vh;
 }
+
+.line-1 {
+  width: 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 1s steps(1, end) infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from,
+  to {
+    border-right-color: var(--buttonGreen);
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
