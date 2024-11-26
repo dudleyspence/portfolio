@@ -151,7 +151,7 @@ export function BasicNavbar() {
           <a href="/dudley-spence-cv.pdf" download className="w-full">
             <Button
               size="sm"
-              className="bg-buttonGreen text-white flex items-center justify-center gap-2 rounded-lg h-10 lg:h-12 mb-1 w-full"
+              className="bg-buttonGreen text-white flex items-center justify-center gap-2 rounded-lg h-10 lg:h-12 my-1 w-full"
             >
               <span>{t("nav_resume")}</span>
             </Button>
