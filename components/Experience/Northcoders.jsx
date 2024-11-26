@@ -19,7 +19,7 @@ export function Northcoders({ t }) {
         </div>
       </div>
 
-      <div className="mb-6 flex flex-col gap-4">
+      <div className=" flex flex-col gap-4">
         <div className="text-text flex flex-row gap-3 items-center">
           <svg
             className="fill-text h-5 w-5"

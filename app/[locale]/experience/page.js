@@ -1,6 +1,6 @@
 import React from "react";
-import { Liverpool } from "@/components/Liverpool";
-import { Northcoders } from "@/components/Northcoders";
+import { Liverpool } from "@/components/Experience/Liverpool";
+import { Northcoders } from "@/components/Experience/Northcoders";
 import initTranslations from "@/app/i18n";
 
 const namespaces = ["experience"];

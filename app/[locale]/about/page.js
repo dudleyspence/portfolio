@@ -1,8 +1,8 @@
 import React from "react";
-import AboutMe from "@/components/AboutMe";
-import TranslationsProvider from "@/components/TranslationsProvider";
+import AboutMe from "@/components/About/AboutMe";
+import TranslationsProvider from "@/components/contexts/TranslationsProvider";
 import initTranslations from "@/app/i18n";
-import Skills from "@/components/Skills";
+import Skills from "@/components/About/Skills";
 
 const namespaces = ["about"];
 

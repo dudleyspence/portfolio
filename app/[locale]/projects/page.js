@@ -1,4 +1,4 @@
-import Project from "@/components/Project";
+import Project from "@/components/Projects/Project";
 import React from "react";
 import initTranslations from "@/app/i18n";
 

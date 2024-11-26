@@ -121,7 +121,7 @@ export default function LanguageChanger() {
         <Button
           size="sm"
           variant="outlined"
-          className="flex border-text text-text items-center justify-center gap-2"
+          className="flex border-text text-text w-full items-center justify-center gap-2"
         >
           {countries.find((country) => pathname.startsWith(`/${country.code}`))
             ?.flag || countries[0].flag}

@@ -23,13 +23,13 @@ export function BasicNavbar() {
     );
   }, []);
   const navList = (
-    <ul className="mt-2 h-full mb-4 lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 h-full lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="large"
         className=" h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in"
       >
-        <a href="/" className="flex items-center">
+        <a href="/" className="flex justify-center items-center">
           {t("nav_home")}
         </a>
       </Typography>
@@ -38,7 +38,7 @@ export function BasicNavbar() {
         variant="large"
         className=" p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in "
       >
-        <a href="/about" className="flex items-center">
+        <a href="/about" className="flex justify-center items-center">
           {t("nav_about")}
         </a>
       </Typography>
@@ -47,7 +47,7 @@ export function BasicNavbar() {
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in "
       >
-        <a href="/experience" className="flex items-center">
+        <a href="/experience" className="flex justify-center items-center">
           {t("nav_experience")}
         </a>
       </Typography>
@@ -56,7 +56,7 @@ export function BasicNavbar() {
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in"
       >
-        <a href="/projects" className="flex items-center">
+        <a href="/projects" className="flex justify-center items-center">
           {t("nav_projects")}
         </a>
       </Typography>
@@ -65,7 +65,7 @@ export function BasicNavbar() {
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-200 ease-in"
       >
-        <a href="/contact" className="flex items-center">
+        <a href="/contact" className="flex justify-center items-center">
           {t("nav_contact")}
         </a>
       </Typography>
@@ -95,7 +95,9 @@ export function BasicNavbar() {
               <span>{t("nav_resume")}</span>
             </Button>
           </a>
-          <LanguageChanger />
+          <div className="max-w-50px">
+            <LanguageChanger />
+          </div>
           <ThemeToggle />
         </div>
 
@@ -140,20 +142,21 @@ export function BasicNavbar() {
       </div>
 
       <Collapse
-        className="absolute left-0 right-0 bg-background shadow-md lg:hidden"
+        className="absolute rounded-lg right-0 w-[200px] bg-lowcontrast3 shadow-md lg:hidden"
         open={openNav}
       >
-        <div className="flex flex-col items-start px-4 py-2">
+        <div className="flex flex-col justify-center gap-3 mb-3 items-center px-4 py-2">
           {navList}
-          <div className="flex flex-row gap-5 items-center">
-            <a href="/dudley-spence-cv.pdf" download className="w-full">
-              <Button
-                size="sm"
-                className="bg-buttonGreen text-white flex items-center justify-center gap-2 rounded-lg h-10 lg:h-12"
-              >
-                <span>{t("nav_resume")}</span>
-              </Button>
-            </a>
+
+          <a href="/dudley-spence-cv.pdf" download className="w-full">
+            <Button
+              size="sm"
+              className="bg-buttonGreen text-white flex items-center justify-center gap-2 rounded-lg h-10 lg:h-12 mb-1 w-full"
+            >
+              <span>{t("nav_resume")}</span>
+            </Button>
+          </a>
+          <div className="w-full">
             <LanguageChanger />
           </div>
         </div>
