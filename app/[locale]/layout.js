@@ -23,7 +23,6 @@ export default async function RootLayout({ children, params }) {
             <div>
               <BasicNavbar />
               {children}
-              <Footer />
             </div>
           </TranslationsProvider>
         </ThemeProvider>
