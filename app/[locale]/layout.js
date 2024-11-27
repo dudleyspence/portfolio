@@ -16,7 +16,7 @@ export default async function RootLayout({ children, params }) {
   const namespaces = ["common"];
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className="overflow-scroll h-[100vh]">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <TranslationsProvider locale={locale} namespaces={namespaces}>
