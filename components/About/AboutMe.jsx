@@ -5,7 +5,7 @@ import MapImage from "./MapImage";
 export default function AboutMe({ t }) {
   return (
     <div className="flex w-full max-w-[650px] xl:max-w-[92vw] flex-col xl:flex-row-reverse bg-background relative">
-      <div className="relative w-full xl:w-2/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
+      <div className=" relative w-full xl:w-2/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
         <MapImage />
       </div>
       <div className="font-sans xl:w-3/5 xl:pr-6 pt-6 xl:pt-0">

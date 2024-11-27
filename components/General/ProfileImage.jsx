@@ -11,14 +11,11 @@ export default function ProfileImage() {
   return (
     <div className="relative h-72 w-72 lg:h-[400px] lg:w-[400px]">
       <Image
+        className="rounded-full"
         src={profileImg}
         alt="Profile"
         fill
         placeholder="blur"
-        onLoadingComplete={() => setIsLoaded(true)}
-        className={`object-contain transition-opacity duration-300 ease-in-out ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
         priority
       />
     </div>
