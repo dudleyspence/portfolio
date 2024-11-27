@@ -8,7 +8,9 @@ module.exports = withMT({
   ],
   theme: {
     screens: {
+      xl: "1200px",
       lg: "1080px",
+      sm: "600px",
     },
     extend: {
       colors: {
@@ -20,6 +22,8 @@ module.exports = withMT({
         lowcontrast: "var(--lowcontrast)",
         lowcontrast2: "var(--lowcontrast2)",
         lowcontrast3: "var(--lowcontrast3)",
+        lowcontrast4: "var(--lowcontrast4)",
+
         highcontrast: "var(--highcontrast)",
       },
     },

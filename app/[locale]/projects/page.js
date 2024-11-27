@@ -1,13 +1,14 @@
 import Project from "@/components/Projects/Project";
 import React from "react";
 import initTranslations from "@/app/i18n";
+import { Footer } from "@/components/General/Footer";
 
 const projects = [
   {
     image: "/PeaceOfMind.png",
     type: "fullstack",
     title: "peace_of_mind_title",
-    frontskills: ["JavaScript", "React", "Redux", "Tailwind"],
+    frontskills: ["JavaScript", "React", "Redux", "TailwindCSS"],
     backskills: ["Node.js", "express.js", "MongoDB"],
     githubF: "https://github.com/dudleyspence/PeaceOfMind-FE",
     githubB: "https://github.com/dudleyspence/PeaceOfMind-API",
@@ -20,7 +21,7 @@ const projects = [
     image: "/FrenchLanguage.png",
     type: "fullstack",
     title: "french_language_title",
-    frontskills: ["Next.js", "Tailwind", "Axios"],
+    frontskills: ["Next.js", "TailwindCSS", "Axios"],
     backskills: ["MongoDB"],
     githubF: "https://github.com/dudleyspence/french-learning-journey",
     githubB: "",
@@ -46,14 +47,14 @@ const projects = [
     image: "/TravelSync.png",
     type: "fullstack",
     title: "travelsync_title",
-    frontskills: ["React.js", "HTML", "CSS", "Mapbox"],
+    frontskills: ["React", "HTML", "CSS", "Mapbox"],
     backskills: [
       "Python",
-      "fastAPI",
+      "FastAPI",
       "MySql",
       "SQLAlchemy",
-      "FirebaseAuth",
-      "GooglePlaces API",
+      "Firebase",
+      "GooglePlaces",
     ],
     githubF: "https://github.com/dudleyspence/TravelSync-FE-Extended",
     githubB: "https://github.com/dudleyspence/TravelSyncAPI-Extended",
@@ -112,6 +113,7 @@ export default async function page({ params }) {
           linktag={t(project.linktag)}
         />
       ))}
+      <Footer />
     </div>
   );
 }

@@ -1,186 +1,56 @@
 import React from "react";
-import Image from "next/image";
+import SkillCard from "./SkillCard";
 
-export default function Skills() {
+export default function Skills({ t }) {
   return (
-    <div className="w-full max-w-[550px] lg:max-w-[92vw] grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div
-        id="frontend"
-        className="w-full bg-lowcontrast2 p-4 rounded-xl shadow-lg"
-      >
-        <h4 className="mb-4 text-xl sm:text-2xl text-text">Frontend</h4>
-        <div className="flex flex-row flex-wrap gap-2">
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/html.png"
-              alt="HTML"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/css.png"
-              alt="CSS"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/javascript.png"
-              alt="JavaScript"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/react.png"
-              alt="React"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/nextjs.png"
-              alt="Next.js"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/tailwind.png"
-              alt="TailwindCSS"
-              fill
-              className="object-cover"
-            />
-          </div>
+    <div className="w-full max-w-[650px] xl:max-w-[92vw] grid grid-cols-1 xl:grid-cols-2 gap-10">
+      <div id="frontend" className="w-full bg-lowcontrast2 p-4 rounded-lg">
+        <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
+          {t("frontend")}
+        </h4>
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-6">
+          <SkillCard imagePath="/skills/html.png" name="HTML" />
+          <SkillCard imagePath="/skills/css.png" name="CSS" />
+          <SkillCard imagePath="/skills/javascript.png" name="JavaScript" />
+          <SkillCard imagePath="/skills/react.png" name="React" />
+          <SkillCard imagePath="/skills/nextjs.png" name="Next.js" />
+          <SkillCard imagePath="/skills/tailwind.png" name="TailwindCSS" />
         </div>
       </div>
 
-      <div
-        id="backend"
-        className="w-full bg-lowcontrast2 p-4 rounded-xl shadow-lg text-xl sm:text-2xl"
-      >
-        <h4 className="mb-4 text-text">Backend</h4>
-        <div className="flex flex-row flex-wrap gap-2">
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/nodejs.png"
-              alt="Node.js"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/express.png"
-              alt="Express.js"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/fastAPI.png"
-              alt="FastAPI"
-              fill
-              className="object-cover"
-            />
-          </div>
+      <div id="backend" className="w-full bg-lowcontrast2 p-4 rounded-lg">
+        <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
+          {t("backend")}
+        </h4>
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-6">
+          <SkillCard imagePath="/skills/nodejs.png" name="Node.js" />
+          <SkillCard imagePath="/skills/express.png" name="Express.js" />
+          <SkillCard imagePath="/skills/fastAPI.png" name="FastAPI" />
         </div>
       </div>
 
-      <div
-        id="database"
-        className="w-full bg-lowcontrast2 p-4 rounded-xl shadow-lg"
-      >
-        <h4 className="mb-4 text-text text-xl sm:text-2xl">Database</h4>
-        <div className="flex flex-row flex-wrap gap-2">
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/mongo-db.png"
-              alt="MongoDB"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/firebase.png"
-              alt="Firebase"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/mysql.png"
-              alt="MySQL"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/postgre.png"
-              alt="PostgreSQL"
-              fill
-              className="object-cover"
-            />
-          </div>
+      <div id="database" className="w-full bg-lowcontrast2 p-4 rounded-lg">
+        <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
+          {t("database")}
+        </h4>
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-6">
+          <SkillCard imagePath="/skills/mongo-db.png" name="MongoDB" />
+          <SkillCard imagePath="/skills/firebase.png" name="Firebase" />
+          <SkillCard imagePath="/skills/mysql.png" name="MySQL" />
+          <SkillCard imagePath="/skills/postgre.png" name="PostgreSQL" />
         </div>
       </div>
 
-      <div
-        id="additional"
-        className="w-full bg-lowcontrast2  p-4 rounded-xl shadow-lg text-xl sm:text-2xl"
-      >
-        <h4 className="mb-4 text-text">Additional Tools</h4>
-        <div className="flex flex-row flex-wrap gap-2">
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/github.png"
-              alt="GitHub"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/vite.png"
-              alt="Vite"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/npm.png"
-              alt="npm"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/visualstudio.png"
-              alt="Visual Studio Code"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="sm:h-16 sm:w-16 h-10 w-10 relative">
-            <Image
-              src="/skills/Jest.png"
-              alt="Jest"
-              fill
-              className="object-cover"
-            />
-          </div>
+      <div id="additional" className="w-full bg-lowcontrast2 p-4 rounded-lg">
+        <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
+          {t("additional_tools")}
+        </h4>
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-6">
+          <SkillCard imagePath="/skills/github.png" name="GitHub" />
+          <SkillCard imagePath="/skills/vite.png" name="Vite" />
+          <SkillCard imagePath="/skills/npm.png" name="npm" />
+          <SkillCard imagePath="/skills/visualstudio.png" name="VSCode" />
+          <SkillCard imagePath="/skills/Jest.png" name="Jest" />
         </div>
       </div>
     </div>

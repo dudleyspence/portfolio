@@ -37,7 +37,7 @@ export default async function Home({ params }) {
             className="text-foreground-color"
           >
             <svg
-              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:animate-bounce hover:fill-buttonGreen"
+              className="fill-foreground h-[30px] w-[30px] cursor-pointer  hover:fill-buttonGreen hover:scale-110 duration-100 ease-in"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -52,7 +52,7 @@ export default async function Home({ params }) {
           <a href="https://www.linkedin.com/in/dudleyspence">
             <svg
               id="linkedinIcon"
-              className="fill-foreground h-[30px] w-[30px] cursor-pointer hover:animate-bounce hover:fill-buttonGreen"
+              className="fill-foreground h-[30px] w-[30px] cursor-pointer  hover:fill-buttonGreen hover:scale-110 duration-100 ease-in"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -87,7 +87,7 @@ export default async function Home({ params }) {
             className="text-foreground-color"
           >
             <svg
-              className="fill-current h-[30px] w-[30px] cursor-pointer hover:fill-buttonGreen hover:animate-bounce"
+              className="fill-current h-[30px] w-[30px] cursor-pointer hover:fill-buttonGreen hover:scale-110 duration-100 ease-in"
               viewBox="0 0 512 512"
               xmlns="http://www.w3.org/2000/svg"
             >

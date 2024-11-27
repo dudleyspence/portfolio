@@ -3,12 +3,13 @@ import AboutMe from "@/components/About/AboutMe";
 import TranslationsProvider from "@/components/contexts/TranslationsProvider";
 import initTranslations from "@/app/i18n";
 import Skills from "@/components/About/Skills";
+import { Footer } from "@/components/General/Footer";
 
 const namespaces = ["about"];
 
 export default async function Page({ params }) {
   const { locale } = await params;
-  const { resources } = await initTranslations(locale, namespaces);
+  const { t, resources } = await initTranslations(locale, namespaces);
 
   return (
     <TranslationsProvider
@@ -16,9 +17,10 @@ export default async function Page({ params }) {
       locale={locale}
       namespaces={namespaces}
     >
-      <div className="flex flex-col justify-center items-center gap-10 mb-5 p-5">
+      <div className="flex flex-col justify-center items-center gap-3 xl:gap-7 mb-5 p-5">
         <AboutMe />
-        <Skills />
+        <Skills t={t} />
+        <Footer />
       </div>
     </TranslationsProvider>
   );

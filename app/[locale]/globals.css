@@ -15,6 +15,7 @@
   --lowcontrast: #c8e6c9;
   --lowcontrast2: rgb(46 125 50 / 0.1);
   --lowcontrast3: rgba(244, 241, 222, 0.93);
+  --lowcontrast4: #fbfaf3b0;
   --highcontrast: #2121212f;
 }
 
@@ -25,6 +26,7 @@
   --lowcontrast: #90a4ae;
   --lowcontrast2: rgb(250 250 250 / 0.1);
   --lowcontrast3: rgba(61, 64, 91, 0.93);
+  --lowcontrast4: rgb(250 250 250 / 0.1);
   --highcontrast: #f5f5f530;
 }
 
