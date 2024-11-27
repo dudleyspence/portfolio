@@ -20,7 +20,6 @@ export default function Project({
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } flex w-full max-w-[90vw] flex-col lg:flex bg-background relative`}
     >
-      {/* Image Section */}
       <div className="relative w-full lg:w-3/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
         <Image
           src={image}
