@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Socials() {
   return (
-    <div className="flex justify-center gap-7 pt-10">
+    <div className="flex justify-center gap-7 ">
       <a href="https://github.com/dudleyspence">
         <svg
           id="githubIcon"

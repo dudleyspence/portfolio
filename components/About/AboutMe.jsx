@@ -20,7 +20,7 @@ export default function AboutMe() {
   }
 
   return (
-    <div className="flex w-full max-w-[650px] xl:max-w-[92vw] flex-col xl:flex-row bg-background relative">
+    <div className="flex w-full max-w-[650px] xl:max-w-[92vw] flex-col xl:flex-row-reverse bg-background relative">
       <div className="relative w-full xl:w-2/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
         <div className="h-full w-full">
           {resolvedTheme === "dark" ? (
@@ -42,7 +42,7 @@ export default function AboutMe() {
           )}
         </div>
       </div>
-      <div className="font-sans px-0 xl:w-3/5 xl:px-6 p-6">
+      <div className="font-sans xl:w-3/5 xl:pr-6 pt-6 xl:pt-0">
         <h6 className="font-sans text-lg text-text mb-4 uppercase">
           {t("title")}
         </h6>
@@ -52,12 +52,12 @@ export default function AboutMe() {
         <p className="font-sans text-text mb-8 font-normal xl:text-lg">
           {t("introduction")}
         </p>
-        <p className="font-sans mb-3 font-normal xl:text-lg text-text">
+        <p className="font-sans mb-8 font-normal xl:text-lg text-text">
           {t("portfolio_note")}
         </p>
-        <h4 className="font-sans mt-10 text-3xl text-text mb-2 xl:mb-6">
-          {t("heading2")}
-        </h4>
+        <p className="font-sans mb-3 xl:mb-0 font-normal xl:text-lg text-text">
+          {t("reach_out")}
+        </p>
       </div>
     </div>
   );

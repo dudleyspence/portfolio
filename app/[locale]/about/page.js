@@ -17,7 +17,7 @@ export default async function Page({ params }) {
       locale={locale}
       namespaces={namespaces}
     >
-      <div className="flex flex-col justify-center items-center gap-3 xl:gap-7 mb-5 p-5">
+      <div className="flex flex-col justify-center items-center gap-3 xl:gap-7 mb-5 p-5 pb-0">
         <AboutMe />
         <Skills t={t} />
         <Footer />
