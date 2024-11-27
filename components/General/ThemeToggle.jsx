@@ -13,25 +13,13 @@ export default function ThemeToggle() {
 
   return (
     <div
-      className="relative h-[20px] w-[20px] lg:self-auto  lg:mt-0 cursor-pointer"
+      className="relative lg:self-auto lg:mt-0 cursor-pointer"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
-        <Image
-          src="/theme/sun.png"
-          alt="Sun Icon"
-          fill
-          objectFit="contain"
-          priority
-        />
+        <Image src="/theme/sun.png" alt="Sun Icon" height={20} width={20} />
       ) : (
-        <Image
-          src="/theme/moon.png"
-          alt="Moon Icon"
-          fill
-          objectFit="contain"
-          priority
-        />
+        <Image src="/theme/moon.png" alt="Moon Icon" height={20} width={20} />
       )}
     </div>
   );

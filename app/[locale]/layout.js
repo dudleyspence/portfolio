@@ -1,7 +1,6 @@
 import "./globals.css";
 import { BasicNavbar } from "@/components/General/Navbar";
 import ThemeProvider from "@/components/contexts/ThemeProvider";
-import { Footer } from "@/components/General/Footer";
 import TranslationsProvider from "@/components/contexts/TranslationsProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
