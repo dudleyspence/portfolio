@@ -2,7 +2,7 @@ import React from "react";
 import { Liverpool } from "@/components/Experience/Liverpool";
 import { Northcoders } from "@/components/Experience/Northcoders";
 import initTranslations from "@/app/i18n";
-import { Footer } from "@/components/General/Footer";
+import { Footer } from "@/components/Footer/Footer";
 
 const namespaces = ["experience"];
 

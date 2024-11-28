@@ -1,7 +1,7 @@
 import ContactForm from "@/components/Contact/ContactForm";
 import TranslationsProvider from "@/components/contexts/TranslationsProvider";
 import initTranslations from "@/app/i18n";
-import { Footer } from "@/components/General/Footer";
+import { Footer } from "@/components/Footer/Footer";
 
 const namespaces = ["contact"];
 

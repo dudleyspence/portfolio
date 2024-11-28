@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: "/PeaceOfMind.png",
+    image: "/Projects/PeaceOfMind.png",
     type: "fullstack",
     title: "peace_of_mind_title",
     frontskills: ["JavaScript", "React", "Redux", "TailwindCSS"],
@@ -13,7 +13,7 @@ const projects = [
     linktag: "view_site",
   },
   {
-    image: "/FrenchLanguage.png",
+    image: "/Projects/FrenchLanguage.png",
     type: "fullstack",
     title: "french_language_title",
     frontskills: ["Next.js", "TailwindCSS", "Axios"],
@@ -26,7 +26,7 @@ const projects = [
     linktag: "view_site",
   },
   {
-    image: "/TrailTalk.png",
+    image: "/Projects/TrailTalk.png",
     type: "fullstack",
     title: "trailtalk_title",
     frontskills: ["JavaScript", "React", "HTML", "CSS"],
@@ -39,7 +39,7 @@ const projects = [
     linktag: "view_site",
   },
   {
-    image: "/TravelSync.png",
+    image: "/Projects/TravelSync.png",
     type: "fullstack",
     title: "travelsync_title",
     frontskills: ["React", "HTML", "CSS", "Mapbox"],
@@ -59,7 +59,7 @@ const projects = [
     linktag: "view_site",
   },
   {
-    image: "/Npuzzle.png",
+    image: "/Projects/Npuzzle.png",
     type: "dissertation",
     title: "n_puzzle_title",
     backskills: ["Python", "TensorFlow", "NumPy"],
@@ -71,7 +71,7 @@ const projects = [
     linktag: "download_diss",
   },
   {
-    image: "/PortfolioSinglePage.png",
+    image: "/Projects/PortfolioSinglePage.png",
     type: "frontend",
     title: "original_portfolio_title",
     frontskills: ["HTML", "CSS", "JavaScript"],

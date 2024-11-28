@@ -2,7 +2,7 @@ import React from "react";
 import AboutMe from "@/components/About/AboutMe";
 import initTranslations from "@/app/i18n";
 import Skills from "@/components/About/Skills";
-import { Footer } from "@/components/General/Footer";
+import { Footer } from "@/components/Footer/Footer";
 
 const namespaces = ["about"];
 

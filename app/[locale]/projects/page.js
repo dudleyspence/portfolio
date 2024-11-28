@@ -1,7 +1,7 @@
 import Project from "@/components/Projects/Project";
 import React from "react";
 import initTranslations from "@/app/i18n";
-import { Footer } from "@/components/General/Footer";
+import { Footer } from "@/components/Footer/Footer";
 import projects from "./projects.js";
 
 export default async function page({ params }) {

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profileImg from "@/public/profile.png";
+import profileImg from "@/public/Brand/profile.png";
 
 export default function ProfileImage() {
   return (

@@ -9,8 +9,8 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
-import LanguageChanger from "./LanguageChanger";
 import { useTranslation } from "react-i18next";
+import LanguageChanger from "./LanguageChanger";
 
 export function BasicNavbar() {
   const { t } = useTranslation();
@@ -77,7 +77,7 @@ export function BasicNavbar() {
       <div className="flex items-center justify-between">
         <a href="/" className="h-auto w-[25vw] max-w-[200px] relative">
           <Image
-            src="/logo.png"
+            src="/Brand/logo.png"
             alt="Logo"
             fill
             className="!static h-auto w-full hover:-rotate-3 cursor-pointer"
