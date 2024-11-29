@@ -1,5 +1,6 @@
 const projects = [
   {
+    id: 1,
     image: "/Projects/PeaceOfMind.png",
     type: "fullstack",
     title: "peace_of_mind_title",
@@ -13,6 +14,7 @@ const projects = [
     linktag: "view_site",
   },
   {
+    id: 2,
     image: "/Projects/FrenchLanguage.png",
     type: "fullstack",
     title: "french_language_title",
@@ -26,6 +28,7 @@ const projects = [
     linktag: "view_site",
   },
   {
+    id: 3,
     image: "/Projects/TrailTalk.png",
     type: "fullstack",
     title: "trailtalk_title",
@@ -39,6 +42,7 @@ const projects = [
     linktag: "view_site",
   },
   {
+    id: 4,
     image: "/Projects/TravelSync.png",
     type: "fullstack",
     title: "travelsync_title",
@@ -59,6 +63,7 @@ const projects = [
     linktag: "view_site",
   },
   {
+    id: 5,
     image: "/Projects/Npuzzle.png",
     type: "dissertation",
     title: "n_puzzle_title",
@@ -71,6 +76,7 @@ const projects = [
     linktag: "download_diss",
   },
   {
+    id: 6,
     image: "/Projects/PortfolioSinglePage.png",
     type: "frontend",
     title: "original_portfolio_title",
