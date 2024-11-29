@@ -3,6 +3,13 @@ import { BasicNavbar } from "@/components/Header/Navbar";
 import ThemeProvider from "@/components/contexts/ThemeProvider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/routing";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export const metadata = {
   title: "Dudley Spence",
@@ -12,7 +19,13 @@ export const metadata = {
 
 export default async function RootLayout({ children, params }) {
   const { locale } = await params;
-  const messages = await getMessages();
+
+  if (!routing.locales.includes(locale)) {
+    notFound();
+  }
+  setRequestLocale(locale);
+
+  const messages = await getMessages(locale);
 
   return (
     <html lang={locale}>

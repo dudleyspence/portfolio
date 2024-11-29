@@ -11,7 +11,7 @@ export default function page() {
     <div className="flex flex-col justify-center items-center gap-8 lg:gap-16 my-10">
       {projects.map((project) => (
         <Project
-          key={t(project.title)}
+          key={project.id}
           image={project.image}
           title={t(project.title)}
           type={t(project.type)}
