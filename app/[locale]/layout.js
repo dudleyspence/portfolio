@@ -1,8 +1,8 @@
 import "./globals.css";
 import { BasicNavbar } from "@/components/Header/Navbar";
 import ThemeProvider from "@/components/contexts/ThemeProvider";
-import TranslationsProvider from "@/components/contexts/TranslationsProvider";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 export const metadata = {
   title: "Dudley Spence",
@@ -11,21 +11,20 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params }) {
-  const { locale = "en" } = (await params) || {};
-  const namespaces = ["common"];
+  const { locale } = await params;
+  const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className="overflow-scroll h-[100vh]">
+    <html lang={locale}>
+      <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <TranslationsProvider locale={locale} namespaces={namespaces}>
-            <div>
-              <BasicNavbar />
+          <NextIntlClientProvider messages={messages}>
+            <main className="min-h-screen min-w-screen">
+              <BasicNavbar locale={locale} />
               {children}
-            </div>
-          </TranslationsProvider>
+            </main>
+          </NextIntlClientProvider>
         </ThemeProvider>
-        <SpeedInsights />
       </body>
     </html>
   );

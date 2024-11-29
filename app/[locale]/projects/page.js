@@ -1,12 +1,11 @@
 import Project from "@/components/Projects/Project";
 import React from "react";
-import initTranslations from "@/app/i18n";
+import { useTranslations } from "next-intl";
 import { Footer } from "@/components/Footer/Footer";
 import projects from "./projects.js";
 
-export default async function page({ params }) {
-  const { locale } = await params;
-  const { t } = await initTranslations(locale, ["projects"]);
+export default function page() {
+  const t = useTranslations("projects");
 
   return (
     <div className="flex flex-col justify-center items-center gap-8 lg:gap-16 my-10">

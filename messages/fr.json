@@ -1,0 +1,68 @@
+{
+  "common": {
+    "nav_home": "Accueil",
+    "nav_about": "À propos",
+    "nav_experience": "Expérience",
+    "nav_projects": "Projets",
+    "nav_contact": "Contact",
+    "nav_resume": "Télécharger le CV",
+    "job_title": "Ingénieur informatique",
+    "slogan": "Transformer des idées en expériences numériques..."
+  },
+  "about": {
+    "title": "À propos",
+    "heading": "Développeur Full-Stack à Paris",
+    "introduction": "Bonjour, je suis Dudley Spence, développeur full-stack actuellement sur Paris, passionné par la création d'applications élégantes et intuitives tout en mettant l'accent sur l'écriture d'un code efficace et évolutif.",
+    "portfolio_note": "Mon portfolio présente une variété de projets qui reflètent mes compétences, mon dévouement et ma passion pour l'apprentissage continu et l'amélioration en tant que développeur.",
+    "reach_out": "N'hésitez pas à explorer mon travail, et si vous avez des questions ou souhaitez discuter de la création de quelque chose de formidable ensemble, n'hésitez pas à me contacter!",
+    "why_me": "Why me?",
+    "database": "Base de données",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "additional_tools": "Outils supplémentaires"
+  },
+  "experience": {
+    "title": "Expérience et Éducation",
+    "liverpool": {
+      "course_title": "MSc Informatique",
+      "institution": "Université de Liverpool",
+      "duration": "Sept 2020 - Sept 2021",
+      "grade": "Mention Distinction",
+      "description": "Ce cours intensif de Master m'a fourni une compréhension fondamentale de l'informatique, qui sert désormais de base à toutes mes connaissances et expériences actuelles.",
+      "learn_more": "En savoir plus"
+    },
+    "northcoders": {
+      "course_title": "Formation en Génie Logiciel",
+      "institution": "Northcoders",
+      "duration": "Juin 2024 - Sept 2024",
+      "description": "Acquis des compétences en développement full-stack, travaillant avec des technologies front-end (HTML, CSS, React) et back-end (Node.js, Express), y compris les bases de données SQL.",
+      "learn_more": "En savoir plus"
+    }
+  },
+  "projects": {
+    "fullstack": "Full-stack",
+    "frontend": "Frontend",
+    "dissertation": "Mémoire",
+    "peace_of_mind_title": "Tranquillité d'esprit",
+    "peace_of_mind_desc": "Tranquillité d'esprit connecte les familles des patients gériatriques avec leurs soignants, offrant un espace partagé pour planifier des tâches comme la médication, l'hygiène, les repas et les rendez-vous médicaux. Les soignants enregistrent l'achèvement des tâches et laissent des notes sur les activités, donnant aux familles un aperçu du bien-être de leurs proches.",
+    "french_language_title": "Application de langue française",
+    "french_language_desc": "Cette application simple sert d'outil de stockage de vocabulaire pour se souvenir de nouveaux noms et verbes français. Elle inclut des fonctionnalités telles que la recherche, des tableaux de conjugaison des verbes et des tableaux de prépositions genrées.",
+    "trailtalk_title": "TrailTalk",
+    "trailtalk_desc": "Une plateforme de médias sociaux et de blogs de style Reddit conçue pour les randonneurs afin de se connecter et de rester informés des actualités pertinentes. Les utilisateurs peuvent télécharger, consulter et commenter des publications. La plateforme propose des votes pour les publications et les commentaires, et les publications peuvent être triés par sujet ou organisés par date, votes et nombre de commentaires.",
+    "travelsync_title": "TravelSync",
+    "travelsync_desc": "Une application web qui facilite la planification collaborative des itinéraires de groupe. Avec des fonctionnalités telles que des recherches de lieux basées sur des cartes, une liste interactive d'itinéraires, un stockage de documents et des détails sur les lieux.",
+    "n_puzzle_title": "Résolution du N-puzzle avec apprentissage profond par renforcement",
+    "n_puzzle_desc": "Pour mon mémoire de Master en informatique, j'ai utilisé Python et TensorFlow pour créer un modèle d'apprentissage par renforcement profond qui apprend à résoudre le N-puzzle.",
+    "original_portfolio_title": "Site de portfolio original d'une seule page",
+    "original_portfolio_desc": "Bien que mon portfolio actuel soit construit avec Next.js, j'accorde de l'importance à une base solide en développement web. Ce site de portfolio original, créé avec HTML, CSS et JavaScript, montre ma capacité à créer des designs réactifs et conviviaux sans dépendre de frameworks.",
+    "view_site": "Voir le site en direct",
+    "download_diss": "Télécharger la dissertation"
+  },
+  "contact": {
+    "email": "Adresse e-mail",
+    "fullname": "Nom - Prénom",
+    "message": "Message",
+    "contactme": "Contactez-moi",
+    "send": "Envoyer"
+  }
+}

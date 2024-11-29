@@ -1,14 +1,9 @@
 import ContactForm from "@/components/Contact/ContactForm";
-import TranslationsProvider from "@/components/contexts/TranslationsProvider";
-import initTranslations from "@/app/i18n";
+import { useTranslations } from "next-intl";
 import { Footer } from "@/components/Footer/Footer";
 
-const namespaces = ["contact"];
-
-export default async function ContactPage({ params }) {
-  const { locale } = await params;
-  const { t, resources } = await initTranslations(locale, namespaces);
-
+export default function ContactPage() {
+  const t = useTranslations("contact");
   return (
     <div>
       <div className="flex justify-center min-h-[calc(70vh)] items-center ">
@@ -17,13 +12,7 @@ export default async function ContactPage({ params }) {
             <h4 className="mb-2 font-sans text-2xl text-foreground">
               {t("contactme")}
             </h4>
-            <TranslationsProvider
-              resources={resources}
-              locale={locale}
-              namespaces={namespaces}
-            >
-              <ContactForm />
-            </TranslationsProvider>
+            <ContactForm />
           </div>
         </div>
       </div>

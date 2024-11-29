@@ -1,11 +1,11 @@
 "use client";
 import { Textarea, Input, Button } from "@material-tailwind/react";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
   const [result, setResult] = React.useState("");
-  const { t } = useTranslation("contact");
+  const t = useTranslations("contact");
 
   const onSubmit = async (event) => {
     event.preventDefault();
