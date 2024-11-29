@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import {
   Navbar,
@@ -9,11 +10,12 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 import LanguageChanger from "./LanguageChanger";
 
-export function BasicNavbar() {
-  const { t } = useTranslation();
+export function BasicNavbar({ locale }) {
+  const t = useTranslations("common");
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
@@ -22,52 +24,43 @@ export function BasicNavbar() {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
+
   const navList = (
     <ul className="mt-2 h-full lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="large"
-        className=" h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+        className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
       >
-        <a href="/" className="flex justify-center items-center">
-          {t("nav_home")}
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        className=" p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in "
-      >
-        <a href="/about" className="flex justify-center items-center">
-          {t("nav_about")}
-        </a>
+        <Link href={`/${locale}/`}>{t("nav_home")}</Link>
       </Typography>
       <Typography
         as="li"
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in "
       >
-        <a href="/experience" className="flex justify-center items-center">
-          {t("nav_experience")}
-        </a>
+        <Link href={`/${locale}/about`}>{t("nav_about")}</Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="large"
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in "
+      >
+        <Link href={`/${locale}/experience`}>{t("nav_experience")}</Link>
       </Typography>
       <Typography
         as="li"
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
       >
-        <a href="/projects" className="flex justify-center items-center">
-          {t("nav_projects")}
-        </a>
+        <Link href={`/${locale}/projects`}>{t("nav_projects")}</Link>
       </Typography>
       <Typography
         as="li"
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
       >
-        <a href="/contact" className="flex justify-center items-center">
-          {t("nav_contact")}
-        </a>
+        <Link href={`/${locale}/contact`}>{t("nav_contact")}</Link>
       </Typography>
     </ul>
   );
@@ -75,7 +68,10 @@ export function BasicNavbar() {
   return (
     <Navbar className="sticky bg-background top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none !shadow-none">
       <div className="flex items-center justify-between">
-        <a href="/" className="h-auto w-[25vw] max-w-[200px] relative">
+        <Link
+          href={`/${locale}`}
+          className="h-auto w-[25vw] max-w-[200px] relative"
+        >
           <Image
             src="/Brand/logo.png"
             alt="Logo"
@@ -83,7 +79,7 @@ export function BasicNavbar() {
             className="!static h-auto w-full hover:-rotate-3 cursor-pointer"
             priority
           />
-        </a>
+        </Link>
 
         <div className="h-full hidden lg:flex items-center gap-6">
           {navList}

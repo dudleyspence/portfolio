@@ -1,11 +1,8 @@
-import initTranslations from "@/app/i18n";
+import { useTranslations } from "next-intl";
 import LandingHero from "@/components/Hero/LandingHero";
 
-const namespaces = ["common"];
-
-export default async function Home({ params }) {
-  const { locale } = await params;
-  const { t } = await initTranslations(locale, namespaces);
+export default function Home() {
+  const t = useTranslations("common");
 
   return (
     <div>

@@ -1,14 +1,11 @@
 import React from "react";
 import { Liverpool } from "@/components/Experience/Liverpool";
 import { Northcoders } from "@/components/Experience/Northcoders";
-import initTranslations from "@/app/i18n";
+import { useTranslations } from "next-intl";
 import { Footer } from "@/components/Footer/Footer";
 
-const namespaces = ["experience"];
-
-export default async function page({ params }) {
-  const { locale } = await params;
-  const { t } = await initTranslations(locale, namespaces);
+export default function page() {
+  const t = useTranslations("experience");
 
   return (
     <div>
