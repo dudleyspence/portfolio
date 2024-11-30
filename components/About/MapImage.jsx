@@ -1,35 +1,50 @@
 "use client";
-import React from "react";
+
+import React, { useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import mapDark from "@/public/About/mapdark.png";
 import mapLight from "@/public/About/maplight.png";
-import MapSkeleton from "./MapSkeleton";
 
 export default function MapImage() {
   const { resolvedTheme } = useTheme();
+  const [isLoading, setIsLoading] = useState(true);
 
-  if (!resolvedTheme) return <MapSkeleton />;
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
 
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full overflow-hidden">
       {resolvedTheme === "dark" ? (
         <Image
           src={mapDark}
           alt="Dark Mode Map"
-          className="object-cover !static"
+          className={`object-cover !static ${
+            isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
+          }`}
           fill
           placeholder="blur"
           priority
+          onLoadingComplete={handleImageLoad}
+          style={{
+            transition: "filter 700ms ease, transform 150ms ease",
+          }}
         />
       ) : (
         <Image
           src={mapLight}
           alt="Light Mode Map"
-          className="object-cover !static"
-          placeholder="blur"
+          className={`object-cover !static ${
+            isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
+          }`}
           fill
+          placeholder="blur"
           priority
+          onLoadingComplete={handleImageLoad}
+          style={{
+            transition: "filter 700ms ease, transform 150ms ease",
+          }}
         />
       )}
     </div>

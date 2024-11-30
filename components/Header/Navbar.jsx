@@ -25,6 +25,11 @@ export function BasicNavbar({ locale }) {
     );
   }, []);
 
+  // Function to close the navbar on mobile when a link is clicked
+  const closeNav = () => {
+    setOpenNav(false);
+  };
+
   const navList = (
     <ul className="mt-2 h-full lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
@@ -32,35 +37,45 @@ export function BasicNavbar({ locale }) {
         variant="large"
         className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
       >
-        <Link href={`/${locale}/`}>{t("nav_home")}</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in "
-      >
-        <Link href={`/${locale}/about`}>{t("nav_about")}</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in "
-      >
-        <Link href={`/${locale}/experience`}>{t("nav_experience")}</Link>
+        <Link href={`/${locale}/`} onClick={closeNav}>
+          {t("nav_home")}
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
       >
-        <Link href={`/${locale}/projects`}>{t("nav_projects")}</Link>
+        <Link href={`/${locale}/about`} onClick={closeNav}>
+          {t("nav_about")}
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="large"
         className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
       >
-        <Link href={`/${locale}/contact`}>{t("nav_contact")}</Link>
+        <Link href={`/${locale}/experience`} onClick={closeNav}>
+          {t("nav_experience")}
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="large"
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+      >
+        <Link href={`/${locale}/projects`} onClick={closeNav}>
+          {t("nav_projects")}
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="large"
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+      >
+        <Link href={`/${locale}/contact`} onClick={closeNav}>
+          {t("nav_contact")}
+        </Link>
       </Typography>
     </ul>
   );

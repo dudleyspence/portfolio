@@ -12,6 +12,7 @@ const projects = [
     description: "peace_of_mind_desc",
     reverse: false,
     linktag: "view_site",
+    isPriority: true,
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const projects = [
     description: "french_language_desc",
     reverse: true,
     linktag: "view_site",
+    isPriority: true,
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const projects = [
     description: "trailtalk_desc",
     reverse: false,
     linktag: "view_site",
+    isPriority: false,
   },
   {
     id: 4,
@@ -61,6 +64,7 @@ const projects = [
     description: "travelsync_desc",
     reverse: true,
     linktag: "view_site",
+    isPriority: false,
   },
   {
     id: 5,
@@ -74,6 +78,7 @@ const projects = [
     description: "n_puzzle_desc",
     reverse: false,
     linktag: "download_diss",
+    isPriority: false,
   },
   {
     id: 6,
@@ -87,6 +92,7 @@ const projects = [
     description: "original_portfolio_desc",
     reverse: true,
     linktag: "view_site",
+    isPriority: false,
   },
 ];
 

@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 export default function Project({
@@ -13,7 +15,14 @@ export default function Project({
   description,
   reverse,
   linktag,
+  isPriority,
 }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div
       className={`${
@@ -24,9 +33,16 @@ export default function Project({
         <Image
           src={image}
           alt={`${title} Image`}
-          className="rounded-lg !static lg:absolute object-cover"
+          className={`rounded-lg !static lg:absolute object-cover ${
+            isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
+          }`}
+          loading={isPriority ? "eager" : "lazy"}
+          priority={isPriority}
           fill
-          priority
+          onLoadingComplete={handleImageLoad}
+          style={{
+            transition: "filter 700ms ease, transform 150ms ease",
+          }}
         />
       </div>
 
@@ -61,7 +77,10 @@ export default function Project({
 
             <div className="flex flex-row gap-2 flex-wrap">
               {frontskills.map((skill) => (
-                <p className="text-text px-2 py-1 bg-lowcontrast2 rounded-md">
+                <p
+                  key={skill}
+                  className="text-text px-2 py-1 bg-lowcontrast2 rounded-md"
+                >
                   {skill}
                 </p>
               ))}
@@ -92,7 +111,10 @@ export default function Project({
 
             <div className="flex flex-row gap-2 flex-wrap">
               {backskills.map((skill) => (
-                <p className="text-text px-2 py-1 bg-lowcontrast2 rounded-md">
+                <p
+                  key={skill}
+                  className="text-text px-2 py-1 bg-lowcontrast2 rounded-md"
+                >
                   {skill}
                 </p>
               ))}
