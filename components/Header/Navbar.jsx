@@ -35,7 +35,7 @@ export function BasicNavbar({ locale }) {
       <Typography
         as="li"
         variant="large"
-        className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+        className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
       >
         <Link href={`/${locale}/`} onClick={closeNav}>
           {t("nav_home")}
@@ -44,7 +44,7 @@ export function BasicNavbar({ locale }) {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
       >
         <Link href={`/${locale}/about`} onClick={closeNav}>
           {t("nav_about")}
@@ -53,7 +53,7 @@ export function BasicNavbar({ locale }) {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
       >
         <Link href={`/${locale}/experience`} onClick={closeNav}>
           {t("nav_experience")}
@@ -62,7 +62,7 @@ export function BasicNavbar({ locale }) {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
       >
         <Link href={`/${locale}/projects`} onClick={closeNav}>
           {t("nav_projects")}
@@ -71,7 +71,7 @@ export function BasicNavbar({ locale }) {
       <Typography
         as="li"
         variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] duration-100 ease-in"
+        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] ease-in"
       >
         <Link href={`/${locale}/contact`} onClick={closeNav}>
           {t("nav_contact")}
