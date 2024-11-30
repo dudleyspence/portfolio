@@ -28,7 +28,7 @@ export default async function RootLayout({ children, params }) {
   const messages = await getMessages(locale);
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html className="scroll-smooth" lang={locale} suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>

@@ -3,20 +3,20 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { Footer } from "@/components/Footer/Footer";
 import projects from "./projects.js";
+import PageTitle from "@/components/UI/PageTitle.jsx";
 
 export default function Page() {
   const t = useTranslations("projects");
 
   return (
-    <div className="flex flex-col w-full justify-center items-center gap-8 lg:gap-16 my-10">
-      <p className="text-[25px] lg:text-[30px] self-start text-foreground">
-        {t("title")}
-      </p>
+    <div className="flex flex-col w-full justify-center items-center gap-8 lg:gap-16 mb-10">
+      <PageTitle title={t("title")} />
 
       {projects.map((project) => {
         return (
           <div key={project.id}>
             <Project
+              id={project.id}
               image={project.image}
               title={t(project.title)}
               type={t(project.type)}

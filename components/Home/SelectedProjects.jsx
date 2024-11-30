@@ -13,10 +13,12 @@ const project2ImageBlur = project2.blurHash;
 
 export default function SelectedProjects() {
   const t = useTranslations("projects");
+  const tHome = useTranslations("homepage");
+
   return (
     <div className="flex flex-col gap-10 justify-center items-center w-full">
       <p className="text-[25px] lg:text-[30px] text-foreground">
-        Selected Projects
+        {tHome("selectedprojects")}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 w-full">
         <figure className="relative w-full">

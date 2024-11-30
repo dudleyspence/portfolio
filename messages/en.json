@@ -9,6 +9,10 @@
     "job_title": "Software Engineer",
     "slogan": "Turning ideas into digital experiences..."
   },
+  "homepage": {
+    "selectedprojects": "Selected Projects",
+    "summary": "Quick Summary"
+  },
   "about": {
     "title": "About",
     "heading": "Full-Stack Developer in Paris",
@@ -23,6 +27,14 @@
   },
   "experience": {
     "title": "Experience and Education",
+    "selftaught": {
+      "title": "Self Learning",
+      "institution": "University of Liverpool",
+      "duration": "Sept 2020 - Sept 2021",
+      "grade": "Distinction",
+      "description": "This intensive Master's course provided me with a foundational understanding of Computer Science, which now serves as the basis for all my current knowledge and experience.",
+      "learn_more": "Learn More"
+    },
 
     "liverpool": {
       "course_title": "MSc Computer Science",

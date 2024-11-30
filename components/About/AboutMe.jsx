@@ -9,9 +9,6 @@ export default function AboutMe({ t }) {
         <MapImage />
       </div>
       <div className="font-sans xl:w-3/5 xl:pr-6 pt-6 xl:pt-0">
-        <h6 className="font-sans text-lg text-text mb-4 uppercase">
-          {t("title")}
-        </h6>
         <h4 className="font-sans text-3xl text-text mb-2 xl:mb-6">
           {t("heading")}
         </h4>

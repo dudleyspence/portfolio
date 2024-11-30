@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 export default function Project({
+  id,
   image,
   title,
   type,
@@ -28,6 +29,7 @@ export default function Project({
       className={`${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } flex w-full flex-col lg:flex bg-background relative`}
+      id={id}
     >
       <div className="relative w-full lg:w-3/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
         <Image

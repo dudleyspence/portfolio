@@ -9,6 +9,10 @@
     "job_title": "Ingénieur informatique",
     "slogan": "Transformer des idées en expériences numériques..."
   },
+  "homepage": {
+    "selectedprojects": "Projets sélectionnés",
+    "summary": "Résumé rapide"
+  },
   "about": {
     "title": "À propos",
     "heading": "Développeur Full-Stack à Paris",
@@ -22,6 +26,14 @@
     "additional_tools": "Outils supplémentaires"
   },
   "experience": {
+    "selftaught": {
+      "title": "auto-apprentissage",
+      "institution": "University of Liverpool",
+      "duration": "Sept 2020 - Sept 2021",
+      "grade": "Distinction",
+      "description": "This intensive Master's course provided me with a foundational understanding of Computer Science, which now serves as the basis for all my current knowledge and experience.",
+      "learn_more": "Learn More"
+    },
     "title": "Expérience et Éducation",
     "liverpool": {
       "course_title": "MSc Informatique",
