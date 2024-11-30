@@ -3,7 +3,7 @@ import ProfileImage from "@/components/Hero/ProfileImage";
 
 export default function LandingHero({ t }) {
   return (
-    <div className="flex flex-col lg:flex-row gap-7 lg:gap-20 justify-center items-center h-[calc(100vh-60px)] lg:h-[calc(100vh-108px)]">
+    <div className="flex flex-col lg:flex-row gap-7 lg:gap-15 xl:gap-20 mt-10 md:mt-0 justify-start md:justify-center items-center h-[calc(100vh-60px)] lg:h-[calc(100vh-108px)]">
       <ProfileImage />
       <div className="flex flex-col justify-center items-center">
         <p className="text-[30px] lg:text-[50px] text-foreground">
