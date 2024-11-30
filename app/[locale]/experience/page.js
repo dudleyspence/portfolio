@@ -8,12 +8,15 @@ export default function page() {
   const t = useTranslations("experience");
 
   return (
-    <div>
-      <div className="mt-8 min-h-[70vh] p-8 flex flex-col gap-6 lg:gap-10 lg:flex-row  justify-center items-center ">
+    <div className="min-h-[70vh] p-10">
+      <p className="text-[30px] p-10 self-start text-foreground">
+        {t("title")}
+      </p>
+      <div className="mt-8 h-min flex flex-col gap-6 lg:gap-10 xl:flex-row  lg:justify-around items-center ">
         <Liverpool t={t} />
         <Northcoders t={t} />
       </div>
-      <Footer />
+      <Footer justify-self-end />
     </div>
   );
 }

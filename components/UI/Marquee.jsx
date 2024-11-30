@@ -7,9 +7,10 @@ export default function SkillsMarquee() {
     <div className="w-full mx-auto flex flex-col gap-4">
       <Marquee
         direction="left"
-        gradient={true}
+        gradient={false}
         speed={25}
-        gradientColor="var(--background)"
+        gradientWidth={50}
+        gradientColor="var(--lowcontrast)"
       >
         <div className="mx-3">
           <SkillCard imagePath="/skills/html.png" name="HTML" />
@@ -39,9 +40,9 @@ export default function SkillsMarquee() {
 
       <Marquee
         direction="right"
-        gradient={true}
+        gradient={false}
         speed={25}
-        gradientColor="var(--background)"
+        gradientColor="var(--lowcontrast2)"
       >
         <div className="mx-3">
           <SkillCard imagePath="/skills/fastAPI.png" name="FastAPI" />

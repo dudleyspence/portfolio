@@ -81,7 +81,7 @@ export function BasicNavbar({ locale }) {
   );
 
   return (
-    <Navbar className="sticky bg-background top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none !shadow-none">
+    <Navbar className="sticky bg-background top-0 z-10 h-[60px] lg:h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none !shadow-none">
       <div className="flex items-center justify-between">
         <Link
           href={`/${locale}`}
@@ -91,7 +91,7 @@ export function BasicNavbar({ locale }) {
             src="/Brand/logo.png"
             alt="Logo"
             fill
-            className="!static h-auto w-full hover:-rotate-3 cursor-pointer"
+            className="!static h-auto w-[140px] lg:max-h-full max-w-full hover:-rotate-3 cursor-pointer"
             priority
           />
         </Link>

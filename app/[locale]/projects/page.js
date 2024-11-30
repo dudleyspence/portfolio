@@ -8,7 +8,11 @@ export default function Page() {
   const t = useTranslations("projects");
 
   return (
-    <div className="flex flex-col justify-center items-center gap-8 lg:gap-16 my-10">
+    <div className="flex flex-col w-full justify-center items-center gap-8 lg:gap-16 my-10">
+      <p className="text-[10px] lg:text-[30px] self-start text-foreground">
+        {t("title")}
+      </p>
+
       {projects.map((project) => {
         return (
           <div key={project.id}>

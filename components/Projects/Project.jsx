@@ -27,7 +27,7 @@ export default function Project({
     <div
       className={`${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } flex w-full max-w-[90vw] flex-col lg:flex bg-background relative`}
+      } flex w-full flex-col lg:flex bg-background relative`}
     >
       <div className="relative w-full lg:w-3/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
         <Image
@@ -79,7 +79,7 @@ export default function Project({
               {frontskills.map((skill) => (
                 <p
                   key={skill}
-                  className="text-text px-2 py-1 bg-lowcontrast2 rounded-md"
+                  className="text-sm text-text px-2 py-1 bg-lowcontrast2 rounded-md"
                 >
                   {skill}
                 </p>
@@ -113,7 +113,7 @@ export default function Project({
               {backskills.map((skill) => (
                 <p
                   key={skill}
-                  className="text-text px-2 py-1 bg-lowcontrast2 rounded-md"
+                  className="text-sm text-text px-2 py-1 bg-lowcontrast2 rounded-md"
                 >
                   {skill}
                 </p>

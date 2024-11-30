@@ -14,39 +14,35 @@ export default function MapImage() {
     setIsLoading(false);
   };
 
-  return (
-    <div className="h-full w-full overflow-hidden">
-      {resolvedTheme === "dark" ? (
-        <Image
-          src={mapDark}
-          alt="Dark Mode Map"
-          className={`object-cover !static ${
-            isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
-          }`}
-          fill
-          placeholder="blur"
-          priority
-          onLoadingComplete={handleImageLoad}
-          style={{
-            transition: "filter 700ms ease, transform 150ms ease",
-          }}
-        />
-      ) : (
-        <Image
-          src={mapLight}
-          alt="Light Mode Map"
-          className={`object-cover !static ${
-            isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
-          }`}
-          fill
-          placeholder="blur"
-          priority
-          onLoadingComplete={handleImageLoad}
-          style={{
-            transition: "filter 700ms ease, transform 150ms ease",
-          }}
-        />
-      )}
-    </div>
+  return resolvedTheme === "dark" ? (
+    <Image
+      src={mapDark}
+      alt="Dark Mode Map"
+      className={`object-cover rounded-xl shadow-xl !static ${
+        isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
+      }`}
+      fill
+      placeholder="blur"
+      priority
+      onLoad={handleImageLoad}
+      style={{
+        transition: "filter 700ms ease, transform 150ms ease",
+      }}
+    />
+  ) : (
+    <Image
+      src={mapLight}
+      alt="Light Mode Map"
+      className={`object-cover rounded-xl shadow-xl !static ${
+        isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
+      }`}
+      fill
+      placeholder="blur"
+      priority
+      onLoad={handleImageLoad}
+      style={{
+        transition: "filter 700ms ease, transform 150ms ease",
+      }}
+    />
   );
 }

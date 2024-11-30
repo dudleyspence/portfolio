@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import LandingHero from "@/components/Hero/LandingHero";
-import SkillsMarquee from "@/components/UI/Marquee";
+
+import Overview from "@/components/Home/Overview";
+import { Footer } from "@/components/Footer/Footer";
 
 export default function Home() {
   const t = useTranslations("common");
@@ -8,6 +10,8 @@ export default function Home() {
   return (
     <div>
       <LandingHero t={t} />
+      <Overview />
+      <Footer />
     </div>
   );
 }

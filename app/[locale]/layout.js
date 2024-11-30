@@ -32,9 +32,11 @@ export default async function RootLayout({ children, params }) {
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>
-            <main className="min-h-screen min-w-screen">
+            <main className="flex flex-col items-center min-h-screen min-w-screen">
               <BasicNavbar locale={locale} />
-              {children}
+              <div className="w-full max-w-[650px] lg:max-w-[80vw]">
+                {children}
+              </div>
             </main>
           </NextIntlClientProvider>
         </ThemeProvider>

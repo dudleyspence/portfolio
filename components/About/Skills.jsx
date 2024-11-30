@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 
 export default function Skills({ t }) {
   return (
-    <div className="w-full max-w-[650px] xl:max-w-[92vw] flex flex-col-reverse xl:flex-row">
+    <div className="w-full flex flex-col-reverse xl:flex-row justify-center items-center">
       <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-5 self-start">
         <div id="frontend" className="w-full bg-lowcontrast2 p-4 rounded-lg">
           <h4 className="mb-4 font-sans font-extrabold text-xl text-text">

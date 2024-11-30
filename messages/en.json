@@ -41,6 +41,7 @@
     }
   },
   "projects": {
+    "title": "Projects",
     "fullstack": "Full-stack",
     "frontend": "Frontend",
     "dissertation": "Thesis",

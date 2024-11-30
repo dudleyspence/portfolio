@@ -13,6 +13,7 @@ const projects = [
     reverse: false,
     linktag: "view_site",
     isPriority: true,
+    blurHash: "LMI}#7kC4.%M~pE0D%t700j?%MIU",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const projects = [
     reverse: true,
     linktag: "view_site",
     isPriority: true,
+    blurHash: "L6Q9_[R.~pW9xvIV~q4nD%_3?c_3",
   },
   {
     id: 3,
@@ -43,6 +45,7 @@ const projects = [
     reverse: false,
     linktag: "view_site",
     isPriority: false,
+    blurHash: "LYIhjyaLRtxw~ot8M}M{kGaeV?Rj",
   },
   {
     id: 4,
@@ -65,6 +68,7 @@ const projects = [
     reverse: true,
     linktag: "view_site",
     isPriority: false,
+    blurHash: "LTJIhLMf4nD%?^%2IVRQ8wa^xutR",
   },
   {
     id: 5,
@@ -79,6 +83,7 @@ const projects = [
     reverse: false,
     linktag: "download_diss",
     isPriority: false,
+    blurHash: "LfM?;v*0McDO^$xuozi_V=IotRxu",
   },
   {
     id: 6,
@@ -93,6 +98,7 @@ const projects = [
     reverse: true,
     linktag: "view_site",
     isPriority: false,
+    blurHash: "LLOf-;%CoFDj_BRXRlWCi,bXWFoM",
   },
 ];
 

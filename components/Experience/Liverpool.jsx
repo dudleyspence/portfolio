@@ -1,11 +1,14 @@
+import Image from "next/image";
 export function Liverpool({ t }) {
   return (
-    <div className="font-sans relative flex w-full max-w-[36rem] p-6 flex-col rounded-lg bg-lowcontrast2 min-h-[370px]">
+    <div className="font-sans relative flex w-full max-w-[36rem] p-6 flex-col rounded-lg bg-lowcontrast2 min-h-[390px]">
       <div className="relative bg-clip-border mt-4 rounded-lg overflow-hidden bg-transparent text-gray-700 shadow-none mx-0 flex items-center gap-4 pt-0 pb-6">
-        <img
+        <Image
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLBzZ2_NO2ItFhIvKtKa21vUTGq6TE0oHew&s"
           alt={t("liverpool.institution")}
-          className="relative inline-block h-[58px] w-[58px] rounded-lg object-cover object-center"
+          width={58}
+          height={58}
+          className="relative inline-block rounded-lg object-cover object-center"
         />
         <div className="flex gap-1 w-full flex-col">
           <div className="flex items-center justify-between">
