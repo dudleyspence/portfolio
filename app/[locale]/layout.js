@@ -34,7 +34,7 @@ export default async function RootLayout({ children, params }) {
           <NextIntlClientProvider messages={messages}>
             <main className="flex flex-col items-center min-h-screen min-w-screen">
               <BasicNavbar locale={locale} />
-              <div className="w-full max-w-[650px] lg:max-w-[80vw]">
+              <div className="w-full max-w-[85vw] lg:max-w-[80vw]">
                 {children}
               </div>
             </main>

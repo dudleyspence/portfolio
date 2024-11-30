@@ -8,7 +8,7 @@ export default function page() {
   const t = useTranslations("experience");
 
   return (
-    <div className="min-h-[70vh] p-10">
+    <div className=" min-h-[calc(100vh-60px)] lg:min-h-[calc(100vh-108px)] flex flex-col p-10 justify-between">
       <p className="text-[30px] p-10 self-start text-foreground">
         {t("title")}
       </p>
@@ -16,7 +16,9 @@ export default function page() {
         <Liverpool t={t} />
         <Northcoders t={t} />
       </div>
-      <Footer justify-self-end />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
