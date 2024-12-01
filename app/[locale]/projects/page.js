@@ -4,12 +4,13 @@ import { useTranslations } from "next-intl";
 import { Footer } from "@/components/Footer/Footer";
 import projects from "./projects.js";
 import PageTitle from "@/components/UI/PageTitle.jsx";
+import ThisPortfolio from "@/components/Projects/ThisPortfolio.jsx";
 
 export default function Page() {
   const t = useTranslations("projects");
 
   return (
-    <div className="flex flex-col w-full justify-center items-center gap-8 lg:gap-16 mb-10">
+    <div className="flex flex-col w-full justify-center items-center gap-8 lg:gap-16">
       <PageTitle title={t("title")} />
 
       {projects.map((project) => {
@@ -33,6 +34,7 @@ export default function Page() {
           </div>
         );
       })}
+      <ThisPortfolio t={t} />
       <Footer />
     </div>
   );

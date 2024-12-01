@@ -23,34 +23,27 @@
     "database": "Base de données",
     "frontend": "Frontend",
     "backend": "Backend",
-    "additional_tools": "Outils supplémentaires"
-  },
-  "experience": {
-    "selftaught": {
-      "title": "auto-apprentissage",
-      "institution": "University of Liverpool",
-      "duration": "Sept 2020 - Sept 2021",
-      "grade": "Distinction",
-      "description": "This intensive Master's course provided me with a foundational understanding of Computer Science, which now serves as the basis for all my current knowledge and experience.",
-      "learn_more": "Learn More"
-    },
-    "title": "Expérience et Éducation",
-    "liverpool": {
-      "course_title": "MSc Informatique",
-      "institution": "Université de Liverpool",
-      "duration": "Sept 2020 - Sept 2021",
-      "grade": "Mention Distinction",
-      "description": "Ce cours intensif de Master m'a fourni une compréhension fondamentale de l'informatique, qui sert désormais de base à toutes mes connaissances et expériences actuelles.",
-      "learn_more": "En savoir plus"
-    },
-    "northcoders": {
-      "course_title": "Formation en Génie Logiciel",
-      "institution": "Northcoders",
-      "duration": "Juin 2024 - Sept 2024",
-      "description": "Acquis des compétences en développement full-stack, travaillant avec des technologies front-end (HTML, CSS, React) et back-end (Node.js, Express), y compris les bases de données SQL.",
-      "learn_more": "En savoir plus"
+    "additional_tools": "Outils supplémentaires",
+    "education": {
+      "selflearning": {
+        "title": "auto-apprentissage",
+        "currentlylearning": "Je suis actuellement en train de m'enseigner :"
+      },
+      "title": "Éducation",
+      "liverpool": {
+        "course_title": "MSc Informatique",
+        "institution": "Université de Liverpool",
+        "duration": "Sept 2020 - Sept 2021",
+        "grade": "Mention Distinction"
+      },
+      "northcoders": {
+        "course_title": "Formation en Génie Logiciel",
+        "institution": "Northcoders",
+        "duration": "Juin 2024 - Sept 2024"
+      }
     }
   },
+
   "projects": {
     "title": "Projets",
     "fullstack": "Full-stack",
@@ -69,7 +62,11 @@
     "original_portfolio_title": "Site de portfolio original d'une seule page",
     "original_portfolio_desc": "Bien que mon portfolio actuel soit construit avec Next.js, j'accorde de l'importance à une base solide en développement web. Ce site de portfolio original, créé avec HTML, CSS et JavaScript, montre ma capacité à créer des designs réactifs et conviviaux sans dépendre de frameworks.",
     "view_site": "Voir le site en direct",
-    "download_diss": "Télécharger la dissertation"
+    "download_diss": "Télécharger la dissertation",
+    "this_portfolio": "Ce portfolio",
+    "this_portfolio_desc_1": "Ce portfolio a été initialement créé en utilisant du HTML, CSS et JavaScript. À mesure que mes compétences ont évolué, j'ai décidé de le reconstruire avec Next.js pour exploiter pleinement ses optimisations, y compris le rendu côté serveur (SSR) et le rendu statique, qui améliorent considérablement les performances.",
+    "this_portfolio_desc_2": "Afin d'élargir davantage sa portée, j'ai intégré next-intl pour créer un site internationalisé qui prend en charge à la fois l'anglais et le français, garantissant une expérience fluide pour les utilisateurs des deux langues.",
+    "oldportfolio_click": "Cliquez pour voir l'ancien portfolio"
   },
   "contact": {
     "email": "Adresse e-mail",

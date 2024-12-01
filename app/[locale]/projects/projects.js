@@ -85,21 +85,22 @@ const projects = [
     isPriority: false,
     blurHash: "LfM?;v*0McDO^$xuozi_V=IotRxu",
   },
-  {
-    id: 6,
-    image: "/Projects/PortfolioSinglePage.png",
-    type: "frontend",
-    title: "original_portfolio_title",
-    frontskills: ["HTML", "CSS", "JavaScript"],
-    githubF: "https://github.com/dudleyspence/old-portfolio-site",
-    githubB: "",
-    siteLink: "https://old-portfolio-site-production.up.railway.app",
-    description: "original_portfolio_desc",
-    reverse: true,
-    linktag: "view_site",
-    isPriority: false,
-    blurHash: "LLOf-;%CoFDj_BRXRlWCi,bXWFoM",
-  },
+
+  // {
+  //   id: 7,
+  //   image: "/Projects/PortfolioSinglePage.png",
+  //   type: "frontend",
+  //   title: "original_portfolio_title",
+  //   frontskills: ["HTML", "CSS", "JavaScript"],
+  //   githubF: "https://github.com/dudleyspence/old-portfolio-site",
+  //   githubB: "",
+  //   siteLink: "https://old-portfolio-site-production.up.railway.app",
+  //   description: "original_portfolio_desc",
+  //   reverse: true,
+  //   linktag: "view_site",
+  //   isPriority: false,
+  //   blurHash: "LLOf-;%CoFDj_BRXRlWCi,bXWFoM",
+  // },
 ];
 
 export default projects;

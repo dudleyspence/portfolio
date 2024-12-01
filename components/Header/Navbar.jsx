@@ -31,51 +31,43 @@ export function BasicNavbar({ locale }) {
 
   const navList = (
     <ul className="mt-2 h-full lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="large"
-        className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
-      >
-        <Link href={`/${locale}/`} onClick={closeNav}>
+      <Link href={`/${locale}/`} onClick={closeNav}>
+        <Typography
+          as="li"
+          variant="large"
+          className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
+        >
           {t("nav_home")}
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
-      >
-        <Link href={`/${locale}/about`} onClick={closeNav}>
+        </Typography>
+      </Link>
+
+      <Link href={`/${locale}/about`} onClick={closeNav}>
+        <Typography
+          as="li"
+          variant="large"
+          className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
+        >
           {t("nav_about")}
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
-      >
-        <Link href={`/${locale}/experience`} onClick={closeNav}>
-          {t("nav_experience")}
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
-      >
-        <Link href={`/${locale}/projects`} onClick={closeNav}>
+        </Typography>
+      </Link>
+      <Link href={`/${locale}/projects`} onClick={closeNav}>
+        <Typography
+          as="li"
+          variant="large"
+          className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
+        >
           {t("nav_projects")}
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="large"
-        className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] ease-in"
-      >
-        <Link href={`/${locale}/contact`} onClick={closeNav}>
+        </Typography>
+      </Link>
+      <Link href={`/${locale}/contact`} onClick={closeNav}>
+        <Typography
+          as="li"
+          variant="large"
+          className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] ease-in"
+        >
           {t("nav_contact")}
-        </Link>
-      </Typography>
+        </Typography>
+      </Link>
     </ul>
   );
 
@@ -87,7 +79,7 @@ export function BasicNavbar({ locale }) {
             src="/Brand/logosmall.png"
             alt="Logo"
             fill
-            className="!static max-h-[30px] max-w-[30px] md:max-h-[50px] md:max-w-[50px] hover:-rotate-3 cursor-pointer"
+            className="!static max-h-[30px] max-w-[30px] md:max-h-[50px] md:max-w-[50px] hover:-rotate-6 cursor-pointer"
             priority
           />
         </Link>

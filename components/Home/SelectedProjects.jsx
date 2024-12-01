@@ -24,7 +24,7 @@ export default function SelectedProjects() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 w-full">
         <Link href={project1.siteLink}>
-          <figure className="relative w-full shadow-xl rounded-xl hover:shadow-highcontrast">
+          <figure className="relative w-full cursor-pointer shadow-xl rounded-xl hover:shadow-highcontrast">
             <DynamicBlurImage
               imagePath={project1ImagePath}
               blurHash={project1ImageBlur}
@@ -37,7 +37,7 @@ export default function SelectedProjects() {
           </figure>
         </Link>
         <Link href={project2.siteLink}>
-          <figure className="relative w-full shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
+          <figure className="relative w-full cursor-pointer shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
             <DynamicBlurImage
               imagePath={project2ImagePath}
               blurHash={project2ImageBlur}
