@@ -31,9 +31,9 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
+    <div className="w-full flex flex-col justify-center items-center">
       <form
-        className="w-96 flex flex-col items-end gap-6 mt-10"
+        className="w-full max-w-[300px] flex flex-col items-end gap-6 mt-10"
         onSubmit={onSubmit}
       >
         <Input
@@ -41,7 +41,7 @@ export default function ContactForm() {
           name="name"
           required
           placeholder={t("fullname")}
-          className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 !w-[90vw] max-w-full"
+          className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 w-full"
           size="lg"
           labelProps={{
             className: "hidden",
@@ -54,7 +54,7 @@ export default function ContactForm() {
           name="email"
           required
           placeholder={t("email")}
-          className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 !w-[90vw] max-w-full"
+          className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 w-full"
           size="lg"
           labelProps={{
             className: "hidden",
@@ -65,7 +65,7 @@ export default function ContactForm() {
           name="message"
           placeholder={t("message")}
           required
-          className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 !w-[90vw] max-w-full"
+          className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 w-full"
           size="lg"
           labelProps={{
             className: "hidden",
