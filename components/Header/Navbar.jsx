@@ -87,7 +87,7 @@ export function BasicNavbar({ locale }) {
             src="/Brand/logosmall.png"
             alt="Logo"
             fill
-            className="!static max-h-[30px] md:max-h-[50px] hover:-rotate-3 cursor-pointer"
+            className="!static max-h-[30px] max-w-[30px] md:max-h-[50px] md:max-w-[50px] hover:-rotate-3 cursor-pointer"
             priority
           />
         </Link>
