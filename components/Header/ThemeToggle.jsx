@@ -2,6 +2,8 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import sun from "@/public/theme/sun.png";
+import moon from "@/public/theme/moon.png";
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -17,9 +19,9 @@ export default function ThemeToggle() {
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
-        <Image src="/theme/sun.png" alt="Sun Icon" height={20} width={20} />
+        <Image src={sun} alt="Sun Icon" height={20} width={20} />
       ) : (
-        <Image src="/theme/moon.png" alt="Moon Icon" height={20} width={20} />
+        <Image src={moon} alt="Moon Icon" height={20} width={20} />
       )}
     </div>
   );
