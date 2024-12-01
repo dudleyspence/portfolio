@@ -76,7 +76,7 @@
     "email": "Email Address",
     "fullname": "Full Name",
     "message": "Message",
-    "contactme": "Contact Me",
+    "title": "Contact Me",
     "send": "Send"
   }
 }

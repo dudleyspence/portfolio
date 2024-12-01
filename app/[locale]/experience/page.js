@@ -9,9 +9,9 @@ export default function page() {
   const t = useTranslations("experience");
 
   return (
-    <div className=" min-h-[calc(100vh-60px)] lg:min-h-[calc(100vh-108px)] flex flex-col pt-0 p-10 justify-between">
+    <div className="w-full flex flex-col justify-between pt-6 min-h-[calc(100vh-60px)] lg:min-h-[calc(100vh-82px)]">
       <PageTitle title={t("title")} />
-      <div className="mt-8 h-min flex flex-col gap-6 lg:gap-10 xl:flex-row  lg:justify-around items-center ">
+      <div className="mt-8 h-min flex flex-col gap-6 lg:gap-10 xl:flex-row w-full lg:justify-around items-center ">
         <Liverpool t={t} />
         <Northcoders t={t} />
       </div>

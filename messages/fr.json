@@ -75,7 +75,7 @@
     "email": "Adresse e-mail",
     "fullname": "Nom - Prénom",
     "message": "Message",
-    "contactme": "Contactez-moi",
+    "title": "Contactez-moi",
     "send": "Envoyer"
   }
 }

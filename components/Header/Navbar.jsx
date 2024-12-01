@@ -25,7 +25,6 @@ export function BasicNavbar({ locale }) {
     );
   }, []);
 
-  // Function to close the navbar on mobile when a link is clicked
   const closeNav = () => {
     setOpenNav(false);
   };
@@ -83,15 +82,12 @@ export function BasicNavbar({ locale }) {
   return (
     <Navbar className="sticky bg-background top-0 z-10 h-[60px] lg:h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none !shadow-none">
       <div className="flex items-center justify-between">
-        <Link
-          href={`/${locale}`}
-          className="h-auto w-[25vw] max-w-[200px] relative"
-        >
+        <Link href={`/${locale}`} className="h-full relative">
           <Image
-            src="/Brand/logo.png"
+            src="/Brand/logosmall.png"
             alt="Logo"
             fill
-            className="!static h-auto w-[140px] lg:max-h-full max-w-full hover:-rotate-3 cursor-pointer"
+            className="!static max-h-[30px] md:max-h-[50px] hover:-rotate-3 cursor-pointer"
             priority
           />
         </Link>

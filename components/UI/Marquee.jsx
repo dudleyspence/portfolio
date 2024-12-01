@@ -13,28 +13,52 @@ export default function SkillsMarquee() {
         gradientColor="var(--lowcontrast)"
       >
         <div className="mx-3">
-          <SkillCard imagePath="/skills/html.png" name="HTML" />
+          <SkillCard imagePath="/skills/html.png" name="HTML" marquee={true} />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/css.png" name="CSS" />
+          <SkillCard imagePath="/skills/css.png" name="CSS" marquee={true} />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/javascript.png" name="JavaScript" />
+          <SkillCard
+            imagePath="/skills/javascript.png"
+            name="JavaScript"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/react.png" name="React" />
+          <SkillCard
+            imagePath="/skills/react.png"
+            name="React"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/nextjs.png" name="Next.js" />
+          <SkillCard
+            imagePath="/skills/nextjs.png"
+            name="Next.js"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/tailwind.png" name="TailwindCSS" />
+          <SkillCard
+            imagePath="/skills/tailwind.png"
+            name="TailwindCSS"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/nodejs.png" name="Node.js" />
+          <SkillCard
+            imagePath="/skills/nodejs.png"
+            name="Node.js"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/express.png" name="Express.js" />
+          <SkillCard
+            imagePath="/skills/express.png"
+            name="Express.js"
+            marquee={true}
+          />
         </div>
       </Marquee>
 
@@ -45,34 +69,62 @@ export default function SkillsMarquee() {
         gradientColor="var(--lowcontrast2)"
       >
         <div className="mx-3">
-          <SkillCard imagePath="/skills/fastAPI.png" name="FastAPI" />
+          <SkillCard
+            imagePath="/skills/fastAPI.png"
+            name="FastAPI"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/mongo-db.png" name="MongoDB" />
+          <SkillCard
+            imagePath="/skills/mongo-db.png"
+            name="MongoDB"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/firebase.png" name="Firebase" />
+          <SkillCard
+            imagePath="/skills/firebase.png"
+            name="Firebase"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/mysql.png" name="MySQL" />
+          <SkillCard
+            imagePath="/skills/mysql.png"
+            name="MySQL"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/postgre.png" name="PostgreSQL" />
+          <SkillCard
+            imagePath="/skills/postgre.png"
+            name="PostgreSQL"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/github.png" name="GitHub" />
+          <SkillCard
+            imagePath="/skills/github.png"
+            name="GitHub"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/vite.png" name="Vite" />
+          <SkillCard imagePath="/skills/vite.png" name="Vite" marquee={true} />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/npm.png" name="npm" />
+          <SkillCard imagePath="/skills/npm.png" name="npm" marquee={true} />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/visualstudio.png" name="VSCode" />
+          <SkillCard
+            imagePath="/skills/visualstudio.png"
+            name="VSCode"
+            marquee={true}
+          />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/Jest.png" name="Jest" />
+          <SkillCard imagePath="/skills/Jest.png" name="Jest" marquee={true} />
         </div>
       </Marquee>
     </div>

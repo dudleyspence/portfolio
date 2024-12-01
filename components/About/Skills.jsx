@@ -9,7 +9,7 @@ export default function Skills({ t }) {
           <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
             {t("frontend")}
           </h4>
-          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-6">
+          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-2 md:gap-y-4">
             <SkillCard imagePath="/skills/html.png" name="HTML" />
             <SkillCard imagePath="/skills/css.png" name="CSS" />
             <SkillCard imagePath="/skills/javascript.png" name="JavaScript" />
@@ -23,7 +23,7 @@ export default function Skills({ t }) {
           <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
             {t("backend")}
           </h4>
-          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-6">
+          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-2 md:gap-y-4">
             <SkillCard imagePath="/skills/nodejs.png" name="Node.js" />
             <SkillCard imagePath="/skills/express.png" name="Express.js" />
             <SkillCard imagePath="/skills/fastAPI.png" name="FastAPI" />
@@ -34,7 +34,7 @@ export default function Skills({ t }) {
           <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
             {t("database")}
           </h4>
-          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-6">
+          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-2 md:gap-y-4">
             <SkillCard imagePath="/skills/mongo-db.png" name="MongoDB" />
             <SkillCard imagePath="/skills/firebase.png" name="Firebase" />
             <SkillCard imagePath="/skills/mysql.png" name="MySQL" />
@@ -46,12 +46,12 @@ export default function Skills({ t }) {
           <h4 className="mb-4 font-sans font-extrabold text-xl text-text">
             {t("additional_tools")}
           </h4>
-          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-6">
+          <div className="w-full flex flex-row flex-wrap gap-x-2 gap-y-2 md:gap-y-4">
             <SkillCard imagePath="/skills/github.png" name="GitHub" />
-            <SkillCard imagePath="/skills/vite.png" name="Vite" />
-            <SkillCard imagePath="/skills/npm.png" name="npm" />
             <SkillCard imagePath="/skills/visualstudio.png" name="VSCode" />
             <SkillCard imagePath="/skills/Jest.png" name="Jest" />
+            <SkillCard imagePath="/skills/vite.png" name="Vite" />
+            <SkillCard imagePath="/skills/npm.png" name="npm" />
           </div>
         </div>
       </div>
