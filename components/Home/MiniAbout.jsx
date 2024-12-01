@@ -8,7 +8,10 @@ export default function MiniAbout() {
   const t = useTranslations("homepage");
 
   return (
-    <div className="flex flex-col gap-10 justify-center items-center w-full">
+    <div
+      id="overview"
+      className="flex flex-col gap-10 justify-center items-center w-full"
+    >
       <p className="text-[25px] lg:text-[30px] text-foreground">
         {t("summary")}
       </p>

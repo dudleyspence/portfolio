@@ -8,8 +8,8 @@ export default function ThisPortfolio({ t }) {
   return (
     <div>
       <PageSubTitle title={t("this_portfolio")} />
-      <div className="w-full font-sans flex flex-row gap-10">
-        <div className="w-3/4">
+      <div className="w-full font-sans flex flex-col md:flex-row gap-10">
+        <div className="w-full md:w-1/2 xl:w-2/3">
           <div className="flex flex-row items-start gap-2 mb-5 ">
             <div className="flex flex-row justify-center items-center gap-2">
               <Link href="https://github.com/dudleyspence/portfolio">
@@ -48,7 +48,7 @@ export default function ThisPortfolio({ t }) {
         </div>
 
         <Link
-          className="w-1/4"
+          className="w-full lg:w-1/2 xl:w-1/3"
           href="https://old-portfolio-site-production.up.railway.app"
         >
           <figure className="relative w-full cursor-pointer shadow-xl rounded-xl hover:shadow-highcontrast">
