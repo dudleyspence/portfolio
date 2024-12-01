@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export function Northcoders({ t }) {
   return (
-    <div className="font-sans relative flex w-full max-w-[36rem] p-6 flex-col rounded-lg bg-lowcontrast2 min-h-[390px]">
+    <div className="font-sans relative flex w-full p-6 flex-col rounded-lg bg-lowcontrast2 h-full">
       <div className="relative bg-clip-border mt-4 rounded-lg overflow-hidden bg-transparent text-gray-700 shadow-none mx-0 flex items-center gap-4 pt-0 pb-6">
         <Image
           src="https://pbs.twimg.com/profile_images/1333392601450426370/x_DT51WI_400x400.jpg"
-          alt={t("northcoders.institution")}
+          alt={t("education.northcoders.institution")}
           width={58}
           height={58}
           className="relative inline-block rounded-lg object-cover object-center"
@@ -14,11 +14,11 @@ export function Northcoders({ t }) {
         <div className="flex gap-1 w-full flex-col">
           <div className="flex items-center justify-between">
             <h5 className="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-text">
-              {t("northcoders.course_title")}
+              {t("education.northcoders.course_title")}
             </h5>
           </div>
           <p className="block antialiased font-sans text-base font-light leading-relaxed text-text">
-            {t("northcoders.institution")}
+            {t("education.northcoders.institution")}
           </p>
         </div>
       </div>
@@ -52,37 +52,8 @@ export function Northcoders({ t }) {
               </g>
             </g>
           </svg>
-          {t("northcoders.duration")}
+          {t("education.northcoders.duration")}
         </div>
-
-        <p className="block antialiased font-sans text-base font-light leading-relaxed text-inherit">
-          {t("northcoders.description")}
-        </p>
-        <a
-          href="https://northcoders.com/our-courses/coding-bootcamp"
-          className="inline-block"
-        >
-          <button
-            variant="text"
-            className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-text hover:bg-highcontrast active:bg-gray-900/20 flex items-center gap-2"
-          >
-            {t("northcoders.learn_more")}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-              className="h-4 w-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </button>
-        </a>
       </div>
     </div>
   );

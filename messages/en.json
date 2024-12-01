@@ -19,39 +19,32 @@
     "introduction": "Hi, I'm Dudley Spence, a full-stack developer currently based in Paris, passionate about building elegant and intuitive applications while maintaining a strong focus on writing efficient and scalable code.",
     "portfolio_note": "My portfolio showcases a variety of projects that reflect my skills, dedication, and passion for continuous learning and improvement as a developer.",
     "reach_out": "Feel free to explore my work, and if you have any questions or would like to discuss building something great together, don’t hesitate to get in touch!",
-    "why_me": "Why me?",
+    "skills": "Whats in my toolkit?",
     "database": "Database",
     "frontend": "Frontend",
     "backend": "Backend",
-    "additional_tools": "Additional Tools"
-  },
-  "experience": {
-    "title": "Experience and Education",
-    "selftaught": {
-      "title": "Self Learning",
-      "institution": "University of Liverpool",
-      "duration": "Sept 2020 - Sept 2021",
-      "grade": "Distinction",
-      "description": "This intensive Master's course provided me with a foundational understanding of Computer Science, which now serves as the basis for all my current knowledge and experience.",
-      "learn_more": "Learn More"
-    },
+    "additional_tools": "Additional Tools",
+    "education": {
+      "title": "Education",
+      "selflearning": {
+        "title": "Self Learning",
+        "currentlylearning": "I am currently teaching myself:"
+      },
 
-    "liverpool": {
-      "course_title": "MSc Computer Science",
-      "institution": "University of Liverpool",
-      "duration": "Sept 2020 - Sept 2021",
-      "grade": "Distinction",
-      "description": "This intensive Master's course provided me with a foundational understanding of Computer Science, which now serves as the basis for all my current knowledge and experience.",
-      "learn_more": "Learn More"
-    },
-    "northcoders": {
-      "course_title": "Software Engineering Course",
-      "institution": "Northcoders",
-      "duration": "June 2024 - Sept 2024",
-      "description": "Gained full-stack development skills, working with front-end (HTML, CSS, React) and back-end (Node.js, Express) technologies, including SQL databases.",
-      "learn_more": "Learn More"
+      "liverpool": {
+        "course_title": "MSc Computer Science",
+        "institution": "University of Liverpool",
+        "duration": "Sept 2020 - Sept 2021",
+        "grade": "Distinction"
+      },
+      "northcoders": {
+        "course_title": "Software Engineering Course",
+        "institution": "Northcoders",
+        "duration": "June 2024 - Sept 2024"
+      }
     }
   },
+
   "projects": {
     "title": "Projects",
     "fullstack": "Full-stack",
@@ -70,7 +63,11 @@
     "original_portfolio_title": "Original Single-Page Portfolio Website",
     "original_portfolio_desc": "Although my current portfolio is built with Next.js, I value a solid foundation in web development. This original portfolio site, created with HTML, CSS, and JavaScript, showcases my ability to create responsive and user-friendly designs without relying on frameworks.",
     "view_site": "View Live Site",
-    "download_diss": "Download Dissertation"
+    "download_diss": "Download Dissertation",
+    "this_portfolio": "This portfolio",
+    "this_portfolio_desc_1": "This portfolio was originally built using vanilla HTML, CSS, and JavaScript. As my skills evolved, I decided to rebuild it with Next.js to fully leverage its optimisations, including Server-Side Rendering (SSR) and static rendering, both of which significantly enhance performance.",
+    "this_portfolio_desc_2": "To further expand its reach, I integrated next-intl to create an internationalised site that supports both English and French, ensuring a seamless experience for users in both languages.",
+    "oldportfolio_click": "Click to view the old portfolio"
   },
   "contact": {
     "email": "Email Address",

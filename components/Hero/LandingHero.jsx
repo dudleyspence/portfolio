@@ -69,16 +69,21 @@ export default function LandingHero({ t }) {
             </svg>
           </a>
 
-          <a
-            href="mailto:dudleyspence5@gmail.com"
-            className="text-foreground-color"
-          >
+          <a href="mailto:dudleyspence5@gmail.com">
             <svg
-              className="fill-current h-[30px] w-[30px] cursor-pointer hover:fill-buttonGreen hover:scale-110 duration-100 ease-in"
-              viewBox="0 0 512 512"
+              id="emailIcon"
+              className="h-[30px] w-[30px] fill-foreground hover:scale-110 hover:fill-buttonGreen"
+              viewBox="0 0 1920 1920"
+              width="100%"
+              height="100%"
+              xmlSpace="preserve"
               xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              <path d="M189.547,324.346l87.616,176.304l223.917-490L11.137,245.793L189.547,324.346z M194.754,305.243  l-136.77-60.216L433.599,64.761L194.754,305.243z M276.436,455.383l-67.787-136.416L449.62,76.36L276.436,455.383z" />
+              <path
+                d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z"
+                fillRule="evenodd"
+              />
             </svg>
           </a>
         </div>
