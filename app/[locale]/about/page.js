@@ -15,7 +15,7 @@ export default function Page() {
       <PageTitle title={t("title")} />
       <AboutMe t={t} />
 
-      <PageSubTitle title={"Whats my stack?"} />
+      <PageSubTitle title={t("skills")} />
       <Skills t={t} />
       <PageSubTitle title={t("education.title")} />
       <Education t={t} />

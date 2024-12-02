@@ -19,7 +19,7 @@
     "introduction": "Hi, I'm Dudley Spence, a full-stack developer currently based in Paris, passionate about building elegant and intuitive applications while maintaining a strong focus on writing efficient and scalable code.",
     "portfolio_note": "My portfolio showcases a variety of projects that reflect my skills, dedication, and passion for continuous learning and improvement as a developer.",
     "reach_out": "Feel free to explore my work, and if you have any questions or would like to discuss building something great together, don’t hesitate to get in touch!",
-    "skills": "Whats in my toolkit?",
+    "skills": "Whats my stack?",
     "database": "Database",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -74,6 +74,7 @@
     "fullname": "Full Name",
     "message": "Message",
     "title": "Lets Connect!",
+    "title_2": "Feel free to contact me if you have any questions or just want to say hi.",
     "send": "Send"
   }
 }
