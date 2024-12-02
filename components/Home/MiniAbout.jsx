@@ -19,7 +19,7 @@ export default function MiniAbout() {
         <MyLocation />
         <Learning />
         <div className="col-span-1 md:col-span-2 xl:col-span-1">
-          <StackBlock />
+          <StackBlock t={t} />
         </div>
       </div>
     </div>

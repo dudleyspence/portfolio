@@ -11,7 +11,9 @@
   },
   "homepage": {
     "selectedprojects": "Projets sélectionnés",
-    "summary": "Résumé rapide"
+    "summary": "Résumé rapide",
+    "current_focus": "Sur quoi suis-je actuellement concentré?",
+    "stack": "Ma Stack"
   },
   "about": {
     "title": "À propos",
