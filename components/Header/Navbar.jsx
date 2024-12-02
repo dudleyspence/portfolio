@@ -86,7 +86,7 @@ export function BasicNavbar({ locale }) {
 
         <div className="h-full hidden lg:flex items-center gap-6">
           {navList}
-          <a href="/dudley-spence-cv.pdf" download>
+          <a href="/Docs/dudley-spence-cv.pdf" download>
             <Button
               size="sm"
               className="bg-buttonGreen text-white flex items-center justify-center gap-2 rounded-lg !h-[38px]"

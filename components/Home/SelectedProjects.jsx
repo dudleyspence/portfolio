@@ -23,7 +23,7 @@ export default function SelectedProjects() {
         {tHome("selectedprojects")}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 w-full">
-        <Link href={project1.siteLink}>
+        <Link href={project1.siteLink} target="_blank">
           <figure className="relative w-full cursor-pointer shadow-xl rounded-xl hover:shadow-highcontrast">
             <DynamicBlurImage
               imagePath={project1ImagePath}
@@ -36,7 +36,7 @@ export default function SelectedProjects() {
             </figcaption>
           </figure>
         </Link>
-        <Link href={project2.siteLink}>
+        <Link href={project2.siteLink} target="_blank">
           <figure className="relative w-full cursor-pointer shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
             <DynamicBlurImage
               imagePath={project2ImagePath}

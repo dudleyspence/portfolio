@@ -1,14 +1,11 @@
-"use client";
-import { Typography } from "@material-tailwind/react";
 import Socials from "./Socials";
+import Copyright from "./Copyright";
 
 export function Footer() {
   return (
     <footer className="my-5">
       <Socials />
-      <Typography className=" text-center mt-5 text-foreground">
-        &copy; 2024 Dudley Spence. All rights reserved.
-      </Typography>
+      <Copyright />
     </footer>
   );
 }

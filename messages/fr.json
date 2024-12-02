@@ -75,7 +75,8 @@
     "fullname": "Nom - Prénom",
     "message": "Message",
     "title": "Connectons-nous!",
-    "title_2": "N'hésitez pas à me contacter si vous avez des questions ou si vous voulez simplement dire bonjour.",
+    "title_2": "N'hésitez pas à me contacter si vous avez des questions ou si vous voulez simplement dire bonjour ",
+    "reach_out": "Vous pouvez me joindre par email, sur mes réseaux sociaux, ou en utilisant le formulaire de contact.",
     "send": "Envoyer"
   }
 }

@@ -3,7 +3,7 @@ import React from "react";
 export default function Socials() {
   return (
     <div className="flex justify-center items-center gap-7 ">
-      <a href="https://github.com/dudleyspence">
+      <a href="https://github.com/dudleyspence" target="_blank">
         <svg
           id="githubIcon"
           viewBox="0 0 100 100"
@@ -17,7 +17,7 @@ export default function Socials() {
           />
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/dudleyspence">
+      <a href="https://www.linkedin.com/in/dudleyspence" target="_blank">
         <svg
           id="linkedinIcon"
           className="fill-foreground h-8 w-8 cursor-pointer hover:scale-110 hover:fill-buttonGreen"
@@ -49,7 +49,7 @@ export default function Socials() {
           </g>
         </svg>
       </a>
-      <a href="https://www.instagram.com/dudleyspence/">
+      <a href="https://www.instagram.com/dudleyspence/" target="_blank">
         <svg
           id="instagramIcon"
           className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"
@@ -67,7 +67,7 @@ export default function Socials() {
           </g>
         </svg>
       </a>
-      <a href="mailto:dudleyspence5@gmail.com">
+      <a href="mailto:dudleyspence5@gmail.com" target="_blank">
         <svg
           id="emailIcon"
           className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"

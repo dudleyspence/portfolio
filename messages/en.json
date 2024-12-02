@@ -75,8 +75,9 @@
     "email": "Email Address",
     "fullname": "Full Name",
     "message": "Message",
-    "title": "Lets Connect!",
-    "title_2": "Feel free to contact me if you have any questions or just want to say hi.",
+    "title": "Let's Connect!",
+    "title_2": "Feel free to contact me if you have any questions or just want to say hi ",
+    "reach_out": "You can contact me via email, on my social media, or by using the contact form.",
     "send": "Send"
   }
 }

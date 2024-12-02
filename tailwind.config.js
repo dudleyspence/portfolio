@@ -23,8 +23,8 @@ module.exports = withMT({
         lowcontrast2: "var(--lowcontrast2)",
         lowcontrast3: "var(--lowcontrast3)",
         lowcontrast4: "var(--lowcontrast4)",
-
         highcontrast: "var(--highcontrast)",
+        marqueeFade: "var(--marqueeFade)",
       },
     },
   },
