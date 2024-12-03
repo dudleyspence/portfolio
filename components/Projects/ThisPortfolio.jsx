@@ -48,7 +48,7 @@ export default function ThisPortfolio({ t }) {
         </div>
 
         <Link
-          className="w-full lg:w-1/2 xl:w-1/3"
+          className="w-full md:w-1/2 xl:w-1/3"
           href="https://old-portfolio-site-production.up.railway.app"
         >
           <figure className="relative w-full cursor-pointer shadow-xl rounded-xl hover:shadow-highcontrast">
