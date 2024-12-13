@@ -22,11 +22,13 @@ export default function LandingHero({ t }) {
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground-color"
+            aria-label="Visit Dudley Spence's GitHub profile"
           >
             <svg
               className="fill-foreground h-[30px] w-[30px] cursor-pointer  hover:fill-buttonGreen hover:scale-110 duration-100 ease-in"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <path
                 fillRule="evenodd"
@@ -36,12 +38,17 @@ export default function LandingHero({ t }) {
             </svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/dudleyspence" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/dudleyspence"
+            target="_blank"
+            aria-label="Visit Dudley Spence's LinkedIn profile"
+          >
             <svg
               id="linkedinIcon"
               className="fill-foreground h-[30px] w-[30px] cursor-pointer  hover:fill-buttonGreen hover:scale-110 duration-100 ease-in"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g>
                 <circle
@@ -69,7 +76,11 @@ export default function LandingHero({ t }) {
             </svg>
           </a>
 
-          <a href="mailto:dudleyspence5@gmail.com" target="_blank">
+          <a
+            href="mailto:dudleyspence5@gmail.com"
+            target="_blank"
+            aria-label="Email Dudley Spence"
+          >
             <svg
               id="emailIcon"
               className="h-[30px] w-[30px] fill-foreground hover:scale-110 hover:fill-buttonGreen"
@@ -79,6 +90,7 @@ export default function LandingHero({ t }) {
               xmlSpace="preserve"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
             >
               <path
                 d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z"

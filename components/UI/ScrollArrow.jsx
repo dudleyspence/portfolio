@@ -21,7 +21,11 @@ export default function ScrollArrow() {
   }, []);
 
   return (
-    <a className="cursor-pointer" href="#overview">
+    <a
+      className="cursor-pointer"
+      href="#overview"
+      aria-label="Scroll to overview section"
+    >
       <svg
         className={`fill-foreground h-8 w-8 md:h-10 md:w-10 xl:h-12 xl:w-12 animate-bounce transition-opacity duration-300 ${
           isVisible ? "opacity-100" : "opacity-0"

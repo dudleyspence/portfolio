@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { generateBlurDataUrl } from "@/utils/BlurImageURL";
 
-export default function DynamicBlurImage({ imagePath, blurHash }) {
+export default function DynamicBlurImage({ imagePath, blurHash, alt }) {
   const [loading, setLoading] = useState(true);
   const [blurredImage, setBlurredImage] = useState(null);
 
@@ -18,8 +18,8 @@ export default function DynamicBlurImage({ imagePath, blurHash }) {
 
   return (
     <Image
+      alt={alt}
       src={imagePath}
-      alt="Project 1"
       className={`object-cover rounded-lg shadow-lg !static ${
         loading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
       }`}

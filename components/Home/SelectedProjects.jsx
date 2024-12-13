@@ -23,11 +23,16 @@ export default function SelectedProjects() {
         {tHome("selectedprojects")}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 w-full">
-        <Link href={project1.siteLink} target="_blank">
+        <Link
+          href={project1.siteLink}
+          target="_blank"
+          aria-label={`Link to live site of ${t(project1.title)}`}
+        >
           <figure className="relative w-full cursor-pointer shadow-xl rounded-xl hover:shadow-highcontrast">
             <DynamicBlurImage
               imagePath={project1ImagePath}
               blurHash={project1ImageBlur}
+              alt={`${t(project1.title)} Image`}
             />
             <figcaption className="absolute bottom-3 left-2/4 flex  w-[60%] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-3 px-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
               <h5 className="text-md font-medium text-black">
@@ -36,11 +41,16 @@ export default function SelectedProjects() {
             </figcaption>
           </figure>
         </Link>
-        <Link href={project2.siteLink} target="_blank">
+        <Link
+          href={project2.siteLink}
+          target="_blank"
+          aria-label={`Link to live site of ${t(project2.title)}`}
+        >
           <figure className="relative w-full cursor-pointer shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
             <DynamicBlurImage
               imagePath={project2ImagePath}
               blurHash={project2ImageBlur}
+              alt={`${t(project2.title)} Image`}
             />
             <figcaption className="absolute bottom-3 left-2/4 flex  w-[60%] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-3 px-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
               <h5 className="text-md font-medium text-black">

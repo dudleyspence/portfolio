@@ -40,7 +40,7 @@ export default function Project({
           loading={isPriority ? "eager" : "lazy"}
           priority={isPriority}
           fill
-          onLoadingComplete={handleImageLoad}
+          onLoad={handleImageLoad}
           style={{
             transition: "filter 700ms ease, transform 150ms ease",
           }}
@@ -59,11 +59,17 @@ export default function Project({
           <div className="flex flex-row items-start gap-2 mb-2 ">
             <div className="flex flex-row justify-center items-center gap-2">
               {githubF && (
-                <a href={githubF} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={githubF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`link to the github frontend repo for ${title}`}
+                >
                   <svg
                     className="fill-text h-[25px] w-[25px] cursor-pointer"
                     viewBox="0 0 100 100"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
                     <path
                       fillRule="evenodd"
@@ -93,11 +99,17 @@ export default function Project({
           <div className="flex flex-row items-start gap-2 mb-2 ">
             <div className="flex flex-row justify-center items-center gap-2">
               {githubB && (
-                <a href={githubB} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={githubB}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`link to the github backend repo for ${title}`}
+                >
                   <svg
                     className="fill-text h-[25px] w-[25px] cursor-pointer"
                     viewBox="0 0 100 100"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                   >
                     <path
                       fillRule="evenodd"
@@ -153,7 +165,11 @@ export default function Project({
             </button>
           </a>
         ) : (
-          <a href={siteLink} className="inline-block">
+          <a
+            href={siteLink}
+            aria-label={`link to live site for ${title}`}
+            className="inline-block"
+          >
             <button
               variant="text"
               className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-text hover:bg-highcontrast active:bg-gray-900/20 flex items-center gap-2"

@@ -30,12 +30,13 @@ export function BasicNavbar({ locale }) {
   };
 
   const navList = (
-    <ul className="mt-2 h-full lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <div className="mt-2 h-full lg:mr-4 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Link href={`/${locale}/`} onClick={closeNav}>
         <Typography
           as="li"
           variant="large"
-          className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
+          className="h-full p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] ease-in"
+          aria-label={t("nav_home")}
         >
           {t("nav_home")}
         </Typography>
@@ -45,30 +46,35 @@ export function BasicNavbar({ locale }) {
         <Typography
           as="li"
           variant="large"
-          className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
+          className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] ease-in"
+          aria-label={t("nav_about")}
         >
           {t("nav_about")}
         </Typography>
       </Link>
+
       <Link href={`/${locale}/projects`} onClick={closeNav}>
         <Typography
           as="li"
           variant="large"
-          className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem]  ease-in"
+          className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] ease-in"
+          aria-label={t("nav_projects")}
         >
           {t("nav_projects")}
         </Typography>
       </Link>
+
       <Link href={`/${locale}/contact`} onClick={closeNav}>
         <Typography
           as="li"
           variant="large"
           className="p-1 font-normal text-text text-md lg:text-lg cursor-pointer hover:text-orange hover:underline hover:underline-offset-[0.7rem] ease-in"
+          aria-label={t("nav_contact")}
         >
           {t("nav_contact")}
         </Typography>
       </Link>
-    </ul>
+    </div>
   );
 
   return (
@@ -86,10 +92,15 @@ export function BasicNavbar({ locale }) {
 
         <div className="h-full hidden lg:flex items-center gap-6">
           {navList}
-          <a href="/Docs/dudley-spence-cv.pdf" download>
+          <a
+            href="/Docs/dudley-spence-cv.pdf"
+            aria-label="Download CV"
+            download
+          >
             <Button
               size="sm"
-              className="bg-buttonGreen text-white flex items-center justify-center gap-2 rounded-lg !h-[38px]"
+              className="bg-buttonGreen text-black flex items-center justify-center gap-2 rounded-lg !h-[38px]"
+              aria-label="Download Dudley Spence's CV"
             >
               <span>{t("nav_resume")}</span>
             </Button>
@@ -107,6 +118,7 @@ export function BasicNavbar({ locale }) {
             className="ml-auto h-6 w-6 text-text hover:bg-transparent focus:bg-transparent active:bg-transparent"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
+            aria-label="Toggle navigation menu"
           >
             {openNav ? (
               <svg

@@ -11,6 +11,8 @@ export default function SkillsMarquee() {
         speed={25}
         gradientWidth={60}
         gradientColor="var(--marqueeFade)"
+        aria-label="Skills carousel, cycling through skill cards"
+        aria-live="polite"
       >
         <div className="mx-3">
           <SkillCard imagePath="/skills/html.png" name="HTML" marquee={true} />

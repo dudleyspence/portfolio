@@ -3,12 +3,17 @@ import React from "react";
 export default function Socials() {
   return (
     <div className="flex justify-center items-center gap-7 ">
-      <a href="https://github.com/dudleyspence" target="_blank">
+      <a
+        href="https://github.com/dudleyspence"
+        target="_blank"
+        aria-label="Visit Dudley Spence's GitHub profile"
+      >
         <svg
           id="githubIcon"
           viewBox="0 0 100 100"
           className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"
           xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
         >
           <path
             fillRule="evenodd"
@@ -17,12 +22,17 @@ export default function Socials() {
           />
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/dudleyspence" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/dudleyspence"
+        target="_blank"
+        aria-label="Visit Dudley Spence's LinkedIn profile"
+      >
         <svg
           id="linkedinIcon"
           className="fill-foreground h-8 w-8 cursor-pointer hover:scale-110 hover:fill-buttonGreen"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
         >
           <g>
             <circle
@@ -49,7 +59,11 @@ export default function Socials() {
           </g>
         </svg>
       </a>
-      <a href="https://www.instagram.com/dudleyspence/" target="_blank">
+      <a
+        href="https://www.instagram.com/dudleyspence/"
+        target="_blank"
+        aria-label="Visit Dudley Spence's Instagram profile"
+      >
         <svg
           id="instagramIcon"
           className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"
@@ -59,6 +73,7 @@ export default function Socials() {
           xmlSpace="preserve"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
+          aria-hidden="true"
         >
           <g>
             <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7 c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
@@ -67,7 +82,11 @@ export default function Socials() {
           </g>
         </svg>
       </a>
-      <a href="mailto:dudleyspence5@gmail.com" target="_blank">
+      <a
+        href="mailto:dudleyspence5@gmail.com"
+        target="_blank"
+        aria-label="Email Dudley Spence"
+      >
         <svg
           id="emailIcon"
           className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"
@@ -77,6 +96,7 @@ export default function Socials() {
           xmlSpace="preserve"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
+          aria-hidden="true"
         >
           <path
             d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z"

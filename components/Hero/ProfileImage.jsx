@@ -7,7 +7,7 @@ export default function ProfileImage() {
     <div className="relative w-72 h-72 lg:w-[400px] lg:h-[400px] overflow-hidden rounded-full bg-backgroundColor">
       <Image
         src={profileImg}
-        alt="Profile"
+        alt="Dudley Spence Profile Image"
         fill
         priority
         sizes="(max-width: 1080px) 288px, 400px"

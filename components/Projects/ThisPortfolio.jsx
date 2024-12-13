@@ -12,7 +12,10 @@ export default function ThisPortfolio({ t }) {
         <div className="w-full md:w-1/2 xl:w-2/3">
           <div className="flex flex-row items-start gap-2 mb-5 ">
             <div className="flex flex-row justify-center items-center gap-2">
-              <Link href="https://github.com/dudleyspence/portfolio">
+              <Link
+                href="https://github.com/dudleyspence/portfolio"
+                aria-label="link to the github repo for this site"
+              >
                 <svg
                   className="fill-text h-[25px] w-[25px] cursor-pointer"
                   viewBox="0 0 100 100"

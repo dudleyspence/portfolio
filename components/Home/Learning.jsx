@@ -12,7 +12,7 @@ export default function Learning() {
       <div className="w-full cursor-pointer h-full flex flex-col gap-7 justify-start items-start rounded-xl shadow-xl p-6 bg-buttonGreen hover:shadow-highcontrast">
         <div className="flex flex-row justify-center items-center gap-4">
           <svg
-            className="fill-foreground h-9 w-9"
+            className="fill-[#2c2e42] h-9 w-9"
             version="1.1"
             id="Capa_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function Learning() {
               </g>
             </g>
           </svg>
-          <p className="text-[25px] self-start text-foreground">
+          <p className="text-[25px] self-start text-[#2c2e42]">
             {t("education.title")}
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function Learning() {
             height={40}
             className="relative inline-block rounded-lg object-cover object-center"
           />
-          <h5 className="text-md font-medium text-foreground">
+          <h5 className="text-md font-medium text-[#2c2e42]">
             {t("education.liverpool.institution")}
           </h5>
         </div>
@@ -63,7 +63,7 @@ export default function Learning() {
             height={40}
             className="relative inline-block rounded-lg object-cover object-center"
           />
-          <h5 className="text-md font-medium text-foreground">
+          <h5 className="text-md font-medium text-[#2c2e42]">
             {t("education.northcoders.institution")}
           </h5>
         </div>
@@ -75,7 +75,7 @@ export default function Learning() {
             height={40}
             className="relative inline-block rounded-lg object-cover object-center"
           />
-          <h5 className="text-md font-medium text-foreground">
+          <h5 className="text-md font-medium text-[#2c2e42]">
             {t("education.selflearning.title")}
           </h5>
         </div>
