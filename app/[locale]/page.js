@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer/Footer";
 import ScrollArrow from "@/components/UI/ScrollArrow";
 import fetchLighthouseStats from "@/utils/fetchLighthouseStats";
 
-export function getStaticProps() {
+export function generateStaticParams() {
   return fetchLighthouseStats("https://www.dudleyspence.com/en").then(
     (stats) => {
       return {
@@ -19,7 +19,8 @@ export function getStaticProps() {
   );
 }
 
-export default function Home({ stats }) {
+export default function Home({ params }) {
+  console.log(params);
   const t = useTranslations("common");
 
   return (
