@@ -77,7 +77,7 @@ export default function LandingHero({ t }) {
           </a>
 
           <a
-            href="mailto:dudleyspence5@gmail.com"
+            href="mailto:dudley@dudleyspence.com"
             target="_blank"
             aria-label="Email Dudley Spence"
           >

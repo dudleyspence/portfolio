@@ -9,7 +9,7 @@ export default function ReachOut({ t }) {
         </p>
         <a
           className="flex flex-row items-center text-foreground gap-3 fill-foreground hover:fill-orange hover:text-orange"
-          href="mailto:dudleyspence5@gmail.com"
+          href="mailto:dudley@dudleyspence.com"
           target="_blank"
         >
           <svg
@@ -28,7 +28,7 @@ export default function ReachOut({ t }) {
             />
           </svg>
           <p className="font-sans font-bold text-inherit ">
-            dudleyspence5@gmail.com
+            dudley@dudleyspence.com
           </p>
         </a>
         <a
