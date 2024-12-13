@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function LighthouseStats({ stats }) {
-  console.log(stats);
   return (
     <div className="text-center text-sm text-gray-400 mt-4">
       <h4 className="font-bold text-gray-300 mb-2">Page Lighthouse Stats</h4>

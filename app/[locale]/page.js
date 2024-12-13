@@ -4,23 +4,8 @@ import LandingHero from "@/components/Hero/LandingHero";
 import Overview from "@/components/Home/Overview";
 import { Footer } from "@/components/Footer/Footer";
 import ScrollArrow from "@/components/UI/ScrollArrow";
-import fetchLighthouseStats from "@/utils/fetchLighthouseStats";
 
-export function generateStaticParams() {
-  return fetchLighthouseStats("https://www.dudleyspence.com/en").then(
-    (stats) => {
-      return {
-        props: {
-          stats,
-        },
-        revalidate: 3600, // 1 hour
-      };
-    }
-  );
-}
-
-export default function Home({ params }) {
-  console.log(params);
+export default function Home() {
   const t = useTranslations("common");
 
   return (
@@ -30,7 +15,7 @@ export default function Home({ params }) {
       </div>
       <LandingHero t={t} />
       <Overview />
-      <Footer stats={stats} />
+      <Footer url={"https://www.dudleyspence.com/en"} />
     </div>
   );
 }

@@ -2,10 +2,17 @@ import Socials from "./Socials";
 import Copyright from "./Copyright";
 import LightHouseStats from "./LightHouseStats";
 
-export function Footer({ stats }) {
+export async function Footer({ url }) {
+  const stats = await fetchLighthouseStats(url);
+
   return (
     <footer className="my-5">
-      <LightHouseStats stats={stats} />
+      {stats ? (
+        <LightHouseStats stats={stats} />
+      ) : (
+        "Fetching lighthouse Stats..."
+      )}
+
       <Socials />
       <Copyright />
     </footer>
