@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <LandingHero t={t} />
       <Overview />
-      <Footer url={"https://www.dudleyspence.com/en"} />
+      <Footer />
     </div>
   );
 }

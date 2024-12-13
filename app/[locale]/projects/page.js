@@ -35,7 +35,7 @@ export default function Page() {
         );
       })}
       <ThisPortfolio t={t} />
-      <Footer url={"https://www.dudleyspence.com/en/projects"} />
+      <Footer />
     </div>
   );
 }
