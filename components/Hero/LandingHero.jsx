@@ -36,7 +36,7 @@ export default function LandingHero({ t }) {
             </svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/dudleyspence">
+          <a href="https://www.linkedin.com/in/dudleyspence" target="_blank">
             <svg
               id="linkedinIcon"
               className="fill-foreground h-[30px] w-[30px] cursor-pointer  hover:fill-buttonGreen hover:scale-110 duration-100 ease-in"
@@ -69,7 +69,7 @@ export default function LandingHero({ t }) {
             </svg>
           </a>
 
-          <a href="mailto:dudleyspence5@gmail.com">
+          <a href="mailto:dudleyspence5@gmail.com" target="_blank">
             <svg
               id="emailIcon"
               className="h-[30px] w-[30px] fill-foreground hover:scale-110 hover:fill-buttonGreen"
