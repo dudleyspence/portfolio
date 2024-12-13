@@ -4,8 +4,22 @@ import LandingHero from "@/components/Hero/LandingHero";
 import Overview from "@/components/Home/Overview";
 import { Footer } from "@/components/Footer/Footer";
 import ScrollArrow from "@/components/UI/ScrollArrow";
+import fetchLighthouseStats from "@/utils/fetchLighthouseStats";
 
-export default function Home() {
+export function getStaticProps() {
+  return fetchLighthouseStats("https://www.dudleyspence.com/en").then(
+    (stats) => {
+      return {
+        props: {
+          stats,
+        },
+        revalidate: 3600, // 1 hour
+      };
+    }
+  );
+}
+
+export default function Home({ stats }) {
   const t = useTranslations("common");
 
   return (
@@ -15,7 +29,7 @@ export default function Home() {
       </div>
       <LandingHero t={t} />
       <Overview />
-      <Footer />
+      <Footer stats={stats} />
     </div>
   );
 }

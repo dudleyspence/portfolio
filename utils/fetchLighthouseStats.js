@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default function fetchLighthouseStats(url) {
-  const apiKey = "YOUR_API_KEY";
+  const apiKey = "AIzaSyBH5xT6GO9kcAK1r5_aeP20_IvXBqvqUfM";
 
   return axios
     .get(
