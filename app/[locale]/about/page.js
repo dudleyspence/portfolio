@@ -19,7 +19,7 @@ export default function Page() {
       <Skills t={t} />
       <PageSubTitle title={t("education.title")} />
       <Education t={t} />
-      <Footer />
+      <Footer url={"https://www.dudleyspence.com/en/about"} />
     </div>
   );
 }
