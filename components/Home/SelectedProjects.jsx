@@ -5,8 +5,8 @@ import DynamicBlurImage from "../UI/DynamicBlurImage";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-const project1 = projects[1];
-const project2 = projects[3];
+const project1 = projects[0];
+const project2 = projects[2];
 
 const project1ImagePath = project1.image;
 const project1ImageBlur = project1.blurHash;
