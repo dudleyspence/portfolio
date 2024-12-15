@@ -159,7 +159,11 @@ export function BasicNavbar({ locale }) {
         <div className="flex flex-col justify-center gap-3 mb-3 items-center px-4 py-2">
           {navList}
 
-          <a href="/dudley-spence-cv.pdf" download className="w-full">
+          <a
+            href="/Docs/dudley-spence-cv.pdf"
+            aria-label="Download CV"
+            download
+          >
             <Button
               size="sm"
               className="bg-buttonGreen text-white flex items-center justify-center gap-2 rounded-lg h-10 lg:h-12 my-1 w-full"
