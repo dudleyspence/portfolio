@@ -14,7 +14,11 @@ export function generateStaticParams() {
 export const metadata = {
   title: "Dudley Spence",
   description: "Portfolio Website",
-  image: "profile.png",
+  image: "/Brand/profile.png",
+  icons: {
+    icon: "../favicon.ico",
+    apple: "/Brand/IphoneAppIcon.png",
+  },
 };
 
 export default async function RootLayout({ children, params }) {
