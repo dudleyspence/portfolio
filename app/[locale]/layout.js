@@ -54,6 +54,7 @@ export default async function RootLayout({ children, params }) {
               <BasicNavbar locale={locale} />
               <div className="w-full max-w-[85vw] lg:max-w-[80vw]">
                 {children}
+                <SpeedInsights />
               </div>
             </main>
           </NextIntlClientProvider>
