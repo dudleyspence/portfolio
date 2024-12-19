@@ -1,6 +1,7 @@
 import "./globals.css";
 import { BasicNavbar } from "@/components/Header/Navbar";
 import ThemeProvider from "@/components/contexts/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
