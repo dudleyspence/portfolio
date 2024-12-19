@@ -6,6 +6,20 @@ import { getMessages } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/routing";
+import { Poppins, Archivo_Black } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const archivoBlack = Archivo_Black({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -33,7 +47,7 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html className="scroll-smooth" lang={locale} suppressHydrationWarning>
-      <body>
+      <body className={archivoBlack.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>
             <main className="flex flex-col items-center min-h-screen min-w-screen">

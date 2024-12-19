@@ -1,41 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import url("https://fonts.cdnfonts.com/css/tabarra-black");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* styles/globals.css */
-/* 
-:root {
-  --background: #f4f1de;
-  --foreground: #3d405b;
-  --dudleyOrange: #e07a5f;
-  --text: black;
-  --lowcontrast: #c8e6c9;
-  --lowcontrast2: rgb(46 125 50 / 0.1);
-  --lowcontrast3: rgba(244, 241, 222, 0.93);
-  --lowcontrast4: #fbfaf3b0;
-  --highcontrast: #2121212f;
-  --marqueeFade: rgb(226, 229, 207);
-} 
-  
-
-.dark {
-  --background: rgb(61, 64, 91);
-  --foreground: #f4f1de;
-  --dudleyOrange: #e07a5f;
-  --text: white;
-  --lowcontrast: #90a4ae;
-  --lowcontrast2: rgb(250 250 250 / 0.1);
-  --lowcontrast3: rgba(61, 64, 91, 0.93);
-  --lowcontrast4: rgb(250 250 250 / 0.1);
-  --highcontrast: #f5f5f530;
-  --marqueeFade: rgb(82, 84, 106);
-}
-
-*/
 
 :root {
   --background: #f6f3e3;
@@ -66,7 +31,7 @@
 body {
   color: var(--text);
   background: var(--background);
-  font-family: "Tabarra Black", sans-serif;
+  font-family: sans-serif;
   font-weight: 200;
   font-style: light;
   min-height: 100vh;
