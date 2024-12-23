@@ -78,7 +78,6 @@ export default function LandingHero({ t }) {
 
           <a
             href="mailto:dudley@dudleyspence.com"
-            target="_blank"
             aria-label="Email Dudley Spence"
           >
             <svg

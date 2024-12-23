@@ -82,11 +82,7 @@ export default function Socials() {
           </g>
         </svg>
       </a>
-      <a
-        href="mailto:dudley@dudleyspence.com"
-        target="_blank"
-        aria-label="Email Dudley Spence"
-      >
+      <a href="mailto:dudley@dudleyspence.com" aria-label="Email Dudley Spence">
         <svg
           id="emailIcon"
           className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen"
