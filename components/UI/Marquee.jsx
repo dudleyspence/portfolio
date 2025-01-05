@@ -22,6 +22,13 @@ export default function SkillsMarquee() {
         </div>
         <div className="mx-3">
           <SkillCard
+            imagePath="/skills/react-query.png"
+            name="React Query"
+            marquee={true}
+          />
+        </div>
+        <div className="mx-3">
+          <SkillCard
             imagePath="/skills/javascript.png"
             name="JavaScript"
             marquee={true}

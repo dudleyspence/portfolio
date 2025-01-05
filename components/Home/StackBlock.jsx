@@ -27,8 +27,8 @@ export default function StackBlock({ t }) {
           marquee={true}
         />
         <SkillCard
-          imagePath="/skills/mongo-db.png"
-          name="MongoDB"
+          imagePath="/skills/react-query.png"
+          name="react-query"
           marquee={true}
         />
       </div>
