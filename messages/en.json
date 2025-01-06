@@ -57,7 +57,7 @@
     "french_language_title": "French Language Application",
     "french_language_desc": "This simple application serves as a vocabulary storage tool to remember new French nouns and verbs. It includes features such as search, verb conjugation tables, and tables of gendered prepositions.",
     "trailtalk_title": "TrailTalk",
-    "trailtalk_desc": "TrailTalk is a Reddit-style social media and blogging platform tailored for hikers to connect and stay informed about relevant news. The platform offers a smooth authentication login experience, a user-friendly drag-and-drop feature for uploading images, and a feature-rich text editor for creating articles with custom styling. Users can upload, view, and comment on posts, vote on posts and comments, and sort posts by topic or organize them by date, votes, and the number of comments.",
+    "trailtalk_desc": "TrailTalk is a Reddit-style social media and blogging platform tailored for hikers to connect and stay informed about relevant news. The platform offers a smooth authentication login experience, a user-friendly drag-and-drop feature for uploading images, and a feature-rich text editor for creating articles with custom styling. Users can upload, view, and comment on posts, vote on posts and comments, and sort posts by topic or organise them by date, votes, and the number of comments.",
     "travelsync_title": "TravelSync",
     "travelsync_desc": "A web application that facilitates collaborative planning of group itineraries. With features such as map-based location searches, an interactive itinerary list, document storage, and details about locations.",
     "n_puzzle_title": "Solving the N-Puzzle with Deep Reinforcement Learning",
