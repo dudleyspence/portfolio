@@ -1,6 +1,7 @@
 import React from "react";
 import SkillsMarquee from "../UI/Marquee";
 import SkillCard from "../About/SkillCard";
+import CurrentlyLearning from "../About/CurrentlyLearning";
 
 export default function StackBlock({ t }) {
   return (
@@ -20,18 +21,7 @@ export default function StackBlock({ t }) {
       <p className="text-[18px] self-start text-foreground">
         {t("current_focus")}
       </p>
-      <div className="w-full flex flex-row gap-5 items-start">
-        <SkillCard
-          imagePath="/skills/nextjs.png"
-          name="Next.js"
-          marquee={true}
-        />
-        <SkillCard
-          imagePath="/skills/typescript.png"
-          name="TypeScript"
-          marquee={true}
-        />
-      </div>
+      <CurrentlyLearning marquee={true} />
     </div>
   );
 }

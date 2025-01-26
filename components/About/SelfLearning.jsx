@@ -1,8 +1,9 @@
 import Image from "next/image";
 import SkillCard from "./SkillCard";
+import CurrentlyLearning from "./CurrentlyLearning";
 
 const skill2 = (
-  <SkillCard imagePath="/skills/mongo-db.png" name="MongoDB" marquee={false} />
+  <SkillCard imagePath="/skills/mongo-db.png" name="" marquee={false} />
 );
 const skill1 = (
   <SkillCard imagePath="/skills/nextjs.png" name="Next.js" marquee={false} />
@@ -31,10 +32,7 @@ export function SelfLearning({ t }) {
         </div>
       </div>
 
-      <div className=" flex flex-row gap-4 mt-3">
-        {skill1}
-        {skill2}
-      </div>
+      <CurrentlyLearning marquee={false} />
     </div>
   );
 }
