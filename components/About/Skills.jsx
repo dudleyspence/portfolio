@@ -16,6 +16,7 @@ export default function Skills({ t }) {
             <SkillCard imagePath="/skills/react.png" name="React" />
             <SkillCard imagePath="/skills/nextjs.png" name="Next.js" />
             <SkillCard imagePath="/skills/tailwind.png" name="TailwindCSS" />
+            <SkillCard imagePath="/skills/typescript.png" name="TypeScript"/>
           </div>
         </div>
 
@@ -52,6 +53,7 @@ export default function Skills({ t }) {
             <SkillCard imagePath="/skills/Jest.png" name="Jest" />
             <SkillCard imagePath="/skills/vite.png" name="Vite" />
             <SkillCard imagePath="/skills/npm.png" name="npm" />
+            <SkillCard imagePath="/skills/canva.png" name="Canva"/>
           </div>
         </div>
       </div>

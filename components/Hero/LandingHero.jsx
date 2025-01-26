@@ -9,7 +9,7 @@ export default function LandingHero({ t }) {
         <p className="text-[30px] lg:text-[50px] text-foreground">
           Dudley Spence
         </p>
-        <p className="line-1 anim-typewriter text-[30px] lg:text-[50px] text-buttonGreen">
+        <p className="line-1 anim-typewriter text-[30px] lg:text-[40px] 2xl:text-[50px] text-buttonGreen">
           {t("job_title")}
         </p>
         <p className=" w-[300px] lg:w-[400px] mt-5 text-center text-[18px] lg:text-[20px] text-foreground">

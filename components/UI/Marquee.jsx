@@ -69,6 +69,14 @@ export default function SkillsMarquee() {
             marquee={true}
           />
         </div>
+        <div className="mx-3">
+          <SkillCard 
+            imagePath="/skills/typescript.png" 
+            name="TypeScript" 
+            marquee={true}
+          />
+        </div>
+        
       </Marquee>
 
       <Marquee
@@ -135,6 +143,13 @@ export default function SkillsMarquee() {
         </div>
         <div className="mx-3">
           <SkillCard imagePath="/skills/Jest.png" name="Jest" marquee={true} />
+        </div>
+        <div className="mx-3">
+          <SkillCard 
+            imagePath="/skills/canva.png" 
+            name="Canva" 
+            marquee={true}
+          />
         </div>
       </Marquee>
     </div>

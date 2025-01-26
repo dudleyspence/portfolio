@@ -27,8 +27,8 @@ export default function StackBlock({ t }) {
           marquee={true}
         />
         <SkillCard
-          imagePath="/skills/react-query.png"
-          name="react-query"
+          imagePath="/skills/typescript.png"
+          name="TypeScript"
           marquee={true}
         />
       </div>
