@@ -58,8 +58,7 @@ export default function ThisPortfolio({ t }) {
             <Image
               className="rounded-lg !static lg:absolute object-cover"
               fill
-              src={oldportfolio}
-              placeholder="blur"
+              src="https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051717/PortfolioSinglePage_lw0rt4.png"
               alt="Image Link to Old Portfolio"
             />
             <figcaption className="absolute bottom-3 left-2/4 flex  w-[60%] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-3 px-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">

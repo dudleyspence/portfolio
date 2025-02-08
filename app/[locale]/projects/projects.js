@@ -1,7 +1,8 @@
 const projects = [
   {
     id: 1,
-    image: "/Projects/TrailTalk.png",
+    image:
+      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051719/TrailTalk_carpwd.png",
     type: "fullstack",
     title: "trailtalk_title",
     frontskills: [
@@ -24,7 +25,8 @@ const projects = [
   },
   {
     id: 2,
-    image: "/Projects/PeaceOfMind.png",
+    image:
+      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051715/PeaceOfMind_paenk5.png",
     type: "fullstack",
     title: "peace_of_mind_title",
     frontskills: [
@@ -46,7 +48,8 @@ const projects = [
   },
   {
     id: 3,
-    image: "/Projects/TravelSync.png",
+    image:
+      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051720/TravelSync_kcptex.png",
     type: "fullstack",
     title: "travelsync_title",
     frontskills: [
@@ -68,7 +71,8 @@ const projects = [
   },
   {
     id: 4,
-    image: "/Projects/FrenchLanguage.png",
+    image:
+      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051716/FrenchLanguage_orhusd.png",
     type: "fullstack",
     title: "french_language_title",
     frontskills: ["Next.js", "TailwindCSS", "Axios"],
@@ -85,7 +89,8 @@ const projects = [
 
   {
     id: 5,
-    image: "/Projects/Npuzzle.png",
+    image:
+      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051718/Npuzzle_vyxizc.png",
     type: "dissertation",
     title: "n_puzzle_title",
     backskills: ["Python", "TensorFlow", "NumPy"],
