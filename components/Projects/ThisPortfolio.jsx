@@ -1,6 +1,5 @@
 import React from "react";
 import PageSubTitle from "@/components/UI/PageSubTitle.jsx";
-import oldportfolio from "@/public/Projects/PortfolioSinglePage.png";
 import Image from "next/image";
 import Link from "next/link";
 

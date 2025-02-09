@@ -4,14 +4,14 @@ import SkillCard from "./SkillCard";
 export default function CurrentlyLearning({ marquee }) {
   const skill2 = (
     <SkillCard
-      imagePath="/skills/TypeScript.png"
+      imagePath="@/public/skills/TypeScript.png"
       name="TypeScript"
       marquee={marquee}
     />
   );
   const skill1 = (
     <SkillCard
-      imagePath="/skills/nextjs.png"
+      imagePath="@/public/skills/nextjs.png"
       name="Next.js"
       marquee={marquee}
     />
