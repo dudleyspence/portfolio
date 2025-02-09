@@ -15,68 +15,75 @@ export default function SkillsMarquee() {
         aria-live="polite"
       >
         <div className="mx-3">
-          <SkillCard imagePath="/skills/html.png" name="HTML" marquee={true} />
-        </div>
-        <div className="mx-3">
-          <SkillCard imagePath="/skills/css.png" name="CSS" marquee={true} />
+          <SkillCard
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095103/html_z4ek47.png"
+            name="HTML"
+            marquee
+          />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/react-query.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095101/css_hlam1n.png"
+            name="CSS"
+            marquee
+          />
+        </div>
+        <div className="mx-3">
+          <SkillCard
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095107/react-query_irkpz5.png"
             name="React Query"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/javascript.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095103/javascript_fmu58q.png"
             name="JavaScript"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/react.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095108/react_wyrptj.png"
             name="React"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/nextjs.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095105/nextjs_fftwta.png"
             name="Next.js"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/tailwind.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095109/tailwind_bjoe4f.png"
             name="TailwindCSS"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/nodejs.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095105/nodejs_odcua8.png"
             name="Node.js"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/express.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095101/express_lj32sy.png"
             name="Express.js"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
-          <SkillCard 
-            imagePath="/skills/typescript.png" 
-            name="TypeScript" 
-            marquee={true}
+          <SkillCard
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095109/typescript_npobqq.png"
+            name="TypeScript"
+            marquee
           />
         </div>
-        
       </Marquee>
 
       <Marquee
@@ -88,67 +95,79 @@ export default function SkillsMarquee() {
       >
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/fastAPI.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095101/fastAPI_smazly.png"
             name="FastAPI"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/mongo-db.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095104/mongo-db_he1wmx.png"
             name="MongoDB"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/firebase.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095102/firebase_xeygrr.png"
             name="Firebase"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/mysql.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095104/mysql_r8mfqt.png"
             name="MySQL"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/postgre.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095106/postgre_rnwqfn.png"
             name="PostgreSQL"
-            marquee={true}
+            marquee
           />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/github.png"
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095102/github_akppo1.png"
             name="GitHub"
-            marquee={true}
+            marquee
           />
-        </div>
-        <div className="mx-3">
-          <SkillCard imagePath="/skills/vite.png" name="Vite" marquee={true} />
-        </div>
-        <div className="mx-3">
-          <SkillCard imagePath="/skills/npm.png" name="npm" marquee={true} />
         </div>
         <div className="mx-3">
           <SkillCard
-            imagePath="/skills/visualstudio.png"
-            name="VSCode"
-            marquee={true}
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095109/vite_rf6u5c.png"
+            name="Vite"
+            marquee
           />
         </div>
         <div className="mx-3">
-          <SkillCard imagePath="/skills/Jest.png" name="Jest" marquee={true} />
+          <SkillCard
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095106/npm_z09hbg.png"
+            name="npm"
+            marquee
+          />
         </div>
         <div className="mx-3">
-          <SkillCard 
-            imagePath="/skills/canva.png" 
-            name="Canva" 
-            marquee={true}
+          <SkillCard
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095109/visualstudio_ocu0tz.png"
+            name="VSCode"
+            marquee
+          />
+        </div>
+        <div className="mx-3">
+          <SkillCard
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095103/Jest_ogs7ll.png"
+            name="Jest"
+            marquee
+          />
+        </div>
+        <div className="mx-3">
+          <SkillCard
+            imagePath="https://res.cloudinary.com/dvb1ktpjd/image/upload/c_thumb,w_200,g_face/v1739095101/canva_losood.png"
+            name="Canva"
+            marquee
           />
         </div>
       </Marquee>
