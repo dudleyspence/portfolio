@@ -1,7 +1,7 @@
 import React from "react";
 import SkillCard from "./SkillCard";
-import nextIcon from "@/public/Skills/nextjs.png";
-import typescriptIcon from "@/public/Skills/typescript.png";
+import nextIcon from "../../public/Skills/nextjs.png";
+import typescriptIcon from "../../public/Skills/typescript.png";
 
 export default function CurrentlyLearning({ marquee }) {
   const skill2 = (
