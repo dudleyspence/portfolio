@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     image:
-      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051719/TrailTalk_carpwd.png",
+      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739121535/Portfolio/Projects/xlxigagqplb8ytzp5i2d.png",
     type: "fullstack",
     title: "trailtalk_title",
     frontskills: [
@@ -69,56 +69,6 @@ const projects = [
     isPriority: false,
     blurHash: "LLK.6fR5DiR5_N-;NGWC00M{%0kW",
   },
-  {
-    id: 4,
-    image:
-      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051716/FrenchLanguage_orhusd.png",
-    type: "fullstack",
-    title: "french_language_title",
-    frontskills: ["Next.js", "TailwindCSS", "Axios"],
-    backskills: ["MongoDB"],
-    githubF: "https://github.com/dudleyspence/french-learning-journey",
-    githubB: "",
-    siteLink: "https://french-learning-journey-production.up.railway.app/",
-    description: "french_language_desc",
-    reverse: true,
-    linktag: "view_site",
-    isPriority: true,
-    blurHash: "L6Q9_[R.~pW9xvIV~q4nD%_3?c_3",
-  },
-
-  {
-    id: 5,
-    image:
-      "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739051718/Npuzzle_vyxizc.png",
-    type: "dissertation",
-    title: "n_puzzle_title",
-    backskills: ["Python", "TensorFlow", "NumPy"],
-    githubF: "",
-    githubB: "https://github.com/dudleyspence/N-Puzzle-DQN",
-    siteLink: "download",
-    description: "n_puzzle_desc",
-    reverse: false,
-    linktag: "download_diss",
-    isPriority: false,
-    blurHash: "LfM?;v*0McDO^$xuozi_V=IotRxu",
-  },
-
-  // {
-  //   id: 7,
-  //   image: "/Projects/PortfolioSinglePage.png",
-  //   type: "frontend",
-  //   title: "original_portfolio_title",
-  //   frontskills: ["HTML", "CSS", "JavaScript"],
-  //   githubF: "https://github.com/dudleyspence/old-portfolio-site",
-  //   githubB: "",
-  //   siteLink: "https://old-portfolio-site-production.up.railway.app",
-  //   description: "original_portfolio_desc",
-  //   reverse: true,
-  //   linktag: "view_site",
-  //   isPriority: false,
-  //   blurHash: "LLOf-;%CoFDj_BRXRlWCi,bXWFoM",
-  // },
 ];
 
 export default projects;

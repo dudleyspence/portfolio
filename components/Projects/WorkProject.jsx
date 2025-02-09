@@ -3,17 +3,20 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-export default function Project({
-  id,
+export default function WorkProject({
+  WIP,
   image,
   title,
-  type,
+  companyRole,
+  companyLogo,
+  dates,
   frontskills,
   backskills,
   githubF,
   githubB,
   siteLink,
-  description,
+  description_1,
+  responsibilities,
   reverse,
   linktag,
   isPriority,
@@ -27,14 +30,14 @@ export default function Project({
   return (
     <div
       className={`${
-        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } flex w-full flex-col lg:flex bg-background relative`}
+        reverse ? "2xl:flex-row-reverse" : "2xl:flex-row"
+      } flex w-full flex-col 2xl:flex bg-background relative`}
     >
-      <div className="relative w-full lg:w-3/5 shrink-0 rounded-xl overflow-hidden shadow-xl">
+      <div className="relative w-full 2xl:w-1/2 shrink-0 rounded-xl overflow-hidden shadow-xl">
         <Image
           src={image}
           alt={`${title} Image`}
-          className={`rounded-lg !static lg:absolute object-cover ${
+          className={`rounded-lg !static  object-cover ${
             isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
           }`}
           loading={isPriority ? "eager" : "lazy"}
@@ -45,15 +48,30 @@ export default function Project({
             transition: "filter 700ms ease, transform 150ms ease",
           }}
         />
+        {WIP && (
+          <div className="absolute top-5 right-5 z-50">
+            <Image
+              height={60}
+              width={120}
+              src="https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739133455/Portfolio/Projects/lmqol4es1vtzyb87ivue.png"
+              alt="work in progress"
+            />
+          </div>
+        )}
       </div>
 
       <div
-        className={`font-sans px-0 lg:w-2/5 lg:px-6 p-6 ${
-          reverse ? "lg:pl-0" : "lg:pr-0"
+        className={`font-sans px-0 2xl:w-1/2 2xl:px-6 p-6 pb-2 ${
+          reverse ? "2xl:pl-0" : "2xl:pr-0"
         }`}
       >
-        <h6 className="mb-4 uppercase font-bold text-text">{type}</h6>
+        <div className="flex flex-row items-center gap-3 mb-4">
+          <Image src={companyLogo} width={20} height={20} alt="company logo" />
+          <h6 className=" uppercase font-bold text-text">{companyRole}</h6>
+        </div>
+
         <h1 className="mb-4 text-2xl font-sans font-bold text-text">{title}</h1>
+        <h6 className=" mb-4 uppercase font-bold text-text">Dates: {dates}</h6>
 
         {frontskills && (
           <div className="flex flex-row items-start gap-2 mb-2 ">
@@ -135,63 +153,40 @@ export default function Project({
           </div>
         )}
 
-        <p className="mb-8 font-sans text-text">{description}</p>
+        <p className="mb-4 mt-8 font-sans text-text">{description_1}</p>
+        <ul className="mb-8 list-disc list-inside space-y-2">
+          {responsibilities.map((res, index) => (
+            <li key={`responsibility_${index}`}>{res}</li>
+          ))}
+        </ul>
 
-        {siteLink === "download" ? (
-          <a
-            href="Solving the N-Puzzle using Deep Reinforcement Learning.pdf"
-            className="inline-block"
-            download
+        <a
+          target="_blank"
+          href={siteLink}
+          aria-label={`link to live site for ${title}`}
+          className="inline-block"
+        >
+          <button
+            variant="text"
+            className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-text hover:bg-highcontrast active:bg-gray-900/20 flex items-center gap-2"
           >
-            <button
-              variant="text"
-              className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-text hover:bg-highcontrast active:bg-gray-900/20 flex items-center gap-2"
+            {linktag}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+              className="h-4 w-4"
             >
-              {linktag}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-                className="h-4 w-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </button>
-          </a>
-        ) : (
-          <a
-            href={siteLink}
-            aria-label={`link to live site for ${title}`}
-            className="inline-block"
-          >
-            <button
-              variant="text"
-              className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg text-text hover:bg-highcontrast active:bg-gray-900/20 flex items-center gap-2"
-            >
-              {linktag}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-                className="h-4 w-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </button>
-          </a>
-        )}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </button>
+        </a>
       </div>
     </div>
   );

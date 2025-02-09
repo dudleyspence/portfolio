@@ -9,6 +9,7 @@ const nextConfig = {
       "encrypted-tbn0.gstatic.com",
       "pbs.twimg.com",
       "res.cloudinary.com",
+      "media.licdn.com",
     ],
   },
 };
