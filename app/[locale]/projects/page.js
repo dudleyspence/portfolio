@@ -14,7 +14,9 @@ export default function Page() {
     <div className="flex flex-col w-full justify-center items-center gap-8 lg:gap-16">
       <div>
         <PageTitle title={t("title")} />
-        <p className="text-foreground text-xl">{t("page_summary")}</p>
+        <p className="text-foreground text-sm sm:text-xl">
+          {t("page_summary")}
+        </p>
       </div>
 
       <FreelanceProjects t={t} />
