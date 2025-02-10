@@ -2,10 +2,10 @@ import React from "react";
 import StackBlock from "./StackBlock";
 import MyLocation from "./MyLocation";
 import Learning from "./Learning";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function MiniAbout() {
-  const t = useTranslations("homepage");
+export default async function MiniAbout() {
+  const t = await getTranslations("homepage");
 
   return (
     <div

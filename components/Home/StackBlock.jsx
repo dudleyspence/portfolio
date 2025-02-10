@@ -1,6 +1,5 @@
 import React from "react";
 import SkillsMarquee from "../UI/Marquee";
-import SkillCard from "../About/SkillCard";
 import CurrentlyLearning from "../About/CurrentlyLearning";
 
 export default function StackBlock({ t }) {

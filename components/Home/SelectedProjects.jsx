@@ -1,8 +1,6 @@
-"use client";
 import React from "react";
 import projects from "@/app/[locale]/projects/projects";
-import DynamicBlurImage from "../UI/DynamicBlurImage";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,13 +8,11 @@ const project1 = projects[0];
 const project2 = projects[2];
 
 const project1ImagePath = project1.image;
-const project1ImageBlur = project1.blurHash;
 const project2ImagePath = project2.image;
-const project2ImageBlur = project2.blurHash;
 
-export default function SelectedProjects() {
-  const t = useTranslations("projects");
-  const tHome = useTranslations("homepage");
+export default async function SelectedProjects() {
+  const t = await getTranslations("projects");
+  const tHome = await getTranslations("homepage");
 
   return (
     <div className="flex flex-col gap-10 justify-center items-center w-full">
@@ -29,10 +25,12 @@ export default function SelectedProjects() {
           target="_blank"
           aria-label={`Link to live site of ${t(project1.title)}`}
         >
-          <figure className="relative w-full cursor-pointer shadow-xl rounded-xl hover:shadow-highcontrast">
+          <figure className="relative w-full h-full cursor-pointer shadow-xl rounded-xl hover:shadow-highcontrast">
             <Image
               src={project1ImagePath}
               placeholder="blur"
+              fill
+              className="object-cover rounded-lg shadow-lg !static"
               blurDataURL={project1.blurURL}
               alt={`${t(project1.title)} Image`}
             />
@@ -48,10 +46,12 @@ export default function SelectedProjects() {
           target="_blank"
           aria-label={`Link to live site of ${t(project2.title)}`}
         >
-          <figure className="relative w-full cursor-pointer shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
+          <figure className="relative w-full h-full cursor-pointer shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
             <Image
               src={project2ImagePath}
               placeholder="blur"
+              fill
+              className="object-cover rounded-lg shadow-lg !static"
               blurDataURL={project2.blurURL}
               alt={`${t(project2.title)} Image`}
             />
