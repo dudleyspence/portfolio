@@ -21,7 +21,8 @@ const projects = [
     reverse: false,
     linktag: "view_site",
     isPriority: false,
-    blurHash: "LYIhjyaLRtxw~ot8M}M{kGaeV?Rj",
+    blurURL:
+      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAJUlEQVR4nAEaAOX/AN7X/9XLxP7//uLk/wB3arINAB6HiaubnurxCRB1E8ygSQAAAABJRU5ErkJggg==",
   },
   {
     id: 2,
@@ -44,7 +45,8 @@ const projects = [
     reverse: true,
     linktag: "view_site",
     isPriority: true,
-    blurHash: "LMI}#7kC4.%M~pE0D%t700j?%MIU",
+    blurURL:
+      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAI0lEQVR4nGOo753y9+/vmetWO8SnMTCw8zb3Tizp6AjNyAAArrcL6zBr2pYAAAAASUVORK5CYII=",
   },
   {
     id: 3,
@@ -67,7 +69,8 @@ const projects = [
     reverse: false,
     linktag: "view_site",
     isPriority: false,
-    blurHash: "LLK.6fR5DiR5_N-;NGWC00M{%0kW",
+    blurURL:
+      "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAK0lEQVR4nGPQ1NP6P3/+7P8f/v/6n5mT/Z8hJjbuv5Gp2X99Pb3/rBw8/wE5hBDUTGNl5QAAAABJRU5ErkJggg==",
   },
 ];
 

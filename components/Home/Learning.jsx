@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-export default function Learning() {
-  const t = useTranslations("about");
-  const locale = useLocale();
+export default async function Learning() {
+  const t = await getTranslations("about");
+  const locale = await getLocale();
 
   return (
     <Link href={`/${locale}/about`}>

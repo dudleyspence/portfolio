@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { generateBlurDataUrl } from "@/utils/BlurImageURL";
+// import { generateBlurDataUrl } from "@/utils/BlurImageURL.js";
 
 export default function DynamicBlurImage({ imagePath, blurHash, alt }) {
   const [loading, setLoading] = useState(true);

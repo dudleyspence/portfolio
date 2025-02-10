@@ -1,12 +1,12 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import LandingHero from "@/components/Hero/LandingHero";
 
 import Overview from "@/components/Home/Overview";
 import { Footer } from "@/components/Footer/Footer";
 import ScrollArrow from "@/components/UI/ScrollArrow";
 
-export default function Home() {
-  const t = useTranslations("common");
+export default async function Home() {
+  const t = await getTranslations("common");
 
   return (
     <div>
