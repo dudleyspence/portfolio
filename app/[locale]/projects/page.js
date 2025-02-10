@@ -6,6 +6,7 @@ import ThisPortfolio from "@/components/Projects/ThisPortfolio.jsx";
 import PersonalProjects from "@/components/Projects/PersonalProjects";
 import FreelanceProjects from "@/components/Projects/FreelanceProjects";
 import AcademicProjects from "@/components/Projects/AcademicProjects";
+import { getAllDataUrl } from "@/utils/BlurImageURL";
 
 export default function Page() {
   const t = useTranslations("projects");

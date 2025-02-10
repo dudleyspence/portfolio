@@ -22,7 +22,8 @@ const project = {
   reverse: true,
   linktag: "view_site",
   isPriority: true,
-  blurHash: "LJMtK*My?w?wsVROXARjcZxuROxD",
+  blurURL:
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAI0lEQVR4nGNoqCi/cupYbXYyO7ckw+o5E+5ePPX/zR05eXUApZAMxLwUT7AAAAAASUVORK5CYII=",
 };
 
 export default function FreelanceProjects({ t }) {
@@ -47,6 +48,7 @@ export default function FreelanceProjects({ t }) {
         reverse={project.reverse}
         linktag={t(project.linktag)}
         isPriority={project.isPriority}
+        blurURL={project.blurURL}
       />
     </div>
   );

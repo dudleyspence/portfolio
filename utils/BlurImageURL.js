@@ -1,17 +1,16 @@
-import { decode } from "blurhash";
+// import { getPlaiceholder } from "plaiceholder";
+// import projects from "../app/[locale]/projects/projects.js";
 
-export function generateBlurDataUrl(blurHash, width = 32, height = 32) {
-  const canvas = document.createElement("canvas");
-  const ctx = canvas.getContext("2d");
+// export async function generateBlurDataUrl(src) {
+//   try {
+//     const buffer = await fetch(src).then(async (res) =>
+//       Buffer.from(await res.arrayBuffer())
+//     );
 
-  const pixels = decode(blurHash, width, height);
+//     const { base64 } = await getPlaiceholder(buffer);
 
-  canvas.width = width;
-  canvas.height = height;
-
-  const imageData = new ImageData(new Uint8ClampedArray(pixels), width, height);
-
-  ctx.putImageData(imageData, 0, 0);
-
-  return canvas.toDataURL();
-}
+//     console.log(base64);
+//   } catch (err) {
+//     err;
+//   }
+// }

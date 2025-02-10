@@ -15,7 +15,8 @@ const project = {
   reverse: true,
   linktag: "download_diss",
   isPriority: false,
-  blurHash: "LfM?;v*0McDO^$xuozi_V=IotRxu",
+  blurURL:
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAALUlEQVR4nAEiAN3/AMi4lv/7+vL/NBcA/zUdAP8ALisl/52ip/8rHA7/MQAA/z1EEH3erQC3AAAAAElFTkSuQmCC",
 };
 
 export default function AcademicProjects({ t }) {
@@ -35,6 +36,7 @@ export default function AcademicProjects({ t }) {
         reverse={project.reverse}
         linktag={t(project.linktag)}
         isPriority={project.isPriority}
+        blurURL={project.blurURL}
       />
     </div>
   );

@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 export default function PersonalProject({
@@ -16,13 +14,8 @@ export default function PersonalProject({
   reverse,
   linktag,
   isPriority,
+  blurURL,
 }) {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleImageLoad = () => {
-    setIsLoading(false);
-  };
-
   return (
     <div
       className={`${
@@ -33,13 +26,12 @@ export default function PersonalProject({
         <Image
           src={image}
           alt={`${title} Image`}
-          className={`rounded-lg !static 2xl:absolute object-cover ${
-            isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
-          }`}
+          className="rounded-lg !static 2xl:absolute object-cover"
           loading={isPriority ? "eager" : "lazy"}
           priority={isPriority}
+          placeholder="blur"
+          blurDataURL={blurURL}
           fill
-          onLoad={handleImageLoad}
           style={{
             transition: "filter 700ms ease, transform 150ms ease",
           }}

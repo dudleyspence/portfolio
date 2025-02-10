@@ -24,6 +24,7 @@ export default function PersonalProjects({ t }) {
               reverse={project.reverse}
               linktag={t(project.linktag)}
               isPriority={project.isPriority}
+              blurURL={project.blurURL}
             />
           </div>
         );

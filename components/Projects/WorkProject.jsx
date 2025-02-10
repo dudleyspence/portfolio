@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 export default function WorkProject({
@@ -20,13 +18,8 @@ export default function WorkProject({
   reverse,
   linktag,
   isPriority,
+  blurURL,
 }) {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleImageLoad = () => {
-    setIsLoading(false);
-  };
-
   return (
     <div
       className={`${
@@ -37,13 +30,12 @@ export default function WorkProject({
         <Image
           src={image}
           alt={`${title} Image`}
-          className={`rounded-lg !static  object-cover ${
-            isLoading ? "scale-[1.02] blur-xl grayscale" : "blur-0 grayscale-0"
-          }`}
+          className="rounded-lg !static  object-cover"
           loading={isPriority ? "eager" : "lazy"}
           priority={isPriority}
           fill
-          onLoad={handleImageLoad}
+          placeholder="blur"
+          blurDataURL={blurURL}
           style={{
             transition: "filter 700ms ease, transform 150ms ease",
           }}
