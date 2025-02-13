@@ -38,11 +38,7 @@ export default async function RecentUpdates() {
             />
           </figure>
         </Link>
-        <Link
-          href="http://www.github.com/dudleyspence/eventhub"
-          target="_blank"
-          aria-label="Link to Github projet repo"
-        >
+        <Link href="/projects" aria-label="Link to projects section">
           <figure className="relative w-full h-full cursor-pointer shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
             <Image
               src={freelaceProject.image}
@@ -57,7 +53,7 @@ export default async function RecentUpdates() {
             />
             <Image
               height={60}
-              className="absolute top-5 right-5 z-50"
+              className="absolute top-5 right-5 z-1"
               width={120}
               src="https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739133455/Portfolio/Projects/lmqol4es1vtzyb87ivue.png"
               alt="work in progress"

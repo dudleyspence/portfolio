@@ -41,14 +41,13 @@ export default function WorkProject({
           }}
         />
         {WIP && (
-          <div className="absolute top-5 right-5 z-50">
-            <Image
-              height={60}
-              width={120}
-              src="https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739133455/Portfolio/Projects/lmqol4es1vtzyb87ivue.png"
-              alt="work in progress"
-            />
-          </div>
+          <Image
+            className="absolute top-5 right-5 z-1"
+            height={60}
+            width={120}
+            src="https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739133455/Portfolio/Projects/lmqol4es1vtzyb87ivue.png"
+            alt="work in progress"
+          />
         )}
       </div>
 
