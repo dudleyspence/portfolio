@@ -1,5 +1,5 @@
 import React from "react";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import Image from "next/image";
 import { freelaceProject } from "../Projects/FreelanceProjects";
@@ -12,6 +12,7 @@ const openToWorkBlur =
 export default async function RecentUpdates() {
   const t = await getTranslations("projects");
   const tHome = await getTranslations("homepage");
+  const loc = await getLocale();
 
   return (
     <div className="flex flex-col gap-10 justify-center items-center w-full">
@@ -38,7 +39,7 @@ export default async function RecentUpdates() {
             />
           </figure>
         </Link>
-        <Link href="/projects" aria-label="Link to projects section">
+        <Link href={`${loc}/projects`} aria-label="Link to projects section">
           <figure className="relative w-full h-full cursor-pointer shadow-xl shadow-black/5 rounded-xl hover:shadow-highcontrast">
             <Image
               src={freelaceProject.image}
