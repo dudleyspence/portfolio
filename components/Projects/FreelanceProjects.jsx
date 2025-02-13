@@ -3,7 +3,7 @@ import PageSubTitle from "../UI/PageSubTitle";
 import Project from "./PersonalProject";
 import WorkProject from "./WorkProject";
 
-const project = {
+export const freelaceProject = {
   WIP: true,
   image:
     "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739131481/Portfolio/Projects/zjzkpq8y1zrvek1rwgsn.png",
@@ -27,28 +27,30 @@ const project = {
 };
 
 export default function FreelanceProjects({ t }) {
-  const responsibilities = project.responsibilities.map((res) => t(res));
+  const responsibilities = freelaceProject.responsibilities.map((res) =>
+    t(res)
+  );
   return (
     <div className="w-full">
       <PageSubTitle title={t("freelance_projects")} />
       <WorkProject
-        WIP={project.WIP}
-        image={project.image}
-        dates={t(project.dates)}
-        title={t(project.title)}
-        companyRole={t(project.companyRole)}
-        companyLogo={project.companyLogo}
-        frontskills={project.frontskills}
-        backskills={project.backskills}
-        githubF={project.githubF}
-        githubB={project.githubB}
-        siteLink={project.siteLink}
-        description_1={t(project.description_1)}
+        WIP={freelaceProject.WIP}
+        image={freelaceProject.image}
+        dates={t(freelaceProject.dates)}
+        title={t(freelaceProject.title)}
+        companyRole={t(freelaceProject.companyRole)}
+        companyLogo={freelaceProject.companyLogo}
+        frontskills={freelaceProject.frontskills}
+        backskills={freelaceProject.backskills}
+        githubF={freelaceProject.githubF}
+        githubB={freelaceProject.githubB}
+        siteLink={freelaceProject.siteLink}
+        description_1={t(freelaceProject.description_1)}
         responsibilities={responsibilities}
-        reverse={project.reverse}
-        linktag={t(project.linktag)}
-        isPriority={project.isPriority}
-        blurURL={project.blurURL}
+        reverse={freelaceProject.reverse}
+        linktag={t(freelaceProject.linktag)}
+        isPriority={freelaceProject.isPriority}
+        blurURL={freelaceProject.blurURL}
       />
     </div>
   );
