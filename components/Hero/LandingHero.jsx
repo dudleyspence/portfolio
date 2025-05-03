@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileImage from "@/components/Hero/ProfileImage";
+import ChunkLogo from "../UI/ChunkLogo";
 
 export default function LandingHero({ t }) {
   return (
@@ -96,6 +97,13 @@ export default function LandingHero({ t }) {
                 fillRule="evenodd"
               />
             </svg>
+          </a>
+          <a
+            href="https://www.chunkapp.net"
+            target="_blank"
+            aria-label="Visit Dudley Spence's Chunk profile"
+          >
+            <ChunkLogo className="h-[30px] w-[30px] fill-foreground hover:scale-110 hover:fill-buttonGreen" />
           </a>
         </div>
       </div>

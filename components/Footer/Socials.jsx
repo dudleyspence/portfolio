@@ -1,4 +1,5 @@
 import React from "react";
+import ChunkLogo from "../UI/ChunkLogo";
 
 export default function Socials() {
   return (
@@ -105,7 +106,7 @@ export default function Socials() {
         target="_blank"
         aria-label="Visit Dudley Spence's Chunk profile"
       >
-        <ChunkLogo className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen" />
+        <ChunkLogo className="h-[30px] w-[30px] fill-foreground hover:scale-110 hover:fill-buttonGreen" />
       </a>
     </div>
   );
