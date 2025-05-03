@@ -52,13 +52,6 @@ export default async function RecentUpdates() {
                 transition: "filter 700ms ease, transform 150ms ease",
               }}
             />
-            <Image
-              height={60}
-              className="absolute top-5 right-5 z-1"
-              width={120}
-              src="https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739133455/Portfolio/Projects/lmqol4es1vtzyb87ivue.png"
-              alt="work in progress"
-            />
             <figcaption className="absolute bottom-3 left-2/4 flex flex-col w-[80%] -translate-x-2/4 justify-between rounded-xl border border-white bg-white/75 py-3 px-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
               <div className="flex flex-row items-center gap-3 mb-1">
                 <Image
