@@ -100,13 +100,6 @@ export default function Socials() {
           />
         </svg>
       </a>
-      <a
-        href="https://www.chunkapp.net"
-        target="_blank"
-        aria-label="Visit Dudley Spence's Chunk profile"
-      >
-        <ChunkLogo className="h-8 w-8 fill-foreground hover:scale-110 hover:fill-buttonGreen" />
-      </a>
     </div>
   );
 }
