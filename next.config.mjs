@@ -5,11 +5,23 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./i18n.js");
 const nextConfig = {
   images: {
-    domains: [
-      "encrypted-tbn0.gstatic.com",
-      "pbs.twimg.com",
-      "res.cloudinary.com",
-      "media.licdn.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "encrypted-tbn0.gstatic.com",
+      },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "media.licdn.com",
+      },
     ],
   },
 };

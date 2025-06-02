@@ -14,7 +14,8 @@
     "recentUpdates": "Mises à jour récentes",
     "summary": "Résumé rapide",
     "current_focus": "Sur quoi suis-je actuellement concentré?",
-    "stack": "Ma Stack"
+    "stack": "Ma Stack",
+    "mySaaS": "Mon SaaS - Chunk"
   },
   "about": {
     "title": "À propos",
@@ -50,7 +51,15 @@
   "projects": {
     "title": "Projets",
     "page_summary": "Découvrez une sélection de projets freelance, personnels et académiques mettant en avant des solutions logicielles robustes et conviviales. Chaque projet illustre une combinaison unique de technologies, de résolution de problèmes et d’innovation.",
-    "freelance_projects": "Projets Freelance",
+    "freelance_projects": "Projets SaaS et Freelance",
+    "chunk_company_role": "Fondateur et Développeur",
+    "chunk_project_title": "Chunk",
+    "chunk_dates": "Avril 2025 - Présent",
+    "chunk_desc_1": "Chunk est une application de bureau macOS que j'ai conçue et développée de A à Z. C'est un outil de timeblocking qui se loge dans la barre de menu et s'intègre avec les calendriers Apple, Outlook et Google.",
+    "chunk_res_1": "Développement d'une application macOS avec Tauri, SQLite et React.js, en mettant l'accent sur une intégration fluide avec les calendriers Apple, Outlook et Google.",
+    "chunk_res_2": "Création d'une boutique en ligne avec Next.js et intégration de LemonSqueezy pour les paiements et les licences.",
+    "chunk_res_3": "Lancé en tant que produit SaaS, avec plus de 130 utilisateurs en 3 semaines et des retours utilisateurs très positifs.",
+
     "personal_projects": "Projets Personnels",
     "academic_projects": "Projets Académique",
     "fullstack": "Full-stack",

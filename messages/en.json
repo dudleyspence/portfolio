@@ -14,7 +14,8 @@
     "recentUpdates": "Recent Updates",
     "summary": "Quick Summary",
     "current_focus": "What am I currently focused on?",
-    "stack": "My Stack"
+    "stack": "My Stack",
+    "mySaaS": "My SaaS - Chunk"
   },
   "about": {
     "title": "About",
@@ -50,8 +51,15 @@
 
   "projects": {
     "title": "Projects",
-    "page_summary": "Discover a curated list of freelance, personal, and academic projects, showcasing robust, user-friendly software solutions. Each project demonstrates a unique blend of technologies, problem-solving, and innovation.",
-    "freelance_projects": "Freelance Projects",
+    "page_summary": "Discover a curated list of SaaS, freelance, personal, and academic projects, showcasing robust, user-friendly software solutions. Each project demonstrates a unique blend of technologies, problem-solving, and innovation.",
+    "freelance_projects": "SaaS and Freelance Projects",
+    "chunk_company_role": "Founder and Developer",
+    "chunk_project_title": "Chunk",
+    "chunk_dates": "April 2025 - Present",
+    "chunk_desc_1": "Chunk is a macOS desktop application that I built end to end from idea to launch. It is a timeblocking app that lives in the menubar and has integrations with Apple, Outlook and Google Calendar.",
+    "chunk_res_1": "Developed a macOS desktop application using Tauri, SQLite, and React.js, with a focus on seamless integration with Apple, Outlook, and Google Calendar.",
+    "chunk_res_2": "Developed a next.js webstore and integrated LemonSqueezy for payments and licensing.",
+    "chunk_res_3": "Launched as a SaaS product and gained 130+ users in 3 weeks along with consistently positive user feedback.",
     "personal_projects": "Personal Projects",
     "academic_projects": "Academic Projects",
     "fullstack": "Full-stack",

@@ -4,7 +4,7 @@ import Project from "./PersonalProject";
 import WorkProject from "./WorkProject";
 
 export const freelaceProject = {
-  WIP: true,
+  WIP: false,
   image:
     "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1739131481/Portfolio/Projects/zjzkpq8y1zrvek1rwgsn.png",
   companyRole: "eventhub_company_role",
@@ -26,13 +26,59 @@ export const freelaceProject = {
     "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAI0lEQVR4nGNoqCi/cupYbXYyO7ckw+o5E+5ePPX/zR05eXUApZAMxLwUT7AAAAAASUVORK5CYII=",
 };
 
+export const saasProject = {
+  WIP: false,
+  image:
+    "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1748887548/ProductHunt_Graphics_3_iz3b4t.png",
+  companyRole: "chunk_company_role",
+  companyLogo:
+    "https://res.cloudinary.com/dhe8ympcr/image/upload/v1747430397/ChunkLogo_dmaj1i_yzmz7n.png",
+  title: "chunk_project_title",
+  frontskills: ["TypeScript", "React.js", "Next.js", "TailwindCSS"],
+  backskills: ["Tauri", "SQLite", "LemonSqueezy"],
+  githubF: "",
+  githubB: "",
+  dates: "chunk_dates",
+  siteLink: "https://www.chunkapp.net",
+  description_1: "chunk_desc_1",
+  responsibilities: ["chunk_res_1", "chunk_res_2", "chunk_res_3"],
+  reverse: false,
+  linktag: "view_site",
+  isPriority: true,
+  blurURL:
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAI0lEQVR4nGNoqCi/cupYbXYyO7ckw+o5E+5ePPX/zR05eXUApZAMxLwUT7AAAAAASUVORK5CYII=",
+};
+
 export default function FreelanceProjects({ t }) {
-  const responsibilities = freelaceProject.responsibilities.map((res) =>
+  const eventHubResponsibilities = freelaceProject.responsibilities.map((res) =>
     t(res)
   );
+  const chunkResponsibilities = saasProject.responsibilities.map((res) =>
+    t(res)
+  );
+
   return (
-    <div className="w-full">
+    <div className="flex flex-col w-full justify-center items-center gap-8 lg:gap-16">
       <PageSubTitle title={t("freelance_projects")} />
+      <WorkProject
+        WIP={saasProject.WIP}
+        image={saasProject.image}
+        dates={t(saasProject.dates)}
+        title={t(saasProject.title)}
+        companyRole={t(saasProject.companyRole)}
+        companyLogo={saasProject.companyLogo}
+        frontskills={saasProject.frontskills}
+        backskills={saasProject.backskills}
+        githubF={saasProject.githubF}
+        githubB={saasProject.githubB}
+        siteLink={saasProject.siteLink}
+        description_1={t(saasProject.description_1)}
+        responsibilities={chunkResponsibilities}
+        reverse={saasProject.reverse}
+        linktag={t(saasProject.linktag)}
+        isPriority={saasProject.isPriority}
+        blurURL={saasProject.blurURL}
+      />
       <WorkProject
         WIP={freelaceProject.WIP}
         image={freelaceProject.image}
@@ -46,7 +92,7 @@ export default function FreelanceProjects({ t }) {
         githubB={freelaceProject.githubB}
         siteLink={freelaceProject.siteLink}
         description_1={t(freelaceProject.description_1)}
-        responsibilities={responsibilities}
+        responsibilities={eventHubResponsibilities}
         reverse={freelaceProject.reverse}
         linktag={t(freelaceProject.linktag)}
         isPriority={freelaceProject.isPriority}
