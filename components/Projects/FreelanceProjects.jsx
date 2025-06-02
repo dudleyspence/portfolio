@@ -29,7 +29,7 @@ export const freelaceProject = {
 export const saasProject = {
   WIP: false,
   image:
-    "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1748887548/ProductHunt_Graphics_3_iz3b4t.png",
+    "https://res.cloudinary.com/dvb1ktpjd/image/upload/v1748895374/ProductHunt_Graphics_4_czyhww.png",
   companyRole: "chunk_company_role",
   companyLogo:
     "https://res.cloudinary.com/dhe8ympcr/image/upload/v1747430397/ChunkLogo_dmaj1i_yzmz7n.png",
